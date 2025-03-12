@@ -13,11 +13,17 @@ Alexander Mordvintsev, Ettore Randazzo, Eyvind Niklasson, Michael Levin
 
 ## List of Papers
 
+
+
+
 ### 2025
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2025-02-03neuralcell_dacre.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2502.01242" target="_blank">
+    <img src="assets/thumbnails/2025-02-03neuralcell_dacre.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -35,14 +41,15 @@ In Distributed Manipulator Systems (DMS), decentralization is a highly desirable
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
-<td width="150px">
-<img src="assets/thumbnails/2025-01-07neuralcell_jia.jpg" width="140px">
+<td>
+<a href="https://arxiv.org/pdf/2501.03573" target="_blank">
+    <img src="assets/thumbnails/2025-01-07neuralcell_jia.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -60,14 +67,15 @@ This essay discusses the connections and differences between two emerging paradi
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2025-01-05medsegdiff_mittal.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2501.02447" target="_blank">
+    <img src="assets/thumbnails/2025-01-05medsegdiff_mittal.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -85,14 +93,21 @@ Denoising Diffusion Models (DDMs) are widely used for high-quality image generat
 
 </td>
 </tr>
-</table>
 
+
+
+
+
+</table>
 
 ### 2024
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2024-10-30ncadaptdy_ranem.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2410.23368" target="_blank">
+    <img src="assets/thumbnails/2024-10-30ncadaptdy_ranem.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -110,14 +125,15 @@ Continual learning (CL) in medical imaging presents a unique challenge, requirin
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2024-10-29ncamorph_ranem.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2410.22265" target="_blank">
+    <img src="assets/thumbnails/2024-10-29ncamorph_ranem.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -135,14 +151,15 @@ Medical image registration is a critical process that aligns various patient sca
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2024-09-10aqualitydi_qian.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2409.06888" target="_blank">
+    <img src="assets/thumbnails/2024-09-10aqualitydi_qian.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -160,14 +177,15 @@ We use the Quality Diversity (QD) algorithm with Neural Cellular Automata (NCA) 
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2024-04-09noisencan_pajouheshgar.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2404.06279" target="_blank">
+    <img src="assets/thumbnails/2024-04-09noisencan_pajouheshgar.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -185,14 +203,21 @@ Neural Cellular Automata (NCA) is a class of Cellular Automata where the update 
 
 </td>
 </tr>
-</table>
 
+
+
+
+
+</table>
 
 ### 2023
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-11-24mordvintse.jpg" width="140px">
+<a href="https://znah.net/hexells/" target="_blank">
+    <img src="assets/thumbnails/2023-11-24mordvintse.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -210,14 +235,15 @@ Alexander **Mordvintsev**
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-11-05meshneural_pajouheshgar.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2311.02820" target="_blank">
+    <img src="assets/thumbnails/2023-11-05meshneural_pajouheshgar.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -235,14 +261,15 @@ Modeling and synthesizing textures are essential for enhancing the realism of vi
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-10-28arbitraril_zhang.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2310.18622" target="_blank">
+    <img src="assets/thumbnails/2023-10-28arbitraril_zhang.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -260,14 +287,15 @@ We study the problem of generating arbitrarily large environments to improve the
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-09-28reconstruc_seibert.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2309.16195" target="_blank">
+    <img src="assets/thumbnails/2023-09-28reconstruc_seibert.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -285,14 +313,15 @@ The problem of generating microstructures of complex materials in silico has bee
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-09-23automataqu_sato.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2309.14364" target="_blank">
+    <img src="assets/thumbnails/2023-09-23automataqu_sato.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -310,14 +339,15 @@ We study life over the course of video game history as represented by their mech
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-08-30pathfindin.jpg" width="140px">
+<a href="https://zenodo.org/records/8275919" target="_blank">
+    <img src="assets/thumbnails/2023-08-30pathfindin.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -335,14 +365,15 @@ Abstract: Current artificial intelligence systems are rather rigid and narrow, i
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-07-24hierarchic_pande.jpg" width="140px">
+<a href="https://dl.acm.org/doi/10.1145/3638529.3654150" target="_blank">
+    <img src="assets/thumbnails/2023-07-24hierarchic_pande.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -360,14 +391,15 @@ Abstract. As opposed to the traditional view wherein intelligence was believed t
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-07-18biomakerca_randazzo.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2307.09320" target="_blank">
+    <img src="assets/thumbnails/2023-07-18biomakerca_randazzo.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -385,14 +417,15 @@ We introduce Biomaker CA: a Biome Maker project using Cellular Automata (CA). In
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-06-19criticalne_pontes-filho.jpg" width="140px">
+<a href="https://www.nichele.eu/ALIFE-DistributedGhost/2-Pontes.pdf" target="_blank">
+    <img src="assets/thumbnails/2023-06-19criticalne_pontes-filho.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -410,14 +443,15 @@ Sidney **Pontes-Filho**, Stefano **Nichele**, Mikkel **Lepperød**
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-05-22neuralcell_stovold.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2305.12971" target="_blank">
+    <img src="assets/thumbnails/2023-05-22neuralcell_stovold.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -435,14 +469,15 @@ Neural Cellular Automata (NCAs) are a model of morphogenesis, capable of growing
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-05-22selfrepli_sinapayen.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2305.13043" target="_blank">
+    <img src="assets/thumbnails/2023-05-22selfrepli_sinapayen.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -460,14 +495,15 @@ This paper reports on patterns exhibiting self-replication with spontaneous, inh
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-05-12trainingto_dwyer.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2110.14237" target="_blank">
+    <img src="assets/thumbnails/2023-05-12trainingto_dwyer.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -485,14 +521,15 @@ Graph neural cellular automata are a recently introduced class of computational 
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-04-05neuralcell_tang.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2304.02354" target="_blank">
+    <img src="assets/thumbnails/2023-04-05neuralcell_tang.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -510,14 +547,15 @@ We propose Neural Cellular Automata (NCA) to simulate the microstructure develop
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-03-30dyncareal_pajouheshgar.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2211.11417" target="_blank">
+    <img src="assets/thumbnails/2023-03-30dyncareal_pajouheshgar.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -535,14 +573,15 @@ Current Dynamic Texture Synthesis (DyTS) models can synthesize realistic videos.
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-02-19growingste_randazzo.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2302.10197" target="_blank">
+    <img src="assets/thumbnails/2023-02-19growingste_randazzo.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -560,14 +599,15 @@ Neural Cellular Automata (NCA) models have shown remarkable capacity for pattern
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-02-07medncaro_kalkhof.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2302.03473" target="_blank">
+    <img src="assets/thumbnails/2023-02-07medncaro_kalkhof.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -585,14 +625,15 @@ Access to the proper infrastructure is critical when performing medical image se
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-01-25enequiv_gala.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2301.10497" target="_blank">
+    <img src="assets/thumbnails/2023-01-25enequiv_gala.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -610,14 +651,15 @@ Cellular automata (CAs) are computational models exhibiting rich dynamics emergi
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-01-17pathfindin_earle.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2301.06820" target="_blank">
+    <img src="assets/thumbnails/2023-01-17pathfindin_earle.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -635,14 +677,15 @@ Pathfinding makes up an important sub-component of a broad range of complex task
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2023-01-02gameofinte_grieskamp.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2301.00897" target="_blank">
+    <img src="assets/thumbnails/2023-01-02gameofinte_grieskamp.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -660,14 +703,21 @@ Cellular automata (CA) captivate researchers due to teh emergent, complex indivi
 
 </td>
 </tr>
-</table>
 
+
+
+
+
+</table>
 
 ### 2022
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-11-02attention_tesfaldet.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2211.01233" target="_blank">
+    <img src="assets/thumbnails/2022-11-02attention_tesfaldet.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -685,14 +735,15 @@ Recent extensions of Cellular Automata (CA) have incorporated key ideas from mod
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-10-29growingneu.jpg" width="140px">
+<a href="https://github.com/PWhiddy/Growing-Neural-Cellular-Automata-Pytorch" target="_blank">
+    <img src="assets/thumbnails/2022-10-29growingneu.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -710,14 +761,15 @@ Extended experiments of "Growing Neural Cellular Automata" https://distill.pub/2
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-07-31physicalne_walker.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2203.07548" target="_blank">
+    <img src="assets/thumbnails/2022-07-31physicalne_walker.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -735,14 +787,15 @@ Materials with the ability to self-classify their own shape have the potential t
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-07-19empoweredn_grasso.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2205.06771" target="_blank">
+    <img src="assets/thumbnails/2022-07-19empoweredn_grasso.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -760,14 +813,15 @@ Information-theoretic fitness functions are becoming increasingly popular to pro
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-06-06clipguided.jpg" width="140px">
+<a href="https://mainakdeb.github.io/posts/clip-guided-nca/" target="_blank">
+    <img src="assets/thumbnails/2022-06-06clipguided.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -785,14 +839,15 @@ Mainak **Deb**
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-05-03growingiso_mordvintsev.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2205.01681" target="_blank">
+    <img src="assets/thumbnails/2022-05-03growingiso_mordvintsev.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -810,14 +865,15 @@ Modeling the ability of multicellular organisms to build and maintain their bodi
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-04-25hyperncag_najarro.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2204.11674" target="_blank">
+    <img src="assets/thumbnails/2022-04-25hyperncag_najarro.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -835,14 +891,15 @@ In contrast to deep reinforcement learning agents, biological neural networks ar
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-04-25goalguide_sudhakaran.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2205.06806" target="_blank">
+    <img src="assets/thumbnails/2022-04-25goalguide_sudhakaran.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -860,14 +917,15 @@ Inspired by cellular growth and self-organization, Neural Cellular Automata (NCA
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-03-12variationa_palm.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2201.12360" target="_blank">
+    <img src="assets/thumbnails/2022-03-12variationa_palm.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -885,14 +943,15 @@ In nature, the process of cellular growth and differentiation has lead to an ama
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-03-12adversaria_cavuoti.jpg" width="140px">
+<a href="https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00521/112290/Adversarial-Takeover-of-Neural-Cellular-Automata" target="_blank">
+    <img src="assets/thumbnails/2022-03-12adversaria_cavuoti.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -910,14 +969,15 @@ The biggest open problems in the life sciences concern the algorithms by which c
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2022-02-17illuminati_earle.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2109.05489" target="_blank">
+    <img src="assets/thumbnails/2022-02-17illuminati_earle.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -935,14 +995,21 @@ We present a method of generating diverse collections of neural cellular automat
 
 </td>
 </tr>
-</table>
 
+
+
+
+
+</table>
 
 ### 2021
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-11-26muncat_mordvintsev.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2111.13545" target="_blank">
+    <img src="assets/thumbnails/2021-11-26muncat_mordvintsev.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -960,14 +1027,15 @@ We study the problem of example-based procedural texture synthesis using highly 
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-09-12whatcancol_vardy.jpg" width="140px">
+<a href="https://ieeexplore.ieee.org/abstract/document/9599243" target="_blank">
+    <img src="assets/thumbnails/2021-09-12whatcancol_vardy.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -985,14 +1053,15 @@ Neural Cellular Automata (NCA) have been trained to produce target images and sh
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-07-19generative_otte.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2108.04328" target="_blank">
+    <img src="assets/thumbnails/2021-07-19generative_otte.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1010,14 +1079,15 @@ Motivated by the interaction between cells, the recently introduced concept of N
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-07-19asynchroni_niklasson.jpg" width="140px">
+<a href="https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00461/102923/Asynchronicity-in-Neural-Cellular-Automata" target="_blank">
+    <img src="assets/thumbnails/2021-07-19asynchroni_niklasson.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1035,14 +1105,15 @@ Abstract. Cellular Automata have intrigued curious minds for the better part of 
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-07-12towardssel_variengien.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2106.15240" target="_blank">
+    <img src="assets/thumbnails/2021-07-12towardssel_variengien.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1060,14 +1131,15 @@ Neural cellular automata (Neural CA) are a recent framework used to model biolog
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-06-22differenti_mordvintsev.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2107.06862" target="_blank">
+    <img src="assets/thumbnails/2021-06-22differenti_mordvintsev.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1085,14 +1157,15 @@ Reaction-Diffusion (RD) systems provide a computational framework that governs m
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-06-12neuralcell_ruiz.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2006.12155" target="_blank">
+    <img src="assets/thumbnails/2021-06-12neuralcell_ruiz.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1110,14 +1183,15 @@ Very recently, the Neural Cellular Automata (NCA) has been proposed to simulate 
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-06-06openended.jpg" width="140px">
+<a href="https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/" target="_blank">
+    <img src="assets/thumbnails/2021-06-06openended.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1135,14 +1209,15 @@ Minecraft Open-Ended Challenge 2021 Submission
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-05-15texturegen_mordvintsev.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2105.07299" target="_blank">
+    <img src="assets/thumbnails/2021-05-15texturegen_mordvintsev.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1160,14 +1235,15 @@ Neural Cellular Automata (NCA) have shown a remarkable ability to learn the requ
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-05-06adversaria_randazzo.jpg" width="140px">
+<a href="https://distill.pub/selforg/2021/adversarial/" target="_blank">
+    <img src="assets/thumbnails/2021-05-06adversaria_randazzo.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1185,14 +1261,15 @@ Reprogramming Neural CA to exhibit novel behaviour, using adversarial attacks.
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2025-02-03neuralcell_dacre.jpg" width="140px">
+<a href="https://kvfrans.com/stampca-conditional-neural-cellular-automat" target="_blank">
+    <img src="assets/thumbnails/2025-02-03neuralcell_dacre.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1210,14 +1287,15 @@ Neural CAs define local interactions which together grow into a global design. I
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-03-15growing3da_sudhakaran.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2103.08737" target="_blank">
+    <img src="assets/thumbnails/2021-03-15growing3da_sudhakaran.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1235,14 +1313,15 @@ Neural Cellular Automata (NCAs) have been proven effective in simulating morphog
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-02-11selforgan_niklasson.jpg properties." width="140px">
+<a href="https://distill.pub/selforg/2021/textures/" target="_blank">
+    <img src="assets/thumbnails/2021-02-11selforgan_niklasson.jpg properties." width="140px">
+</a>
 </td>
 <td>
 
@@ -1260,14 +1339,15 @@ Neural Cellular Automata learn to generate textures, exhibiting surprising
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2021-02-04regenerati_horibe.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2102.02579" target="_blank">
+    <img src="assets/thumbnails/2021-02-04regenerati_horibe.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1285,14 +1365,21 @@ Morphological regeneration is an important feature that highlights the environme
 
 </td>
 </tr>
-</table>
 
+
+
+
+
+</table>
 
 ### 2020
 <table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-11-06imagegener_chen.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2010.04949" target="_blank">
+    <img src="assets/thumbnails/2020-11-06imagegener_chen.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1310,14 +1397,15 @@ In this paper, we propose a novel approach to generate images (or other artworks
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-10-02learningto_zhang.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2103.04130" target="_blank">
+    <img src="assets/thumbnails/2020-10-02learningto_zhang.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1335,14 +1423,15 @@ In this work, we present a probabilistic 3D generative model, named Generative C
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-09-19predicting_chen.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2009.09347" target="_blank">
+    <img src="assets/thumbnails/2020-09-19predicting_chen.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1360,14 +1449,15 @@ This paper presents a novel framework using neural cellular automata (NCA) to re
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-08-27selfclass_randazzo.jpg" width="140px">
+<a href="" target="_blank">
+    <img src="assets/thumbnails/2020-08-27selfclass_randazzo.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1385,14 +1475,15 @@ Training an end-to-end differentiable, self-organising cellular automata for cla
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-08-12imagesegme_sandler.jpg" width="140px">
+<a href="https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/mnist_ca.ipynb" target="_blank">
+    <img src="assets/thumbnails/2020-08-12imagesegme_sandler.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1410,14 +1501,15 @@ In this paper, we propose a new approach for building cellular automata to solve
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-03-12neuralcell_endo.jpg" width="140px">
+<a href="https://umu1729.github.io/pages-neural-cellular-maze-solver/" target="_blank">
+    <img src="assets/thumbnails/2020-03-12neuralcell_endo.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1435,14 +1527,15 @@ Solving mazes with Neural Cellular Automata
 
 </td>
 </tr>
-</table>
 
 
 
-<table>
+
 <tr>
 <td width="150px">
-<img src="assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg" width="140px">
+<a href="https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb" target="_blank">
+    <img src="assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg" width="140px">
+</a>
 </td>
 <td>
 
@@ -1460,6 +1553,6 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 
 </td>
 </tr>
+
+
 </table>
-
-

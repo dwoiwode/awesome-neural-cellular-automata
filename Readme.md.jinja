@@ -13,11 +13,21 @@ Alexander Mordvintsev, Ettore Randazzo, Eyvind Niklasson, Michael Levin
 
 ## List of Papers
 {% for paper in papers | reverse %}
-{% if loop.changed(paper["year"][:4]) %}### {{ paper["year"][:4] }}{% endif %}
+{# Update year if needed #}
+{% if loop.changed(paper["year"][:4]) %}
+{% if not loop.first %}
+</table>
+{% endif %}
+### {{ paper["year"][:4] }}
 <table>
+{% endif %}
+{# Create paper entry #}
+{%- set pdf_link = paper["urls"]["arxiv"].replace("/abs/", "/pdf/") if "arxiv" in paper["urls"] else paper["urls"].values() | select("string") | first -%}
 <tr>
 <td width="150px">
-<img src="{{ paper['thumbnail'] }}" width="140px">
+<a href="{{ pdf_link }}" target="_blank">
+    <img src="{{ paper['thumbnail'] }}" width="140px">
+</a>
 </td>
 <td>
 
@@ -39,7 +49,7 @@ Published on **{{ paper["year"] }}** by
 
 </td>
 </tr>
-</table>
 
 {% endfor %}
+</table>
 
