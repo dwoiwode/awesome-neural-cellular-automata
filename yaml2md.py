@@ -82,6 +82,8 @@ def create_date_histograms(papers):
             if full_quarters[i].endswith('Q4'):
                 ax_quarter.axvline(x=i + 0.5, color=color_years, linestyle='--')
 
+        return fig
+
 
     # Light Mode Figure
     color_years = "#00509B"
@@ -98,6 +100,7 @@ def create_date_histograms(papers):
     plt.tight_layout()
     plt.savefig("assets/papers_per_quarter_light.png", dpi=300, bbox_inches='tight', transparent=True)
     plt.savefig("assets/papers_per_quarter_light.svg", bbox_inches='tight', transparent=True)
+    plt.clf()
 
     # Dark Mode Figure
     color_years = "#99B9D8"
@@ -110,11 +113,18 @@ def create_date_histograms(papers):
         "ytick.color": "white",
     })
 
+    fig = do_plot()
+    # Set frame (spine) color
+    ax = fig.gca()
+    ax.spines['top'].set_color("white")
+    ax.spines['right'].set_color("white")
+    ax.spines['bottom'].set_color("white")
+    ax.spines['left'].set_color("white")
 
-    do_plot()
     plt.tight_layout()
     plt.savefig("assets/papers_per_quarter_dark.png", dpi=300, bbox_inches='tight', transparent=True)
     plt.savefig("assets/papers_per_quarter_dark.svg", bbox_inches='tight', transparent=True)
+    plt.clf()
 
 
 # Load YAML data
