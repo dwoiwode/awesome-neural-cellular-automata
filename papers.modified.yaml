@@ -1,3 +1,4 @@
+date: 2025-03-12-14-50-11
 papers:
 - id: 2020-02-11growingneu_mordvintsev
   title: Growing Neural Cellular Automata
@@ -12,7 +13,6 @@ papers:
   - - Michael
     - Levin
   urls:
-    paper: ''
     code: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb'
     project_page: 'https://distill.pub/2020/growing-ca/'
   thumbnail: assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg
@@ -27,9 +27,7 @@ papers:
   - - Kenji
     - Yasuoka
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://umu1729.github.io/pages-neural-cellular-maze-solver/'
   thumbnail: assets/thumbnails/2020-03-12neuralcell_endo.jpg
   abstract: Solving mazes with Neural Cellular Automata
 - id: 2020-08-12imagesegme_sandler
@@ -49,9 +47,8 @@ papers:
   - - Blaise Agúera y
     - Arcas
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    code: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/mnist_ca.ipynb'
+    project_page: 'https://distill.pub/2020/selforg/mnist/'
   thumbnail: assets/thumbnails/2020-08-12imagesegme_sandler.jpg
   abstract: In this paper, we propose a new approach for building cellular automata
     to solve real-world segmentation problems. We design and train a cellular automaton
@@ -80,7 +77,7 @@ papers:
   - - Sam
     - Greydanus
   urls:
-    arxiv: ''
+    paper: ''
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2020-08-27selfclass_randazzo.jpg
@@ -101,9 +98,8 @@ papers:
   - - Zhecheng
     - Wang
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://arxiv.org/abs/2009.09347'
+    code: 'https://github.com/chenmingxiang110/NCA_Prediction'
   thumbnail: assets/thumbnails/2020-09-19predicting_chen.jpg
   abstract: This paper presents a novel framework using neural cellular automata (NCA)
     to regenerate and predict geographic information. The model extends the idea of
@@ -128,8 +124,8 @@ papers:
   - - Young Min
     - Kim
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2103.04130'
+    code: 'https://github.com/96lives/gca'
     project_page: ''
   thumbnail: assets/thumbnails/2020-10-02learningto_zhang.jpg
   abstract: In this work, we present a probabilistic 3D generative model, named Generative
@@ -155,8 +151,8 @@ papers:
   - - Zhecheng
     - Wang
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2010.04949'
+    code: 'https://github.com/chenmingxiang110/VAE-NCA'
     project_page: ''
   thumbnail: assets/thumbnails/2020-11-06imagegener_chen.jpg
   abstract: In this paper, we propose a novel approach to generate images (or other
@@ -175,9 +171,9 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://link.springer.com/chapter/10.1007/978-3-030-72812-0_3'
+    arxiv: 'https://arxiv.org/abs/2102.02579'
+    code: 'https://github.com/KazuyaHoribe/RegeneratingSoftRobots'
   thumbnail: assets/thumbnails/2021-02-04regenerati_horibe.jpg
   abstract: 'Morphological regeneration is an important feature that highlights the
     environmental adaptive capacity of biological systems. Lack of this regenerative
@@ -209,11 +205,11 @@ papers:
   - - Michael
     - Levin
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
-  thumbnail: assets/thumbnails/2021-02-11selforgan_niklasson.jpg
+    project_page: 'https://distill.pub/selforg/2021/textures/'
+    code pytorch: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/texture_nca_pytorch.ipynb'
+    code tensorflow: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/texture_nca_tf2.ipynb'
   abstract: Neural Cellular Automata learn to generate textures, exhibiting surprising
+  thumbnail: assets/thumbnails/2021-02-11selforgan_niklasson.jpg
     properties.
 - id: 2021-03-15growing3da_sudhakaran
   title: Growing 3D Artefacts and Functional Machines with Neural Cellular Automata
@@ -234,9 +230,10 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://direct.mit.edu/isal/proceedings/isal2021/33/108/102980'
+    arxiv: 'https://arxiv.org/abs/2103.08737'
+    code: 'https://github.com/real-itu/3d-artefacts-nca'
+    video: 'https://www.youtube.com/watch?v=-EzztzKoPeo'
   thumbnail: assets/thumbnails/2021-03-15growing3da_sudhakaran.jpg
   abstract: 'Neural Cellular Automata (NCAs) have been proven effective in simulating
     morphogenetic processes, the continuous construction of complex structures from
@@ -264,9 +261,7 @@ papers:
   - - Michael
     - Levin
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://distill.pub/selforg/2021/adversarial/'
   thumbnail: assets/thumbnails/2021-05-06adversaria_randazzo.jpg
   abstract: Reprogramming Neural CA to exhibit novel behaviour, using adversarial
     attacks.
@@ -281,7 +276,7 @@ papers:
   - - Ettore
     - Randazzo
   urls:
-    arxiv: ''
+    paper: 'https://arxiv.org/abs/2105.07299'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2021-05-15texturegen_mordvintsev.jpg
@@ -303,12 +298,12 @@ papers:
     existing work on texture generation. We discuss the advantages of such a paradigm.
 - id: 2021-06-06openended
   title: Open-ended creation of hybrid creatures with Neural Cellular Automata
-  year: '2021-06-06'
+  year: '2021-08-03'
   authors: []
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    blog: 'https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/'
+    code: 'https://github.com/hugcis/hybrid-nca-evocraft'
+    video: 'https://www.youtube.com/watch?v=RdUCL4Fs0XY'
   thumbnail: assets/thumbnails/2021-06-06openended.jpg
   abstract: Minecraft Open-Ended Challenge 2021 Submission
 - id: 2021-06-12neuralcell_ruiz
@@ -322,9 +317,9 @@ papers:
   - - Francesc
     - Moreno-Noguer
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://ieeexplore.ieee.org/document/9578885'
+    arxiv: 'https://arxiv.org/abs/2006.12155'
+    cvpr: 'https://openaccess.thecvf.com/content/CVPR2021/html/Hernandez_Neural_Cellular_Automata_Manifold_CVPR_2021_paper.html'
   thumbnail: assets/thumbnails/2021-06-12neuralcell_ruiz.jpg
   abstract: Very recently, the Neural Cellular Automata (NCA) has been proposed to
     simulate the morphogenesis process with deep networks. NCA learns to grow an image
@@ -352,7 +347,8 @@ papers:
   - - Eyvind
     - Niklasson
   urls:
-    arxiv: ''
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00429/102965/Differentiable-Programming-of-Reaction-Diffusion'
+    arxiv: 'https://arxiv.org/abs/2107.06862'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2021-06-22differenti_mordvintsev.jpg
@@ -364,8 +360,7 @@ papers:
     of Neural Cellular Automata and using task-speciﬁc differentiable loss functions.
     RD systems generated by our method exhibit robust, non-trivial “life-like” behavior.
 - id: 2021-07-12towardssel_variengien
-  title: 'Towards self-organized control: Using neural cellular automata to robustly
-    control a cart-pole agent'
+  title: 'Towards self-organized control: Using neural cellular automata to robustly control a cart-pole agent'
   year: '2021-07-12'
   authors:
   - - Alexandre
@@ -377,9 +372,9 @@ papers:
   - - Sidney
     - Pontes-Filho
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://arxiv.org/abs/2106.15240'
+    project_page: 'https://alexandrevariengien.com/self-organized-control/'
+    code: 'https://github.com/aVariengien/self-organized-control'
   thumbnail: assets/thumbnails/2021-07-12towardssel_variengien.jpg
   abstract: Neural cellular automata (Neural CA) are a recent framework used to model
     biological phenomena emerging from multicellular organisms. In these systems,
@@ -406,9 +401,8 @@ papers:
   - - Ettore
     - Randazzo
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00461/102923/Asynchronicity-in-Neural-Cellular-Automata'
+    code: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/async.ipynb'
   thumbnail: assets/thumbnails/2021-07-19asynchroni_niklasson.jpg
   abstract: Abstract. Cellular Automata have intrigued curious minds for the better
     part of the last century, with significant contributions to their field from the
@@ -440,7 +434,7 @@ papers:
   - - Kristian
     - Kersting
   urls:
-    arxiv: ''
+    paper: 'https://arxiv.org/abs/2108.04328'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2021-07-19generative_otte.jpg
@@ -463,7 +457,7 @@ papers:
   - - Andrew
     - Vardy
   urls:
-    arxiv: ''
+    paper: 'https://ieeexplore.ieee.org/abstract/document/9599243'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2021-09-12whatcancol_vardy.jpg
@@ -485,9 +479,9 @@ papers:
   - - Eyvind
     - Niklasson
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    arxiv: 'https://arxiv.org/abs/2111.13545'
+    code 1: 'https://www.shadertoy.com/view/slGGzD'
+    code 2: 'https://www.shadertoy.com/view/styGzD'
   thumbnail: assets/thumbnails/2021-11-26muncat_mordvintsev.jpg
   abstract: We study the problem of example-based procedural texture synthesis using
     highly compact models. Given a sample image, we use differentiable programming
@@ -516,8 +510,9 @@ papers:
   - - Julian
     - Togelius
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://dl.acm.org/doi/10.1145/3512290.3528754'
+    arxiv: 'https://arxiv.org/abs/2109.05489'
+    code: 'https://github.com/smearle/control-pcgrl'
     project_page: ''
   thumbnail: assets/thumbnails/2022-02-17illuminati_earle.jpg
   abstract: 'We present a method of generating diverse collections of neural cellular
@@ -547,9 +542,9 @@ papers:
   - - Michael
     - Levin
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00521/112290/Adversarial-Takeover-of-Neural-Cellular-Automata'
+    project_page: 'https://letteraunica.github.io/neural_cellular_automata/'
+    code: 'https://github.com/LetteraUnica/neural_cellular_automata'
   thumbnail: assets/thumbnails/2022-03-12adversaria_cavuoti.jpg
   abstract: 'The biggest open problems in the life sciences concern the algorithms
     by which competent subunits (cells) could cooperate to form large-scale structures
@@ -580,8 +575,8 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2201.12360'
+    code: 'https://github.com/rasmusbergpalm/vnca'
     project_page: ''
   thumbnail: assets/thumbnails/2022-03-12variationa_palm.jpg
   abstract: In nature, the process of cellular growth and differentiation has lead
@@ -600,8 +595,7 @@ papers:
     the VNCA can learn a distribution of stable attractors that can recover from signiﬁcant
     damage.
 - id: 2022-04-25goalguide_sudhakaran
-  title: 'Goal-Guided Neural Cellular Automata: Learning to Control Self-Organising
-    Systems'
+  title: 'Goal-Guided Neural Cellular Automata: Learning to Control Self-Organising Systems'
   year: '2022-04-25'
   authors:
   - - Shyam
@@ -611,7 +605,7 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
+    paper: 'https://arxiv.org/abs/2205.06806'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2022-04-25goalguide_sudhakaran.jpg
@@ -639,9 +633,9 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    arxiv: 'https://arxiv.org/abs/2204.11674'
+    project_page: 'https://iclr.cc/virtual/2022/8100'
+    code: 'https://github.com/enajx/hyperNCA'
   thumbnail: assets/thumbnails/2022-04-25hyperncag_najarro.jpg
   abstract: In contrast to deep reinforcement learning agents, biological neural networks
     are grown through a self-organized developmental process. Here we propose a new
@@ -663,9 +657,12 @@ papers:
   - - Craig
     - Fouts
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://direct.mit.edu/isal/proceedings/isal2022/34/65/112305'
+    project_page: 'https://google-research.github.io/self-organising-systems/isonca/'
+    arxiv: 'https://arxiv.org/abs/2205.01681'
+    video: 'https://www.youtube.com/watch?v=OZggz3EMjaY'
+    code structured seeds: 'https://github.com/google-research/self-organising-systems/blob/master/isotropic_nca/blogpost_isonca_structured_seeds_pytorch.ipynb'
+    code rotation invariant: 'https://github.com/google-research/self-organising-systems/blob/master/isotropic_nca/blogpost_isonca_single_seed_pytorch.ipynb'
   thumbnail: assets/thumbnails/2022-05-03growingiso_mordvintsev.jpg
   abstract: 'Modeling the ability of multicellular organisms to build and maintain
     their bodies through local interactions between individual cells (morphogenesis)
@@ -684,13 +681,13 @@ papers:
     seeds; or by introducing a rotation-reﬂection invariant training objective and
     relying on symmetry breaking caused by asynchronous cell updates.'
 - id: 2022-06-06clipguided
-  title: CLIP Guided Neural Cellular Automata using PyTorch | Mainak's blog
+  title: CLIP Guided Neural Cellular Automata using PyTorch
   year: '2022-06-06'
-  authors: []
+  authors:
+    - - Mainak
+      - Deb
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://mainakdeb.github.io/posts/clip-guided-nca/'
   thumbnail: assets/thumbnails/2022-06-06clipguided.jpg
   abstract: ''
 - id: 2022-07-19empoweredn_grasso
@@ -702,9 +699,9 @@ papers:
   - - Josh
     - Bongard
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://dl.acm.org/doi/10.1145/3520304.3529067'
+    arxiv: 'https://arxiv.org/abs/2205.06771'
+    code: 'https://github.com/caitlingrasso/empowered-nca'
   thumbnail: assets/thumbnails/2022-07-19empoweredn_grasso.jpg
   abstract: 'Information-theoretic fitness functions are becoming increasingly popular
     to produce generally useful, task-independent behaviors. One such universal function,
@@ -741,9 +738,9 @@ papers:
   - - Sebastian
     - Risi
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://arxiv.org/abs/2203.07548'
+    code: 'https://github.com/kattwalker/projectcube'
+    video: 'https://www.youtube.com/watch?v=0TCOkE4keyc'
   thumbnail: assets/thumbnails/2022-07-31physicalne_walker.jpg
   abstract: Materials with the ability to self-classify their own shape have the potential
     to advance a wide range of engineering applications and industries. Biological
@@ -761,11 +758,12 @@ papers:
 - id: 2022-10-29growingneu
   title: Growing Neural Cellular Automata - Task Experiments
   year: '2022-10-29'
-  authors: []
+  authors:
+  - - Peter
+    - Whidden
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    code: 'https://github.com/PWhiddy/Growing-Neural-Cellular-Automata-Pytorch'
+    project_page: 'https://transdimensional.xyz/projects/neural_ca/index.html'
   thumbnail: assets/thumbnails/2022-10-29growingneu.jpg
   abstract: Extended experiments of "Growing Neural Cellular Automata" https://distill.pub/2020/growing-ca/
 - id: 2022-11-02attention_tesfaldet
@@ -779,7 +777,8 @@ papers:
   - - Christopher
     - Pal
   urls:
-    arxiv: ''
+    paper: 'https://proceedings.neurips.cc/paper_files/paper/2022/file/361e5112d2eca09513bbd266e4b2d2be-Paper-Conference.pdf'
+    arxiv: 'https://arxiv.org/abs/2211.01233'
     code: ''
     project_page: ''
   thumbnail: assets/thumbnails/2022-11-02attention_tesfaldet.jpg
@@ -810,8 +809,8 @@ papers:
   - - Shaun
     - Lee
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2301.00897'
+    code: 'https://github.com/chaytanc/game-of-intelligent-life'
     project_page: ''
   thumbnail: assets/thumbnails/2023-01-02gameofinte_grieskamp.jpg
   abstract: Cellular automata (CA) captivate researchers due to teh emergent, complex
@@ -838,8 +837,8 @@ papers:
   - - Chinmay
     - Hegde
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2301.06820'
+    code: 'https://github.com/smearle/pathfinding-nca'
     project_page: ''
   thumbnail: assets/thumbnails/2023-01-17pathfindin_earle.jpg
   abstract: Pathfinding makes up an important sub-component of a broad range of complex
@@ -869,8 +868,8 @@ papers:
   - - Erik
     - Quaeghebeur
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2301.10497'
+    code: 'https://github.com/gengala/egnca'
     project_page: ''
   thumbnail: assets/thumbnails/2023-01-25enequiv_gala.jpg
   abstract: 'Cellular automata (CAs) are computational models exhibiting rich dynamics
@@ -900,8 +899,9 @@ papers:
   - - Anirban
     - Mukhopadhyay
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://link.springer.com/chapter/10.1007/978-3-031-34048-2_54'
+    arxiv: 'https://arxiv.org/abs/2302.03473'
+    code: 'https://github.com/MECLabTUDA/Med-NCA'
     project_page: ''
   thumbnail: assets/thumbnails/2023-02-07medncaro_kalkhof.jpg
   abstract: Access to the proper infrastructure is critical when performing medical
@@ -934,8 +934,8 @@ papers:
   - - Craig
     - Fouts
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2302.10197'
+    code: 'ttps://github.com/google-research/self-organising-systems/tree/master/isotropic_nca'
     project_page: ''
   thumbnail: assets/thumbnails/2023-02-19growingste_randazzo.jpg
   abstract: 'Neural Cellular Automata (NCA) models have shown remarkable capacity
@@ -968,9 +968,10 @@ papers:
   - - Sabine
     - Süsstrunk
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://dynca.github.io/'
+    paper: 'https://arxiv.org/abs/2211.11417'
+    code: 'https://github.com/IVRL/DyNCA'
+    video: 'https://www.youtube.com/watch?v=ELZC2mX5Z9U'
   thumbnail: assets/thumbnails/2023-03-30dyncareal_pajouheshgar.jpg
   abstract: Current Dynamic Texture Synthesis (DyTS) models can synthesize realistic
     videos. However, they require a slow iterative optimization process to synthesize
@@ -998,8 +999,8 @@ papers:
   - - Ehsan
     - Hosseini
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2304.02354'
+    code: 'https://github.com/HighTempIntegrity/JianTang-NCA01'
     project_page: ''
   thumbnail: assets/thumbnails/2023-04-05neuralcell_tang.jpg
   abstract: We propose Neural Cellular Automata (NCA) to simulate the microstructure
@@ -1020,9 +1021,10 @@ papers:
   - - Maxwell M.
     - Omwenga
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://danielegrattarola.github.io/posts/2021-11-08/graph-neural-cellular-automata.html'
+    paper: 'https://ieeexplore.ieee.org/document/10187381'
+    arxiv: 'https://arxiv.org/abs/2110.14237'
+    code: 'https://github.com/danielegrattarola/GNCA'
   thumbnail: assets/thumbnails/2023-05-12trainingto_dwyer.jpg
   abstract: Graph neural cellular automata are a recently introduced class of computational
     models that extend neural cellular automata to arbitrary graphs. They are promising
@@ -1040,16 +1042,17 @@ papers:
     that translucent graph neural cellular automata are capable of this task, albeit
     with optimal learning rates highly dependent on the graph to be reconstructed.
 - id: 2023-05-22selfrepli_sinapayen
-  title: Self-Replication, Spontaneous Mutations, and Exponential Genetic Drift in
-    Neural Cellular Automata
+  title: Self-Replication, Spontaneous Mutations, and Exponential Genetic Drift in Neural Cellular Automata
   year: '2023-05-22'
   authors:
   - - Lana
     - Sinapayen
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00591/116893/Self-Replication-Spontaneous-Mutations-and'
+    arxiv: 'https://arxiv.org/abs/2305.13043'
+    code: 'https://github.com/LanaSina/NCA_self_replication'
     project_page: ''
+    videos: 'https://youtube.com/playlist?list=PLYuu1RcSnrYRhophmfolv_lmx7Qz8AP1P'
   thumbnail: assets/thumbnails/2023-05-22selfrepli_sinapayen.jpg
   abstract: This paper reports on patterns exhibiting self-replication with spontaneous,
     inheritable mutations and exponential genetic drift in Neural Cellular Automata.
@@ -1066,8 +1069,9 @@ papers:
   - - James
     - Stovold
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00567/116835/Neural-Cellular-Automata-Can-Respond-to-Signals'
+    arxiv: 'https://arxiv.org/abs/2305.12971'
+    code: 'https://github.com/jstovold/ALIFE2023'
     project_page: ''
   thumbnail: assets/thumbnails/2023-05-22neuralcell_stovold.jpg
   abstract: 'Neural Cellular Automata (NCAs) are a model of morphogenesis, capable
@@ -1075,6 +1079,20 @@ papers:
     paper, we show that NCAs can be trained to respond to signals. Two types of signal
     are used: internal (genomically-coded) signals, and external (environmental) signals.
     Signals are presented to a single pixel for a single timestep.'
+- id: 2023-06-19criticalne_pontes-filho
+  title: Critical Neural Cellular Automata
+  year: 2023-06-19
+  authors:
+    - - Sidney
+      - Pontes-Filho
+    - - Stefano
+      - Nichele
+    - - Mikkel
+      - Lepperød
+  urls:
+    paper: 'https://www.nichele.eu/ALIFE-DistributedGhost/2-Pontes.pdf'
+  thumbnail: assets/thumbnails/2023-06-19criticalne_pontes-filho.jpg
+  abstract: ''
 - id: 2023-07-18biomakerca_randazzo
   title: 'Biomaker CA: a Biome Maker project using Cellular Automata'
   year: '2023-07-18'
@@ -1084,9 +1102,9 @@ papers:
   - - Alexander
     - Mordvintsev
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://arxiv.org/abs/2307.09320'
+    project_page: 'https://google-research.github.io/self-organising-systems/2023/biomaker-ca/'
+    code: 'https://github.com/google-research/self-organising-systems/tree/master/self_organising_systems/biomakerca'
   thumbnail: assets/thumbnails/2023-07-18biomakerca_randazzo.jpg
   abstract: 'We introduce Biomaker CA: a Biome Maker project using Cellular Automata
     (CA). In Biomaker CA, morphogenesis is a first class citizen and small seeds need
@@ -1112,8 +1130,8 @@ papers:
   - - Daniele
     - Grattarola
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://dl.acm.org/doi/10.1145/3638529.3654150'
+    code: 'https://github.com/ngaylinn/mocs-final'
     project_page: ''
   thumbnail: assets/thumbnails/2023-07-24hierarchic_pande.jpg
   abstract: Abstract. As opposed to the traditional view wherein intelligence was
@@ -1137,10 +1155,18 @@ papers:
 - id: 2023-08-30pathfindin
   title: Pathfinding Neural Cellular Automata with Local Self-Attention
   year: '2023-08-30'
-  authors: []
+  authors:
+  - - Felix
+    - Reimers
+  - - Sanyam
+    - Jain
+  - - Aarati
+    - Shrestha
+  - - Stafano
+    - Nichele
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://zenodo.org/records/8275919'
+    code: 'https://github.com/Deskt0r/LocalAttentionNCA'
     project_page: ''
   thumbnail: assets/thumbnails/2023-08-30pathfindin.jpg
   abstract: 'Abstract: Current artificial intelligence systems are rather rigid and
@@ -1169,8 +1195,8 @@ papers:
   - - Atsushi
     - Masumori
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2309.14364'
+    code: 'https://github.com/IkegLab/GNCA_invader'
     project_page: ''
   thumbnail: assets/thumbnails/2023-09-23automataqu_sato.jpg
   abstract: We study life over the course of video game history as represented by
@@ -1182,8 +1208,7 @@ papers:
     Cellular Automata, as a way to more fully express life within video game settings
     and innovate new game mechanics or gameplay loops.
 - id: 2023-09-28reconstruc_seibert
-  title: Reconstructing microstructures from statistical descriptors using neural
-    cellular automata
+  title: Reconstructing microstructures from statistical descriptors using neural cellular automata
   year: '2023-09-28'
   authors:
   - - Paul
@@ -1201,9 +1226,8 @@ papers:
   - - Markus
     - Kästner
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://link.springer.com/article/10.1007/s40192-023-00335-1'
+    arxiv: 'https://arxiv.org/abs/2309.16195'
   thumbnail: assets/thumbnails/2023-09-28reconstruc_seibert.jpg
   abstract: The problem of generating microstructures of complex materials in silico
     has been approached from various directions including simulation, Markov, deep
@@ -1234,8 +1258,8 @@ papers:
   - - Jiaoyang
     - Li
   urls:
-    arxiv: ''
-    code: ''
+    paper: 'https://arxiv.org/abs/2310.18622'
+    code: 'https://github.com/lunjohnzhang/warehouse_env_gen_nca_public'
     project_page: ''
   thumbnail: assets/thumbnails/2023-10-28arbitraril_zhang.jpg
   abstract: We study the problem of generating arbitrarily large environments to improve
@@ -1272,9 +1296,9 @@ papers:
   - - Sabine
     - Süsstrunk
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://meshnca.github.io/'
+    arxiv: 'https://arxiv.org/abs/2311.02820'
+    code: 'https://github.com/IVRL/MeshNCA'
   thumbnail: assets/thumbnails/2023-11-05meshneural_pajouheshgar.jpg
   abstract: Modeling and synthesizing textures are essential for enhancing the realism
     of virtual environments. Methods that directly synthesize textures in 3D offer
@@ -1298,16 +1322,15 @@ papers:
 - id: 2023-11-24mordvintse
   title: Mordvintsev Hexcells
   year: '2023-11-24'
-  authors: []
+  authors:
+  - - Alexander
+    - Mordvintsev
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://znah.net/hexells/'
   thumbnail: assets/thumbnails/2023-11-24mordvintse.jpg
   abstract: ''
 - id: 2024-04-09noisencan_pajouheshgar
-  title: 'NoiseNCA: Noisy Seed Improves Spatio-Temporal Continuity of Neural Cellular
-    Automata'
+  title: 'NoiseNCA: Noisy Seed Improves Spatio-Temporal Continuity of Neural Cellular Automata'
   year: '2024-04-09'
   authors:
   - - Ehsan
@@ -1317,9 +1340,10 @@ papers:
   - - Sabine
     - Süsstrunk
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    project_page: 'https://noisenca.github.io/'
+    paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00785/123473/NoiseNCA-Noisy-Seed-Improves-Spatio-Temporal'
+    arxiv: 'https://arxiv.org/abs/2404.06279'
+    code: 'https://github.com/IVRL/NoiseNCA'
   thumbnail: assets/thumbnails/2024-04-09noisencan_pajouheshgar.jpg
   abstract: Neural Cellular Automata (NCA) is a class of Cellular Automata where the
     update rule is parameterized by a neural network that can be trained using gradient
@@ -1341,8 +1365,7 @@ papers:
     that NCA models can learn continuous dynamics and opens new venues for NCA research
     from a dynamical systems' perspective.
 - id: 2024-09-10aqualitydi_qian
-  title: A Quality Diversity Approach to Automatically Generate Multi-Agent Path Finding
-    Benchmark Maps
+  title: A Quality Diversity Approach to Automatically Generate Multi-Agent Path Finding Benchmark Maps
   year: '2024-09-10'
   authors:
   - - Cheng
@@ -1358,9 +1381,8 @@ papers:
   - - Jiaoyang
     - Li
   urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
+    paper: 'https://ojs.aaai.org/index.php/SOCS/article/view/31580'
+    arxiv: 'https://arxiv.org/abs/2409.06888'
   thumbnail: assets/thumbnails/2024-09-10aqualitydi_qian.jpg
   abstract: We use the Quality Diversity (QD) algorithm with Neural Cellular Automata
     (NCA) to generate benchmark maps for Multi-Agent Path Finding (MAPF) algorithms.
@@ -1379,30 +1401,3 @@ papers:
     experiments and comparisons between algorithms, we identify patterns where each
     algorithm excels and detect disparities in runtime or success rates between different
     algorithms.
-- id: Unknowncriticalne_pontes-filho
-  title: Critical Neural Cellular Automata
-  year: Unknown
-  authors:
-  - - Sidney
-    - Pontes-Filho
-  - - Stefano
-    - Nichele
-  - - Mikkel
-    - Lepperød
-  urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
-  thumbnail: assets/thumbnails/Unknowncriticalne_pontes-filho.jpg
-  abstract: ''
-- id: Unknowndistill
-  title: Distill
-  year: Unknown
-  authors: []
-  urls:
-    arxiv: ''
-    code: ''
-    project_page: ''
-  thumbnail: assets/thumbnails/Unknowndistill.jpg
-  abstract: ''
-date: 2025-03-12-13-21-03
