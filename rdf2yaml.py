@@ -1,3 +1,11 @@
+"""
+Converts a Zotero rdf structure to a automatically generated yaml. Also generates thumbnails for each entry.
+
+Easiest way to add new papers to this list:
+- Export selected entries from Zotero as rdf
+- convert the rdf structure to yaml using this script
+- Update `papers.yaml` using the content from `papers.auto.yaml`.
+"""
 import datetime
 import re
 import subprocess
@@ -76,16 +84,14 @@ def parse_rdf(rdf_file:Path):
                     pdf_path = rdf_file.parent / list(resource.attrib.values())[0]
 
         # Find paper urls
-        urls = {
+        urls = {  # TODO: Currently only done manually to improve overall quality
+            "project_page": "",
             "paper": "",
             "code": "",
-            "project_page": ""
         }
 
         title_text = title.text if title is not None else "Unknown Title"
-        print(year, year2, end=" -> ")
         year = unify_year(year, year2)
-        print(year)
         id_text = generate_id(title_text, year, authors)
 
         papers.append({
@@ -96,7 +102,6 @@ def parse_rdf(rdf_file:Path):
             "urls": urls,
             "thumbnail": create_thumbnail(pdf_path, id_text).as_posix(),
             "abstract": abstract.text if abstract is not None else "",
-            # "paper": pdf_path.relative_to(Path(__file__).parent).as_posix() if pdf_path else None,
         })
 
     return papers
@@ -121,7 +126,7 @@ def create_thumbnail(pdf_path, paper_id) -> Path:
             ], check=True)
 
         else:
-            output_thumb.write_bytes(Path("placeholder_thumbnail.jpg").read_bytes())
+            output_thumb.write_bytes(Path("assets/thumbnail_placeholder.jpg").read_bytes())
 
     return output_thumb
 
@@ -136,7 +141,7 @@ def export_yaml(papers, output_file="papers.auto.yaml"):
 
 
 def main():
-    path = r"C:\Users\woiwode\Desktop\tmp\NCA_rdf\NCA_rdf.rdf"
+    path = r"NCA.rdf"
     rdf_file = Path(path)
     papers = parse_rdf(rdf_file)
     print(f"Found {len(papers)} papers in {rdf_file}")

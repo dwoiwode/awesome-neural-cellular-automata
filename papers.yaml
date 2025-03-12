@@ -13,8 +13,8 @@ papers:
   - - Michael
     - Levin
   urls:
-    code: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb'
     project_page: 'https://distill.pub/2020/growing-ca/'
+    code: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb'
   thumbnail: assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg
   abstract: Training an end-to-end differentiable, self-organising cellular automata
     model of morphogenesis, able to both grow and regenerate specific patterns.
@@ -208,9 +208,8 @@ papers:
     project_page: 'https://distill.pub/selforg/2021/textures/'
     code pytorch: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/texture_nca_pytorch.ipynb'
     code tensorflow: 'https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/texture_nca_tf2.ipynb'
-  abstract: Neural Cellular Automata learn to generate textures, exhibiting surprising
   thumbnail: assets/thumbnails/2021-02-11selforgan_niklasson.jpg
-    properties.
+  abstract: Neural Cellular Automata learn to generate textures, exhibiting surprising properties.
 - id: 2021-03-15growing3da_sudhakaran
   title: Growing 3D Artefacts and Functional Machines with Neural Cellular Automata
   year: '2021-03-15'

@@ -1,11 +1,37 @@
+<!-- This file was automatically created on 2025-03-12 16:18:49 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
+
+If you want to contribute, please update the `papers.yaml` file.
+Updating the Readme.md directly will be overridden with the next commit!
 
 ## Seminal Paper introducing Neural Cellular Automata
-### Growing Neural Cellular Automata
-Alexander Mordvintsev, Ettore Randazzo, Eyvind Niklasson, Michael Levin
+<table>
+<tr>
+<td width="150px">
+<a href="https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb" target="_blank">
+    <img src="assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg" width="140px">
+</a>
+</td>
+<td>
 
-[🌐 Project Page](https://distill.pub/2020/growing-ca/) | [doi/10.239815/distill.000023](https://doi.org/10.23915/distill.00023)
+### Growing Neural Cellular Automata
+Published on **2020-02-11** by
+
+Alexander **Mordvintsev**, Ettore **Randazzo**, Eyvind **Niklasson**, Michael **Levin**
+
+[Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb) | [Project Page](https://distill.pub/2020/growing-ca/)
+
+<details>
+<summary><b>Abstract</b></summary>
+Training an end-to-end differentiable, self-organising cellular automata model of morphogenesis, able to both grow and regenerate specific patterns.
+</details>
+
+</td>
+</tr>
+
+
+</table>
 
 ## Implementations
 - [Original reference](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb)
@@ -46,7 +72,7 @@ In Distributed Manipulator Systems (DMS), decentralization is a highly desirable
 
 
 <tr>
-<td>
+<td width="150px">
 <a href="https://arxiv.org/pdf/2501.03573" target="_blank">
     <img src="assets/thumbnails/2025-01-07neuralcell_jia.jpg" width="140px">
 </a>
@@ -1320,7 +1346,7 @@ Neural Cellular Automata (NCAs) have been proven effective in simulating morphog
 <tr>
 <td width="150px">
 <a href="https://distill.pub/selforg/2021/textures/" target="_blank">
-    <img src="assets/thumbnails/2021-02-11selforgan_niklasson.jpg properties." width="140px">
+    <img src="assets/thumbnails/2021-02-11selforgan_niklasson.jpg" width="140px">
 </a>
 </td>
 <td>
@@ -1334,7 +1360,7 @@ Eyvind **Niklasson**, Alexander **Mordvintsev**, Ettore **Randazzo**, Michael **
 
 <details>
 <summary><b>Abstract</b></summary>
-Neural Cellular Automata learn to generate textures, exhibiting surprising
+Neural Cellular Automata learn to generate textures, exhibiting surprising properties.
 </details>
 
 </td>
@@ -1533,7 +1559,7 @@ Solving mazes with Neural Cellular Automata
 
 <tr>
 <td width="150px">
-<a href="https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb" target="_blank">
+<a href="https://distill.pub/2020/growing-ca/" target="_blank">
     <img src="assets/thumbnails/2020-02-11growingneu_mordvintsev.jpg" width="140px">
 </a>
 </td>
@@ -1544,7 +1570,7 @@ Published on **2020-02-11** by
 
 Alexander **Mordvintsev**, Ettore **Randazzo**, Eyvind **Niklasson**, Michael **Levin**
 
-[Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb) | [Project Page](https://distill.pub/2020/growing-ca/)
+[Project Page](https://distill.pub/2020/growing-ca/) | [Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb)
 
 <details>
 <summary><b>Abstract</b></summary>
