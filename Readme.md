@@ -1,9 +1,17 @@
-<!-- This file was automatically created on 2025-03-12 16:18:49 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-03-12 16:24:23 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
-If you want to contribute, please update the `papers.yaml` file.
-Updating the Readme.md directly will be overridden with the next commit!
+> [!NOTE]
+> This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
+> While I strive for accuracy and completeness, there may be mistakes or updates needed over time.
+> I welcome suggestions, improvements, and contributions from the community.
+> Please feel free to open an issue or submit a pull request if you have any recommendations or changes.
+>
+> To contribute, please update the `papers.yaml` file.
+> Direct updates to `Readme.md` will be overwritten in the next commit.
+>
+> Thank you for your support and collaboration!
 
 ## Seminal Paper introducing Neural Cellular Automata
 <table>
