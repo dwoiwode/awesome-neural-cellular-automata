@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-03-12 16:50:40 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-03-12 17:19:25 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -46,6 +46,11 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [CAX](https://github.com/maxencefaldor/cax) - Cellular Automata in JAX
 
 ## List of Papers
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/papers_per_quarter_light.svg">
+</picture>
+
 ![](assets/papers_per_quarter.png)
 
 ### 2025
