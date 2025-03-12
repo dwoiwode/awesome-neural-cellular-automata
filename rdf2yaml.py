@@ -126,7 +126,7 @@ def create_thumbnail(pdf_path, paper_id) -> Path:
     return output_thumb
 
 
-def export_yaml(papers, output_file="papers.yaml"):
+def export_yaml(papers, output_file="papers.auto.yaml"):
     with open(output_file, "w", encoding="utf-8") as f:
         yaml.dump({
             "date": f"{datetime.datetime.now():%Y-%m-%d-%H-%M-%S}",
@@ -142,7 +142,7 @@ def main():
     print(f"Found {len(papers)} papers in {rdf_file}")
     papers = sorted(papers, key=lambda p: p["year"])
     export_yaml(papers)
-    print(f"Exported {len(papers)} papers to papers.yaml")
+    print(f"Exported {len(papers)} papers to papers.auto.yaml")
 
 
 if __name__ == "__main__":

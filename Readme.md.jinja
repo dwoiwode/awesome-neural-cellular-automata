@@ -1,6 +1,5 @@
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata
-
+A list of paper and resources regarding Neural Cellular Automata. Last updated: {{ date[:10] }}
 
 ## Seminal Paper introducing Neural Cellular Automata
 ### Growing Neural Cellular Automata
@@ -8,10 +7,15 @@ Alexander Mordvintsev, Ettore Randazzo, Eyvind Niklasson, Michael Levin
 
 [🌐 Project Page](https://distill.pub/2020/growing-ca/) | [doi/10.239815/distill.000023](https://doi.org/10.23915/distill.00023)
 
-## Papers
-{% for paper in papers %}
-### {{ paper["title"] }}
-{{ paper["year"] }} by
+## Implementations
+- [Original reference](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb)
+- [CAX](https://github.com/maxencefaldor/cax) - Cellular Automata in JAX
+
+## List of Papers
+{% for paper in papers | reverse %}
+{% if loop.changed(paper["year"][:4]) %}### {{ paper["year"][:4] }}{% endif %}
+#### {{ paper["title"] }}
+Published on **{{ paper["year"] }}** by
 
 {% for author in paper["authors"] %}{{ author[0] }} **{{ author[1] }}**{% if not loop.last %}, {% endif %}{% endfor %}
 

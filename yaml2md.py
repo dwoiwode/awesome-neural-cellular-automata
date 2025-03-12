@@ -3,7 +3,7 @@ from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
 
 # Load YAML data
-with open("papers.modified.yaml", "r", encoding="utf-8") as f:
+with open("papers.yaml", "r", encoding="utf-8") as f:
     data = yaml.safe_load(f)
 
 # Set up Jinja2 environment
