@@ -45,15 +45,17 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [CAX](https://github.com/maxencefaldor/cax) - Cellular Automata in JAX
 
 ## List of Papers
-{% for paper in papers | reverse %}
+![](assets/papers_per_quarter.png)
+{%- for paper in papers | reverse -%}
 {# Update year if needed #}
-{% if loop.changed(paper["year"][:4]) %}
+{%- if loop.changed(paper["year"][:4]) -%}
 {% if not loop.first %}
 </table>
 {% endif %}
+
 ### {{ paper["year"][:4] }}
 <table>
-{% endif %}
+{%- endif -%}
 {# Create paper entry #}
 {%- set pdf_link = paper["urls"]["arxiv"].replace("/abs/", "/pdf/") if "arxiv" in paper["urls"] else paper["urls"].values() | select("string") | first -%}
 <tr>
@@ -83,6 +85,6 @@ Published on **{{ paper["year"] }}** by
 </td>
 </tr>
 
-{% endfor %}
+{%- endfor -%}
 </table>
 
