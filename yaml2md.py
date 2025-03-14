@@ -98,7 +98,7 @@ def create_date_histograms(papers):
     do_plot()
 
     plt.tight_layout()
-    plt.savefig("assets/papers_per_quarter_light.png", dpi=300, bbox_inches='tight', transparent=True)
+    # plt.savefig("assets/papers_per_quarter_light.png", dpi=300, bbox_inches='tight', transparent=True)
     plt.savefig("assets/papers_per_quarter_light.svg", bbox_inches='tight', transparent=True)
     plt.clf()
 
@@ -122,7 +122,7 @@ def create_date_histograms(papers):
     ax.spines['left'].set_color("white")
 
     plt.tight_layout()
-    plt.savefig("assets/papers_per_quarter_dark.png", dpi=300, bbox_inches='tight', transparent=True)
+    # plt.savefig("assets/papers_per_quarter_dark.png", dpi=300, bbox_inches='tight', transparent=True)
     plt.savefig("assets/papers_per_quarter_dark.svg", bbox_inches='tight', transparent=True)
     plt.clf()
 

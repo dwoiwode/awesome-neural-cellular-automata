@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-03-12 17:22:30 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-03-14 06:44:36 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -8,7 +8,7 @@ A list of paper and resources regarding Neural Cellular Automata. Last updated: 
 > I welcome suggestions, improvements, and contributions from the community.
 > Please feel free to open an issue or submit a pull request if you have any recommendations or changes.
 >
-> To contribute, please update the `papers.yaml` file.
+> To contribute, please update the `papers.yaml` and `Readme.md.jinja` files.
 > Direct updates to `Readme.md` will be overwritten in the next commit.
 >
 > Thank you for your support and collaboration!
@@ -56,6 +56,27 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 
 ### 2025
 <table><tr>
+<td width="150px">
+<a href="https://google-research.github.io/self-organising-systems/difflogic-ca/" target="_blank">
+    <img src="assets/thumbnails/2025-03-14differenti_miotti.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Differentiable Logic CA: from Game of Life to Pattern Generation
+Published on **2025-03-14** by
+
+Pietro **Miotti**, Eyvind **Niklasson**, Ettore **Randazzo**, Alexander **Mordvintsev**
+
+[Project Page](https://google-research.github.io/self-organising-systems/difflogic-ca/)
+
+<details>
+<summary><b>Abstract</b></summary>
+
+</details>
+
+</td>
+</tr><tr>
 <td width="150px">
 <a href="https://arxiv.org/pdf/2502.01242" target="_blank">
     <img src="assets/thumbnails/2025-02-03neuralcell_dacre.jpg" width="140px">
@@ -403,27 +424,6 @@ Sidney **Pontes-Filho**, Stefano **Nichele**, Mikkel **Lepperød**
 </td>
 </tr><tr>
 <td width="150px">
-<a href="https://arxiv.org/pdf/2305.12971" target="_blank">
-    <img src="assets/thumbnails/2023-05-22neuralcell_stovold.jpg" width="140px">
-</a>
-</td>
-<td>
-
-#### Neural Cellular Automata Can Respond to Signals
-Published on **2023-05-22** by
-
-James **Stovold**
-
-[Paper](https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00567/116835/Neural-Cellular-Automata-Can-Respond-to-Signals) | [Arxiv](https://arxiv.org/abs/2305.12971) | [Code](https://github.com/jstovold/ALIFE2023)
-
-<details>
-<summary><b>Abstract</b></summary>
-Neural Cellular Automata (NCAs) are a model of morphogenesis, capable of growing two-dimensional artiﬁcial organisms from a single seed cell. In this paper, we show that NCAs can be trained to respond to signals. Two types of signal are used: internal (genomically-coded) signals, and external (environmental) signals. Signals are presented to a single pixel for a single timestep.
-</details>
-
-</td>
-</tr><tr>
-<td width="150px">
 <a href="https://arxiv.org/pdf/2305.13043" target="_blank">
     <img src="assets/thumbnails/2023-05-22selfrepli_sinapayen.jpg" width="140px">
 </a>
@@ -440,6 +440,27 @@ Lana **Sinapayen**
 <details>
 <summary><b>Abstract</b></summary>
 This paper reports on patterns exhibiting self-replication with spontaneous, inheritable mutations and exponential genetic drift in Neural Cellular Automata. Despite the models not being explicitly trained for mutation or inheritability, the descendant patterns exponentially drift away from ancestral patterns, even when the automaton is deterministic. While this is far from being the first instance of evolutionary dynamics in a cellular automaton, it is the first to do so by exploiting the power and convenience of Neural Cellular Automata, arguably increasing the space of variations and the opportunity for Open Ended Evolution.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2305.12971" target="_blank">
+    <img src="assets/thumbnails/2023-05-22neuralcell_stovold.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Neural Cellular Automata Can Respond to Signals
+Published on **2023-05-22** by
+
+James **Stovold**
+
+[Paper](https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00567/116835/Neural-Cellular-Automata-Can-Respond-to-Signals) | [Arxiv](https://arxiv.org/abs/2305.12971) | [Code](https://github.com/jstovold/ALIFE2023)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural Cellular Automata (NCAs) are a model of morphogenesis, capable of growing two-dimensional artiﬁcial organisms from a single seed cell. In this paper, we show that NCAs can be trained to respond to signals. Two types of signal are used: internal (genomically-coded) signals, and external (environmental) signals. Signals are presented to a single pixel for a single timestep.
 </details>
 
 </td>
@@ -744,27 +765,6 @@ Modeling the ability of multicellular organisms to build and maintain their bodi
 </td>
 </tr><tr>
 <td width="150px">
-<a href="https://arxiv.org/pdf/2204.11674" target="_blank">
-    <img src="assets/thumbnails/2022-04-25hyperncag_najarro.jpg" width="140px">
-</a>
-</td>
-<td>
-
-#### HyperNCA: Growing Developmental Networks with Neural Cellular Automata
-Published on **2022-04-25** by
-
-Elias **Najarro**, Shyam **Sudhakaran**, Claire **Glanois**, Sebastian **Risi**
-
-[Arxiv](https://arxiv.org/abs/2204.11674) | [Project Page](https://iclr.cc/virtual/2022/8100) | [Code](https://github.com/enajx/hyperNCA)
-
-<details>
-<summary><b>Abstract</b></summary>
-In contrast to deep reinforcement learning agents, biological neural networks are grown through a self-organized developmental process. Here we propose a new hypernetwork approach to grow artiﬁcial neural networks based on neural cellular automata (NCA). Inspired by self-organising systems and information-theoretic approaches to developmental biology, we show that our HyperNCA method can grow neural networks capable of solving common reinforcement learning tasks. Finally, we explore how the same approach can be used to build developmental metamorphosis networks capable of transforming their weights to solve variations of the initial RL task.
-</details>
-
-</td>
-</tr><tr>
-<td width="150px">
 <a href="https://arxiv.org/pdf/2205.06806" target="_blank">
     <img src="assets/thumbnails/2022-04-25goalguide_sudhakaran.jpg" width="140px">
 </a>
@@ -786,22 +786,22 @@ Inspired by cellular growth and self-organization, Neural Cellular Automata (NCA
 </td>
 </tr><tr>
 <td width="150px">
-<a href="https://arxiv.org/pdf/2201.12360" target="_blank">
-    <img src="assets/thumbnails/2022-03-12variationa_palm.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2204.11674" target="_blank">
+    <img src="assets/thumbnails/2022-04-25hyperncag_najarro.jpg" width="140px">
 </a>
 </td>
 <td>
 
-#### Variational Neural Cellular Automata
-Published on **2022-03-12** by
+#### HyperNCA: Growing Developmental Networks with Neural Cellular Automata
+Published on **2022-04-25** by
 
-Rasmus Berg **Palm**, Miguel **Gonzalez-Duque**, Shyam **Sudhakaran**, Sebastian **Risi**
+Elias **Najarro**, Shyam **Sudhakaran**, Claire **Glanois**, Sebastian **Risi**
 
-[Arxiv](https://arxiv.org/abs/2201.12360) | [Code](https://github.com/rasmusbergpalm/vnca)
+[Arxiv](https://arxiv.org/abs/2204.11674) | [Project Page](https://iclr.cc/virtual/2022/8100) | [Code](https://github.com/enajx/hyperNCA)
 
 <details>
 <summary><b>Abstract</b></summary>
-In nature, the process of cellular growth and differentiation has lead to an amazing diversity of organisms — algae, starﬁsh, giant sequoia, tardigrades, and orcas are all created by the same generative process. Inspired by the incredible diversity of this biological generative process, we propose a generative model, the Variational Neural Cellular Automata (VNCA), which is loosely inspired by the biological processes of cellular growth and differentiation. Unlike previous related works, the VNCA is a proper probabilistic generative model, and we evaluate it according to best practices. We ﬁnd that the VNCA learns to reconstruct samples well and that despite its relatively few parameters and simple local-only communication, the VNCA can learn to generate a large variety of output from information encoded in a common vector format. While there is a signiﬁcant gap to the current state-of-the-art in terms of generative modeling performance, we show that the VNCA can learn a purely self-organizing generative process of data. Additionally, we show that the VNCA can learn a distribution of stable attractors that can recover from signiﬁcant damage.
+In contrast to deep reinforcement learning agents, biological neural networks are grown through a self-organized developmental process. Here we propose a new hypernetwork approach to grow artiﬁcial neural networks based on neural cellular automata (NCA). Inspired by self-organising systems and information-theoretic approaches to developmental biology, we show that our HyperNCA method can grow neural networks capable of solving common reinforcement learning tasks. Finally, we explore how the same approach can be used to build developmental metamorphosis networks capable of transforming their weights to solve variations of the initial RL task.
 </details>
 
 </td>
@@ -823,6 +823,27 @@ Lorenzo **Cavuoti**, Francesco **Sacco**, Ettore **Randazzo**, Michael **Levin**
 <details>
 <summary><b>Abstract</b></summary>
 The biggest open problems in the life sciences concern the algorithms by which competent subunits (cells) could cooperate to form large-scale structures with new, system-level properties. In synthetic bioengineering, multiple cells of diverse origin can be included in chimeric constructs. To facilitate progress in this field, we sought an understanding of multi-scale decision-making by diverse subunits beyond those observed in frozen accidents of biological phylogeny: abstract models of life-as-it-can-be. Neural Cellular Automata (NCA) are a very good inspiration for understanding current and possible living organisms: researchers managed to create NCA that are able to converge to any morphology. In order to simulate a more dynamic situation, we took the NCA model and generalized it to consider multiple NCA rules. We then used this generalized model to change the behavior of a NCA by injecting other types of cells (adversaries) and letting them take over the entire organism to solve a different task. Next we demonstrate that it is possible to stop aging in an existing NCA by injecting adversaries that follow a different rule. Finally, we quantify a distance between NCAs and develop a procedure that allows us to find adversaries close to the original cells.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2201.12360" target="_blank">
+    <img src="assets/thumbnails/2022-03-12variationa_palm.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Variational Neural Cellular Automata
+Published on **2022-03-12** by
+
+Rasmus Berg **Palm**, Miguel **Gonzalez-Duque**, Shyam **Sudhakaran**, Sebastian **Risi**
+
+[Arxiv](https://arxiv.org/abs/2201.12360) | [Code](https://github.com/rasmusbergpalm/vnca)
+
+<details>
+<summary><b>Abstract</b></summary>
+In nature, the process of cellular growth and differentiation has lead to an amazing diversity of organisms — algae, starﬁsh, giant sequoia, tardigrades, and orcas are all created by the same generative process. Inspired by the incredible diversity of this biological generative process, we propose a generative model, the Variational Neural Cellular Automata (VNCA), which is loosely inspired by the biological processes of cellular growth and differentiation. Unlike previous related works, the VNCA is a proper probabilistic generative model, and we evaluate it according to best practices. We ﬁnd that the VNCA learns to reconstruct samples well and that despite its relatively few parameters and simple local-only communication, the VNCA can learn to generate a large variety of output from information encoded in a common vector format. While there is a signiﬁcant gap to the current state-of-the-art in terms of generative modeling performance, we show that the VNCA can learn a purely self-organizing generative process of data. Additionally, we show that the VNCA can learn a distribution of stable attractors that can recover from signiﬁcant damage.
 </details>
 
 </td>
@@ -896,22 +917,22 @@ Neural Cellular Automata (NCA) have been trained to produce target images and sh
 </td>
 </tr><tr>
 <td width="150px">
-<a href="https://arxiv.org/pdf/2108.04328" target="_blank">
-    <img src="assets/thumbnails/2021-07-19generative_otte.jpg" width="140px">
+<a href="https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/" target="_blank">
+    <img src="assets/thumbnails/2021-06-06openended.jpg" width="140px">
 </a>
 </td>
 <td>
 
-#### Generative Adversarial Neural Cellular Automata
-Published on **2021-07-19** by
+#### Open-ended creation of hybrid creatures with Neural Cellular Automata
+Published on **2021-08-03** by
 
-Maximilian **Otte**, Quentin **Delfosse**, Johannes **Czech**, Kristian **Kersting**
 
-[Arxiv](https://arxiv.org/abs/2108.04328)
+
+[Blog](https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/) | [Code](https://github.com/hugcis/hybrid-nca-evocraft) | [Video](https://www.youtube.com/watch?v=RdUCL4Fs0XY)
 
 <details>
 <summary><b>Abstract</b></summary>
-Motivated by the interaction between cells, the recently introduced concept of Neural Cellular Automata shows promising results in a variety of tasks. So far, this concept was mostly used to generate images for a single scenario. As each scenario requires a new model, this type of generation seems contradictory to the adaptability of cells in nature. To address this contradiction, we introduce a concept using different initial environments as input while using a single Neural Cellular Automata to produce several outputs. Additionally, we introduce GANCA, a novel algorithm that combines Neural Cellular Automata with Generative Adversarial Networks, allowing for more generalization through adversarial training. The experiments show that a single model is capable of learning several images when presented with different inputs, and that the adversarially trained model improves drastically on out-of-distribution data compared to a supervised trained model.
+Minecraft Open-Ended Challenge 2021 Submission
 </details>
 
 </td>
@@ -933,6 +954,27 @@ Eyvind **Niklasson**, Alexander **Mordvintsev**, Ettore **Randazzo**
 <details>
 <summary><b>Abstract</b></summary>
 Abstract. Cellular Automata have intrigued curious minds for the better part of the last century, with significant contributions to their field from the likes of Von Neumann et al. (1966), John Conway (Gardner (1970)), and Wolfram and Gad-el Hak (2003). They can simulate and model phenomena in biology, chemistry, and physics (Chopard and Droz (1998)). Recently, Neural Cellular Automata (NCA) have demonstrated a capacity to learn complex behaviour, including constructing a target morphology (Mordvintsev et al. (2020)), classifying the shape they occupy (Randazzo et al. (2020)), or segmentation of images (Sandler et al. (2020)). As a computational model, NCA have appealing properties. They are parallelisable, fault tolerant and partially robust to operating on manifolds other than those used during training. A strong parallel exists between training NCA and system identification of a partial differential equation (PDE) satisfying certain boundary value conditions. In the original work by Mordvintsev et al. (2020), asynchronicity in cell updates is justified by a desire to have purely local communication between cells. We demonstrate that asynchronicity is not just an ideological feature of the model and is in fact necessary to learn a well-behaved PDE and to allow the model to be used in arbitrary integrators.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2108.04328" target="_blank">
+    <img src="assets/thumbnails/2021-07-19generative_otte.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Generative Adversarial Neural Cellular Automata
+Published on **2021-07-19** by
+
+Maximilian **Otte**, Quentin **Delfosse**, Johannes **Czech**, Kristian **Kersting**
+
+[Arxiv](https://arxiv.org/abs/2108.04328)
+
+<details>
+<summary><b>Abstract</b></summary>
+Motivated by the interaction between cells, the recently introduced concept of Neural Cellular Automata shows promising results in a variety of tasks. So far, this concept was mostly used to generate images for a single scenario. As each scenario requires a new model, this type of generation seems contradictory to the adaptability of cells in nature. To address this contradiction, we introduce a concept using different initial environments as input while using a single Neural Cellular Automata to produce several outputs. Additionally, we introduce GANCA, a novel algorithm that combines Neural Cellular Automata with Generative Adversarial Networks, allowing for more generalization through adversarial training. The experiments show that a single model is capable of learning several images when presented with different inputs, and that the adversarially trained model improves drastically on out-of-distribution data compared to a supervised trained model.
 </details>
 
 </td>
@@ -996,27 +1038,6 @@ Alejandro Hernandez **Ruiz**, Armand **Vilalta**, Francesc **Moreno-Noguer**
 <details>
 <summary><b>Abstract</b></summary>
 Very recently, the Neural Cellular Automata (NCA) has been proposed to simulate the morphogenesis process with deep networks. NCA learns to grow an image starting from a fixed single pixel. In this work, we show that the neural network (NN) architecture of the NCA can be encapsulated in a larger NN. This allows us to propose a new model that encodes a manifold of NCA, each of them capable of generating a distinct image. Therefore, we are effectively learning an embedding space of CA, which shows generalization capabilities. We accomplish this by introducing dynamic convolutions inside an Auto-Encoder architecture, for the first time used to join two different sources of information, the encoding and cell’s environment information. In biological terms, our approach would play the role of the transcription factors, modulating the mapping of genes into specific proteins that drive cellular differentiation, which occurs right before the morphogenesis. We thoroughly evaluate our approach in a dataset of synthetic emojis and also in real images of CIFAR-10. Our model introduces a general-purpose network, which can be used in a broad range of problems beyond image generation.
-</details>
-
-</td>
-</tr><tr>
-<td width="150px">
-<a href="https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/" target="_blank">
-    <img src="assets/thumbnails/2021-06-06openended.jpg" width="140px">
-</a>
-</td>
-<td>
-
-#### Open-ended creation of hybrid creatures with Neural Cellular Automata
-Published on **2021-08-03** by
-
-
-
-[Blog](https://hugocisneros.com/blog/open-ended-creation-of-hybrid-creatures-with-neural-cellular-automata/) | [Code](https://github.com/hugcis/hybrid-nca-evocraft) | [Video](https://www.youtube.com/watch?v=RdUCL4Fs0XY)
-
-<details>
-<summary><b>Abstract</b></summary>
-Minecraft Open-Ended Challenge 2021 Submission
 </details>
 
 </td>

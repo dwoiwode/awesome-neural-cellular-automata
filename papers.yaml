@@ -1561,3 +1561,22 @@ papers:
     faults and noise, and scale seamlessly across varying network sizes. These findings
     underscore the potential of local, decentralized computations to enable scalable,
     fault-tolerant, and noise-resilient object property estimation in DMS
+- id: 2025-03-14differenti_miotti
+  title: 'Differentiable Logic CA: from Game of Life to Pattern Generation'
+  year: '2025-03-14'
+  authors:
+  - - Pietro
+    - Miotti
+  - - Eyvind
+    - Niklasson
+  - - Ettore
+    - Randazzo
+  - - Alexander
+    - Mordvintsev
+  urls:
+    project_page: 'https://google-research.github.io/self-organising-systems/difflogic-ca/'
+    paper: ''
+    code: ''
+  thumbnail: assets/thumbnails/2025-03-14differenti_miotti.jpg
+  abstract: ''
+

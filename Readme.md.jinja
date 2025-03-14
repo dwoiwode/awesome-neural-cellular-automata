@@ -7,7 +7,7 @@ A list of paper and resources regarding Neural Cellular Automata. Last updated: 
 > I welcome suggestions, improvements, and contributions from the community.
 > Please feel free to open an issue or submit a pull request if you have any recommendations or changes.
 >
-> To contribute, please update the `papers.yaml` file.
+> To contribute, please update the `papers.yaml` and `Readme.md.jinja` files.
 > Direct updates to `Readme.md` will be overwritten in the next commit.
 >
 > Thank you for your support and collaboration!
@@ -52,7 +52,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 </picture>
 
 ![](assets/papers_per_quarter.png)
-{%- for paper in papers | reverse -%}
+{%- for paper in papers | sort(attribute="year", reverse=true) -%}
 {# Update year if needed #}
 {%- if loop.changed(paper["year"][:4]) -%}
 {% if not loop.first %}

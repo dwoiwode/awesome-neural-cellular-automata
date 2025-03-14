@@ -9,6 +9,7 @@ Easiest way to add new papers to this list:
 import datetime
 import re
 import subprocess
+import warnings
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional
@@ -58,6 +59,7 @@ def parse_rdf(rdf_file:Path):
     papers = []
     for item in root:
         if "Attachment" in item.tag:
+            # We already got a list of attachments before
             continue
         title = item.find("dc:title", ns)
         year = item.find("dc:date", ns)
@@ -66,7 +68,7 @@ def parse_rdf(rdf_file:Path):
 
         authors = []
         authors_seq = item.find("bib:authors/rdf:Seq", ns)
-        if authors_seq:
+        if authors_seq is not None:
             for author in authors_seq.findall("rdf:li/foaf:Person", ns):
                 surname = author.find("foaf:surname", ns)
                 given_name = author.find("foaf:givenName", ns)
@@ -115,18 +117,21 @@ def generate_id(title, year, authors):
     return id_
 
 
-def create_thumbnail(pdf_path, paper_id) -> Path:
+def create_thumbnail(pdf_path: Path, paper_id) -> Path:
     output_thumb = Path("assets/thumbnails/") / f"{paper_id}.jpg"
     if not output_thumb.exists():
         if pdf_path is not None:
-            output_thumb.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                output_thumb.parent.mkdir(parents=True, exist_ok=True)
 
-            subprocess.run([
-                "magick", "convert", "-background","white","-flatten", f"{pdf_path}[0]", "-resize", "300x400", str(output_thumb)
-            ], check=True)
+                subprocess.run([
+                    "magick", "convert", "-background","white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
+                ], check=True)
+                return output_thumb
+            except Exception as e:
+                warnings.warn(f"Converting {pdf_path} to thumbnail failed: {e}")
 
-        else:
-            output_thumb.write_bytes(Path("assets/thumbnail_placeholder.jpg").read_bytes())
+        output_thumb.write_bytes(Path("assets/thumbnail_placeholder.jpg").read_bytes())
 
     return output_thumb
 
@@ -141,7 +146,7 @@ def export_yaml(papers, output_file="papers.auto.yaml"):
 
 
 def main():
-    path = r"NCA.rdf"
+    path = r"C:\Users\woiwode\Desktop\tmp\Exportierte Einträge\Exportierte Einträge.rdf"
     rdf_file = Path(path)
     papers = parse_rdf(rdf_file)
     print(f"Found {len(papers)} papers in {rdf_file}")
