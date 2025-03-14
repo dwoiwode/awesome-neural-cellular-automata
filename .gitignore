@@ -1,0 +1,4 @@
+.venv/
+.idea/
+papers.auto.yaml
+uv.lock
