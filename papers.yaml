@@ -694,6 +694,22 @@ papers:
     patterns through either of two methods: by breaking symmetries using structured
     seeds; or by introducing a rotation-reﬂection invariant training objective and
     relying on symmetry breaking caused by asynchronous cell updates.'
+- id: 2022-05-24studyinggrowth
+  title: Studying Growth with Neural Cellular Automata
+  year: '2022-05-24'
+  authors:
+    - - Greydanus
+      - Sam
+  urls:
+    project_page: 'https://greydanus.github.io/2022/05/24/studying-growth/'
+    code: 'https://github.com/greydanus/studying_growth'
+  thumbnail: assets/thumbnails/2022-05-22studying_greydanus.jpg.jpg
+  abstract: 'How does a single fertilized egg grow into a population of seventy trillion cells: 
+  a population that can walk, talk, and write sonnets? This is one of the great unanswered 
+  questions of biology. We may never finish answering it, but it is a productive question 
+  nonetheless. In asking it, scientists have discovered the structure of DNA, sequenced the 
+  human genome, and made essential contributions to modern medicine. In this post, we will 
+  explore this question with a new tool called Neural Cellular Automata (NCA).'
 - id: 2022-06-06clipguided
   title: CLIP Guided Neural Cellular Automata using PyTorch
   year: '2022-06-06'

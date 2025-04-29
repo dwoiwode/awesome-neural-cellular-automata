@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-03-14 06:44:36 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-04-29 14:30:03 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -739,6 +739,27 @@ Mainak **Deb**
 <details>
 <summary><b>Abstract</b></summary>
 
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://greydanus.github.io/2022/05/24/studying-growth/" target="_blank">
+    <img src="assets/thumbnails/2022-05-22studying_greydanus.jpg.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Studying Growth with Neural Cellular Automata
+Published on **2022-05-24** by
+
+Greydanus **Sam**
+
+[Project Page](https://greydanus.github.io/2022/05/24/studying-growth/) | [Code](https://github.com/greydanus/studying_growth)
+
+<details>
+<summary><b>Abstract</b></summary>
+How does a single fertilized egg grow into a population of seventy trillion cells: a population that can walk, talk, and write sonnets? This is one of the great unanswered questions of biology. We may never finish answering it, but it is a productive question nonetheless. In asking it, scientists have discovered the structure of DNA, sequenced the human genome, and made essential contributions to modern medicine. In this post, we will explore this question with a new tool called Neural Cellular Automata (NCA).
 </details>
 
 </td>
