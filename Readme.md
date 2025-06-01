@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-04-29 14:30:03 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-06-01 23:01:58 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -43,7 +43,9 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 
 ## Implementations
 - [Original reference](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb)
-- [CAX](https://github.com/maxencefaldor/cax) - Cellular Automata in JAX
+- [CAX](https://github.com/maxencefaldor/cax) - Cellular Automata in JAX (Flax NNX)
+- [JAX-NCA](https://github.com/shyamsn97/jax-nca) - NCA Implementation in JAX (Flax Linen)
+- [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
 <picture>
@@ -220,11 +222,34 @@ Published on **2024-04-09** by
 
 Ehsan **Pajouheshgar**, Yitao **Xu**, Sabine **Süsstrunk**
 
-[Project Page](https://noisenca.github.io/) | [Paper](https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00785/123473/NoiseNCA-Noisy-Seed-Improves-Spatio-Temporal) | [Arxiv](https://arxiv.org/abs/2404.06279) | [Code](https://github.com/IVRL/NoiseNCA)
+[Project Page](https://noisenca.github.io/) | [Paper](https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00785/123473/NoiseNCA-Noisy-Seed-Improves-Spatio-Temporal) | [Arxiv](https://arxiv.org/abs/2404.06279) | [Code](https://github.com/IVRL/NoiseNCA) | [Video](https://www.youtube.com/watch?v=vb0oKr7o6kw)
 
 <details>
 <summary><b>Abstract</b></summary>
 Neural Cellular Automata (NCA) is a class of Cellular Automata where the update rule is parameterized by a neural network that can be trained using gradient descent. In this paper, we focus on NCA models used for texture synthesis, where the update rule is inspired by partial differential equations (PDEs) describing reaction-diffusion systems. To train the NCA model, the spatio-termporal domain is discretized, and Euler integration is used to numerically simulate the PDE. However, whether a trained NCA truly learns the continuous dynamic described by the corresponding PDE or merely overfits the discretization used in training remains an open question. We study NCA models at the limit where space-time discretization approaches continuity. We find that existing NCA models tend to overfit the training discretization, especially in the proximity of the initial condition, also called "seed". To address this, we propose a solution that utilizes uniform noise as the initial condition. We demonstrate the effectiveness of our approach in preserving the consistency of NCA dynamics across a wide range of spatio-temporal granularities. Our improved NCA model enables two new test-time interactions by allowing continuous control over the speed of pattern formation and the scale of the synthesized patterns. We demonstrate this new NCA feature in our interactive online demo. Our work reveals that NCA models can learn continuous dynamics and opens new venues for NCA research from a dynamical systems' perspective.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://aman-bhargava.com/ai/neuro/neuromorphic/2024/03/25/nca-do-active-inference.html" target="_blank">
+    <img src="assets/thumbnail_placeholder.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Neural Cellular Automata, Active Inference, and the Mystery of Biological Computation
+Published on **2024-03-25** by
+
+Aman **Bhargava**
+
+[Project Page](https://aman-bhargava.com/ai/neuro/neuromorphic/2024/03/25/nca-do-active-inference.html)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural cellular automata (NCA) are a fascinating class of computational models. I’m going to try convincing you of the following claims:
+1. It’s worthwhile emulating biological/neuronal computation. 2. NCA are strong algorithmic solution for designing neuromorphic algorithms. 3. Demo: NCA doing active inference
+integration with LLMs.
 </details>
 
 </td>
@@ -234,27 +259,6 @@ Neural Cellular Automata (NCA) is a class of Cellular Automata where the update 
 
 ### 2023
 <table><tr>
-<td width="150px">
-<a href="https://znah.net/hexells/" target="_blank">
-    <img src="assets/thumbnails/2023-11-24mordvintse.jpg" width="140px">
-</a>
-</td>
-<td>
-
-#### Mordvintsev Hexcells
-Published on **2023-11-24** by
-
-Alexander **Mordvintsev**
-
-[Project Page](https://znah.net/hexells/)
-
-<details>
-<summary><b>Abstract</b></summary>
-
-</details>
-
-</td>
-</tr><tr>
 <td width="150px">
 <a href="https://arxiv.org/pdf/2311.02820" target="_blank">
     <img src="assets/thumbnails/2023-11-05meshneural_pajouheshgar.jpg" width="140px">
@@ -753,13 +757,34 @@ Mainak **Deb**
 #### Studying Growth with Neural Cellular Automata
 Published on **2022-05-24** by
 
-Greydanus **Sam**
+Sam **Greydanus**
 
 [Project Page](https://greydanus.github.io/2022/05/24/studying-growth/) | [Code](https://github.com/greydanus/studying_growth)
 
 <details>
 <summary><b>Abstract</b></summary>
 How does a single fertilized egg grow into a population of seventy trillion cells: a population that can walk, talk, and write sonnets? This is one of the great unanswered questions of biology. We may never finish answering it, but it is a productive question nonetheless. In asking it, scientists have discovered the structure of DNA, sequenced the human genome, and made essential contributions to modern medicine. In this post, we will explore this question with a new tool called Neural Cellular Automata (NCA).
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://wandb.ai/johnowhitaker/nca/reports/Fun-with-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0" target="_blank">
+    <img src="assets/thumbnail_placeholder.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### None
+Published on **2022-05-22** by
+
+Jonathan **Whithaker**
+
+[Project Page](https://wandb.ai/johnowhitaker/nca/reports/Fun-with-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0) | [Code](https://colab.research.google.com/drive/19EgmX5byZvL3yDRl5cGVyRekDuJ89Rq6)
+
+<details>
+<summary><b>Abstract</b></summary>
+In this article, we take a look at how to make pretty pictures using differentiable self-organizing systems, using Weights & Biases to keep track of our results.
 </details>
 
 </td>
@@ -1341,3 +1366,25 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 
 </td>
 </tr></table>
+
+
+## Further Reading
+- **Videos & Tutorials**
+  - [Mildly Overfitted](https://www.youtube.com/watch?v=21ACbWoF2Oo) – Tutorial & code explanation (PyTorch)
+  - [Yannic Kilcher](https://www.youtube.com/watch?v=9Kec_7WFyp0) – Paper explanation
+
+- **Courses**
+  - [Artificial Life by Vassilis Papadopoulos](https://vassi.life/teaching/alife)
+    - [Lecture 10: Neural Cellular Automata](https://frotaur.notion.site/Course-10-Neural-Cellular-automata-63d6eb2efe9443b4b2c3a09a55f493a0) ([Video Recording](https://www.youtube.com/watch?v=_ealiM25biA))
+  - [AIAIArt Course by John Whitaker](https://github.com/johnowhitaker/aiaiart)
+    - [Lesson #8: Neural CA](https://colab.research.google.com/drive/1Qpx_4wWXoiwTRTCAP1ohpoPGwDIrp9z-) ([Video Recording](https://www.youtube.com/watch?v=X2-ucB74oEk))
+    - [Full YouTube Playlist](https://www.youtube.com/playlist?list=PL23FjyM69j910zCdDFVWcjSIKHbSB7NE8)
+
+- **Projects & Tools**
+  - [NeuralCA.org](https://www.neuralca.org/) | [GitHub](https://github.com/MonashDeepNeuron/Neural-Cellular-Automata)
+  - [Google Self-organising Systems](https://github.com/google-research/self-organising-systems/)
+
+- **Others**
+  - Alexander Mordvintsev: [Website](https://znah.net/) | [YouTube](https://www.youtube.com/@zzznah) | [Twitter/X](https://x.com/zzznah) | [GitHub](https://github.com/znah)
+  - [International Society for Artificial LIFE (ISAL)](https://alife.org/)
+  - [Awesome Cellular Automata](https://github.com/vovanmozg/awesome-cellular-automata) – curated list of CA resources

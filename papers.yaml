@@ -694,12 +694,23 @@ papers:
     patterns through either of two methods: by breaking symmetries using structured
     seeds; or by introducing a rotation-reﬂection invariant training objective and
     relying on symmetry breaking caused by asynchronous cell updates.'
+- id: 2022-05-22fun_whitaker
+  title:
+  year: '2022-05-22'
+  authors:
+    - - Jonathan
+      - Whithaker
+  urls:
+    project_page: 'https://wandb.ai/johnowhitaker/nca/reports/Fun-with-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0'
+    code: 'https://colab.research.google.com/drive/19EgmX5byZvL3yDRl5cGVyRekDuJ89Rq6'
+  thumbnail: assets/thumbnail_placeholder.jpg
+  abstract: 'In this article, we take a look at how to make pretty pictures using differentiable self-organizing systems, using Weights & Biases to keep track of our results.'
 - id: 2022-05-24studyinggrowth
   title: Studying Growth with Neural Cellular Automata
   year: '2022-05-24'
   authors:
-    - - Greydanus
-      - Sam
+    - - Sam
+      - Greydanus
   urls:
     project_page: 'https://greydanus.github.io/2022/05/24/studying-growth/'
     code: 'https://github.com/greydanus/studying_growth'
@@ -1349,16 +1360,22 @@ papers:
     WebGL shading language and showcase our trained models in an online interactive
     demo which is accessible on personal computers and smartphones. Our demo and the
     high resolution version of this PDF are available at https://meshnca.github.io/.
-- id: 2023-11-24mordvintse
-  title: Mordvintsev Hexcells
-  year: '2023-11-24'
+- id: 2024-03-25neural_bhargava
+  title: Neural Cellular Automata, Active Inference, and the Mystery of Biological Computation
+  year: '2024-03-25'
   authors:
-  - - Alexander
-    - Mordvintsev
+  - - Aman
+    - Bhargava
   urls:
-    project_page: 'https://znah.net/hexells/'
-  thumbnail: assets/thumbnails/2023-11-24mordvintse.jpg
-  abstract: ''
+    project_page: 'https://aman-bhargava.com/ai/neuro/neuromorphic/2024/03/25/nca-do-active-inference.html'
+  thumbnail: assets/thumbnail_placeholder.jpg
+  abstract: 'Neural cellular automata (NCA) are a fascinating class of computational models. I’m going to try convincing you of the following claims:
+
+    1. It’s worthwhile emulating biological/neuronal computation.
+    2. NCA are strong algorithmic solution for designing neuromorphic algorithms.
+    3. Demo: NCA doing active inference 
+    
+  integration with LLMs.'
 - id: 2024-04-09noisencan_pajouheshgar
   title: 'NoiseNCA: Noisy Seed Improves Spatio-Temporal Continuity of Neural Cellular Automata'
   year: '2024-04-09'
@@ -1374,6 +1391,7 @@ papers:
     paper: 'https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00785/123473/NoiseNCA-Noisy-Seed-Improves-Spatio-Temporal'
     arxiv: 'https://arxiv.org/abs/2404.06279'
     code: 'https://github.com/IVRL/NoiseNCA'
+    video: 'https://www.youtube.com/watch?v=vb0oKr7o6kw'
   thumbnail: assets/thumbnails/2024-04-09noisencan_pajouheshgar.jpg
   abstract: Neural Cellular Automata (NCA) is a class of Cellular Automata where the
     update rule is parameterized by a neural network that can be trained using gradient
