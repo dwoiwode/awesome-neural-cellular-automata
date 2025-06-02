@@ -714,7 +714,7 @@ papers:
   urls:
     project_page: 'https://greydanus.github.io/2022/05/24/studying-growth/'
     code: 'https://github.com/greydanus/studying_growth'
-  thumbnail: assets/thumbnails/2022-05-22studying_greydanus.jpg.jpg
+  thumbnail: assets/thumbnails/2022-05-22studying_greydanus.jpg
   abstract: 'How does a single fertilized egg grow into a population of seventy trillion cells: 
   a population that can walk, talk, and write sonnets? This is one of the great unanswered 
   questions of biology. We may never finish answering it, but it is a productive question 

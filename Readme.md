@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-06-01 23:01:58 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-06-02 08:08:30 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -9,7 +9,7 @@ A list of paper and resources regarding Neural Cellular Automata. Last updated: 
 > Please feel free to open an issue or submit a pull request if you have any recommendations or changes.
 >
 > To contribute, please update the `papers.yaml` and `Readme.md.jinja` files.
-> Direct updates to `Readme.md` will be overwritten in the next commit.
+> Running `yaml2md.py` generates the `Readme.md`, and any manual edits to `Readme.md` will be overwritten.
 >
 > Thank you for your support and collaboration!
 
@@ -749,7 +749,7 @@ Mainak **Deb**
 </tr><tr>
 <td width="150px">
 <a href="https://greydanus.github.io/2022/05/24/studying-growth/" target="_blank">
-    <img src="assets/thumbnails/2022-05-22studying_greydanus.jpg.jpg" width="140px">
+    <img src="assets/thumbnails/2022-05-22studying_greydanus.jpg" width="140px">
 </a>
 </td>
 <td>
