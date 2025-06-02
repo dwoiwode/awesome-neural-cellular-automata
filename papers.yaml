@@ -695,7 +695,7 @@ papers:
     seeds; or by introducing a rotation-reﬂection invariant training objective and
     relying on symmetry breaking caused by asynchronous cell updates.'
 - id: 2022-05-22fun_whitaker
-  title:
+  title: Fun with Neural Cellular Automata
   year: '2022-05-22'
   authors:
     - - Jonathan

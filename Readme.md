@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-06-02 08:08:30 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-06-02 08:09:31 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
 
@@ -775,7 +775,7 @@ How does a single fertilized egg grow into a population of seventy trillion cell
 </td>
 <td>
 
-#### None
+#### Fun with Neural Cellular Automata
 Published on **2022-05-22** by
 
 Jonathan **Whithaker**
