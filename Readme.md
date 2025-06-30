@@ -1,6 +1,6 @@
-<!-- This file was automatically created on 2025-06-02 08:09:31 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-06-30 11:33:15 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-03-12.
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-06-30.
 
 > [!NOTE]
 > This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
@@ -59,22 +59,235 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 ### 2025
 <table><tr>
 <td width="150px">
-<a href="https://google-research.github.io/self-organising-systems/difflogic-ca/" target="_blank">
-    <img src="assets/thumbnails/2025-03-14differenti_miotti.jpg" width="140px">
+<a href="https://arxiv.org/pdf/2506.15746" target="_blank">
+    <img src="assets/thumbnails/2025-06-18neuralcell_xu.jpg" width="140px">
 </a>
 </td>
 <td>
 
-#### Differentiable Logic CA: from Game of Life to Pattern Generation
-Published on **2025-03-14** by
+#### Neural Cellular Automata for ARC-AGI
+Published on **2025-06-18** by
 
-Pietro **Miotti**, Eyvind **Niklasson**, Ettore **Randazzo**, Alexander **Mordvintsev**
+Kevin **Xu**, Risto **Miikkulainen**
 
-[Project Page](https://google-research.github.io/self-organising-systems/difflogic-ca/)
+[Arxiv](https://arxiv.org/abs/2506.15746)
 
 <details>
 <summary><b>Abstract</b></summary>
+Cellular automata and their differentiable counterparts, Neural Cellular Automata (NCA), are highly expressive and capable of surprisingly complex behaviors. This paper explores how NCAs perform when applied to tasks requiring precise transformations and few-shot generalization, using the Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) as a domain that challenges their capabilities in ways not previously explored. Specifically, this paper uses gradient-based training to learn iterative update rules that transform input grids into their outputs from the training examples and apply them to the test inputs. Results suggest that gradient-trained NCA models are a promising and efficient approach to a range of abstract grid-based tasks from ARC. Along with discussing the impacts of various design modifications and training constraints, this work examines the behavior and properties of NCAs applied to ARC to give insights for broader applications of self-organizing systems.
+</details>
 
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2506.04912" target="_blank">
+    <img src="assets/thumbnails/2025-06-05differenti_miotti.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Differentiable Logic Cellular Automata: From Game of Life to Pattern Generation
+Published on **2025-06-05** by
+
+Pietro **Miotti**, Eyvind **Niklasson**, Ettore **Randazzo**, Alexander **Mordvintsev**
+
+[Project Page](https://google-research.github.io/self-organising-systems/difflogic-ca/) | [Arxiv](https://arxiv.org/abs/2506.04912) | [Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/diffLogic_CA.ipynb)
+
+<details>
+<summary><b>Abstract</b></summary>
+This paper introduces Differentiable Logic Cellular Automata (DiffLogic CA), a novel combination of Neural Cellular Automata (NCA) and Differentiable Logic Gates Networks (DLGNs). The fundamental computation units of the model are differentiable logic gates, combined into a circuit. During training, the model is fully end-to-end differentiable allowing gradient-based training, and at inference time it operates in a fully discrete state space. This enables learning local update rules for cellular automata while preserving their inherent discrete nature. We demonstrate the versatility of our approach through a series of milestones: (1) fully learning the rules of Conway's Game of Life, (2) generating checkerboard patterns that exhibit resilience to noise and damage, (3) growing a lizard shape, and (4) multi-color pattern generation. Our model successfully learns recurrent circuits capable of generating desired target patterns. For simpler patterns, we observe success with both synchronous and asynchronous updates, demonstrating significant generalization capabilities and robustness to perturbations. We make the case that this combination of DLGNs and NCA represents a step toward programmable matter and robust computing systems that combine binary logic, neural network adaptability, and localized processing. This work, to the best of our knowledge, is the first successful application of differentiable logic gate networks in recurrent architectures.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://github.com/petroniocandido/st_nca" target="_blank">
+    <img src="assets/thumbnail_placeholder.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Spatio-Temporal Traffic Forecasting with Neural Graph Cellular Automata
+Published on **2025-05-29** by
+
+Petrônio C. L. **Silva**, Omid **Orang**, Lucas **Astore**, Frederico G. **Guimarães ORCID iD icon**
+
+[Code](https://github.com/petroniocandido/st_nca)
+
+<details>
+<summary><b>Abstract</b></summary>
+Transformer-based neural network cells with distributed federated learning for flexible cellular automata topologies, aiming for large-scale forecasting of complex spatiotemporal processes.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2505.13058" target="_blank">
+    <img src="assets/thumbnails/2025-05-20apathtouni_béna.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### A Path to Universal Neural Cellular Automata
+Published on **2025-05-20** by
+
+Gabriel **Béna**, Maxence **Faldor**, Dan F. M. **Goodman**, Antoine **Cully**
+
+[Arxiv](https://arxiv.org/abs/2505.13058) | [Project Page](https://gabrielbena.github.io/blog/2025/bena2025unca/)
+
+<details>
+<summary><b>Abstract</b></summary>
+Cellular automata have long been celebrated for their ability to generate complex behaviors from simple, local rules, with well-known discrete models like Conway's Game of Life proven capable of universal computation. Recent advancements have extended cellular automata into continuous domains, raising the question of whether these systems retain the capacity for universal computation. In parallel, neural cellular automata have emerged as a powerful paradigm where rules are learned via gradient descent rather than manually designed. This work explores the potential of neural cellular automata to develop a continuous Universal Cellular Automaton through training by gradient descent. We introduce a cellular automaton model, objective functions and training strategies to guide neural cellular automata toward universal computation in a continuous setting. Our experiments demonstrate the successful training of fundamental computational primitives - such as matrix multiplication and transposition - culminating in the emulation of a neural network solving the MNIST digit classification task directly within the cellular automata state. These results represent a foundational step toward realizing analog general-purpose computers, with implications for understanding universal computation in continuous dynamics and advancing the automated discovery of complex cellular automata behaviors via machine learning.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.nature.com/articles/s41598-025-94032-y.pdf" target="_blank">
+    <img src="assets/thumbnails/2025-05-20intelligen_sharma.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Intelligent health model for medical imaging to guide laymen using neural cellular automata
+Published on **2025-05-20** by
+
+Sandeep Kumar **Sharma**, Chiranji Lal **Chowdhary**, Vijay Shankar **Sharma**, Adil **Rasool**, Arfat Ahmad **Khan**
+
+[Paper](https://www.nature.com/articles/s41598-025-94032-y.pdf) | [Code](https://github.com/Arfat673/Intelligent-health-model-for-medical-imaging-to-guide-laymen-using-neural-cellular-automata)
+
+<details>
+<summary><b>Abstract</b></summary>
+A layman in health systems is a person who doesn’t have any knowledge about health data i.e., X-ray, MRI, CT scan, and health examination reports, etc. The motivation behind the proposed invention is to help laymen to make medical images understandable. The health model is trained using a neural network approach that analyses user health examination data; predicts the type and level of the disease and advises precaution to the user. Cellular Automata (CA) technology has been integrated with the neural networks to segment the medical image. The CA analyzes the medical images pixel by pixel and generates a robust threshold value which helps to efficiently segment the image and identify accurate abnormal spots from the medical image. The proposed method has been trained and experimented using 10000+ medical images which are taken from various open datasets. Various text analysis measures i.e., BLEU, ROUGE, and WER are used in the research to validate the produced report. The BLEU and ROUGE calculate a similarity to decide how the generated text report is closer to the original report. The BLEU and ROUGE scores of the experimented images are approximately 0.62 and 0.90, claims that the produced report is very close to the original report. The WER score 0.14, claims that the generated report contains the most relevant words. The overall summary of the proposed research is that it provides a fruitful medical report with accurate disease and precautions to the laymen.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2505.08778" target="_blank">
+    <img src="assets/thumbnails/2025-05-13-arcnca_guichard.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### ARC-NCA: Towards Developmental Solutions to the Abstraction and Reasoning Corpus
+Published on **2025-05-13** by
+
+Ettienne **Guichard**, Felix **Reimers**, Mia-Katrin **Kvalsund**, Mikkel Elle **Lepperød**, Stefano **Nichele**
+
+[Arxiv](https://arxiv.org/abs/2505.08778) | [Project Page](https://etimush.github.io/ARC_NCA/) | [Code](https://github.com/etimush/ARC_NCA/) | [Video](https://etimush.github.io/ARC-NCA-Videos/)
+
+<details>
+<summary><b>Abstract</b></summary>
+The Abstraction and Reasoning Corpus (ARC), later renamed ARC-AGI, poses a fundamental challenge in artificial general intelligence (AGI), requiring solutions that exhibit robust abstraction and reasoning capabilities across diverse tasks, while only few (with median count of three) correct examples are presented. While ARC-AGI remains very challenging for artificial intelligence systems, it is rather easy for humans. This paper introduces ARC-NCA, a developmental approach leveraging standard Neural Cellular Automata (NCA) and NCA enhanced with hidden memories (EngramNCA) to tackle the ARC-AGI benchmark. NCAs are employed for their inherent ability to simulate complex dynamics and emergent patterns, mimicking developmental processes observed in biological systems. Developmental solutions may offer a promising avenue for enhancing AI's problem-solving capabilities beyond mere training data extrapolation. ARC-NCA demonstrates how integrating developmental principles into computational models can foster adaptive reasoning and abstraction. We show that our ARC-NCA proof-of-concept results may be comparable to, and sometimes surpass, that of ChatGPT 4.5, at a fraction of the cost.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2504.21562" target="_blank">
+    <img src="assets/thumbnails/2025-04-30encapsulat_krumb.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### eNCApsulate: NCA for Precision Diagnosis on Capsule Endoscopes
+Published on **2025-04-30** by
+
+Henry John **Krumb**, Anirban **Mukhopadhyay**
+
+[Arxiv](https://arxiv.org/abs/2504.21562) | [Code](https://github.com/MECLabTUDA/eNCApsulate)
+
+<details>
+<summary><b>Abstract</b></summary>
+Purpose: Wireless Capsule Endoscopy (WCE) is a non-invasive imaging method for the entire gastrointestinal tract, and is a pain-free alternative to traditional endoscopy. It generates extensive video data that requires significant review time, and localizing the capsule after ingestion is a challenge. Techniques like bleeding detection and depth estimation can help with localization of pathologies, but deep learning models are typically too large to run directly on the capsule.
+Methods: Neural Cellular Automata (NCAs) for bleeding segmentation and depth estimation are trained on capsule endoscopic images. For monocular depth estimation, we distill a large foundation model into the lean NCA architecture, by treating the outputs of the foundation model as pseudo ground truth. We then port the trained NCAs to the ESP32 microcontroller, enabling efficient image processing on hardware as small as a camera capsule.
+Results: NCAs are more accurate (Dice) than other portable segmentation models, while requiring more than 100x fewer parameters stored in memory than other small-scale models. The visual results of NCAs depth estimation look convincing, and in some cases beat the realism and detail of the pseudo ground truth. Runtime optimizations on the ESP32-S3 accelerate the average inference speed significantly, by more than factor 3.
+Conclusion: With several algorithmic adjustments and distillation, it is possible to eNCApsulate NCA models into microcontrollers that fit into wireless capsule endoscopes. This is the first work that enables reliable bleeding segmentation and depth estimation on a miniaturized device, paving the way for precise diagnosis combined with visual odometry as a means of precise localization of the capsule – on the capsule.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2504.11855" target="_blank">
+    <img src="assets/thumbnails/2025-04-16engramnca_guichard.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### EngramNCA: a Neural Cellular Automaton Model of Memory Transfer
+Published on **2025-04-16** by
+
+Etienne **Guichard**, Felix **Reimers**, Mia **Kvalsund**, Mikkel **Lepperød**, Stefano **Nichele**
+
+[Arxiv](https://arxiv.org/abs/2504.11855) | [Project Page](https://etimush.github.io/EngramNCA/) | [Code](https://github.com/etimush/EngramNCA)
+
+<details>
+<summary><b>Abstract</b></summary>
+This study introduces EngramNCA, a neural cellular automaton (NCA) that integrates both publicly visible states and private, cell-internal memory channels, drawing inspiration from emerging biological evidence suggesting that memory storage extends beyond synaptic modifications to include intracellular mechanisms. The proposed model comprises two components: GeneCA, an NCA trained to develop distinct morphologies from seed cells containing immutable ”gene” encodings, and GenePropCA, an auxiliary NCA that modulates the private ”genetic” memory of cells without altering their visible states. This architecture enables the encoding and propagation of complex morphologies through the interaction of visible and private channels, facilitating the growth of diverse structures from a shared ”genetic” substrate. EngramNCA supports the emergence of hierarchical and coexisting morphologies, offering insights into decentralized memory storage and transfer in artificial systems. These findings have potential implications for the development of adaptive, self-organizing systems and may contribute to the broader understanding of memory mechanisms in both biological and synthetic contexts.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.biorxiv.org/content/10.1101/2024.12.06.627209v2" target="_blank">
+    <img src="assets/thumbnails/2025-03-28sensormove_kvalsund.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Sensor Movement Drives Emergent Attention and Scalability in Active Neural Cellular Automata
+Published on **2025-03-28** by
+
+Mia-Katrin **Kvalsund**, Kai Olav **Ellefsen**, Kyrre **Glette**, Sidney **Pontes-Filho**, Mikkel Elle **Lepperød**
+
+[Arxiv](https://www.biorxiv.org/content/10.1101/2024.12.06.627209v2) | [Video](https://www.youtube.com/watch?v=-ERmvXo0XTs) | [Code](https://github.com/bioAI-Oslo/column)
+
+<details>
+<summary><b>Abstract</b></summary>
+The brain’s distributed architecture has inspired numerous artificial intelligence (AI) systems, particularly through its neocortical organization. However, current AI approaches largely overlook a crucial aspect of biological intelligence: active sensing - the deliberate movement of sensory organs to explore the environment. To explore how sensor movement impacts behavior in image classification tasks, we introduce the Active Neural Cellular Automata (ANCA), a neocortex-inspired model with movable sensors. Active sensing naturally emerges in the ANCA, with belief-informed exploration and attentive behavior to salient information, without adding explicit attention mechanisms. Active sensing both simplifies classification tasks and leads to a highly scalable system. This enables ANCAs to be smaller than the image size without losing information and enables fault tolerance to damaged sensors. Overall, our work provides insight to how distributed architectures can interact with movement, opening new avenues for adaptive AI systems in embodied agents.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2410.02651" target="_blank">
+    <img src="assets/thumbnails/2025-03-11caxcellul_faldor.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### CAX: Cellular Automata Accelerated in JAX
+Published on **2025-03-11** by
+
+Maxence **Faldor**, Antoine **Cully**
+
+[Arxiv](https://arxiv.org/abs/2410.02651) | [Code](https://github.com/maxencefaldor/cax)
+
+<details>
+<summary><b>Abstract</b></summary>
+Cellular automata have become a cornerstone for investigating emergence and self-organization across diverse scientific disciplines. However, the absence of a hardware-accelerated cellular automata library limits the exploration of new research directions, hinders collaboration, and impedes reproducibility. In this work, we introduce CAX (Cellular Automata Accelerated in JAX), a high-performance and flexible open-source library designed to accelerate cellular automata research. CAX delivers cutting-edge performance through hardware acceleration while maintaining flexibility through its modular architecture, intuitive API, and support for both discrete and continuous cellular automata in arbitrary dimensions. We demonstrate CAX’s performance and flexibility through a wide range of benchmarks and applications. From classic models like elementary cellular automata and Conway’s Game of Life to advanced applications such as growing neural cellular automata and self-classifying MNIST digits, CAX speeds up simulations up to 2,000 times faster. Furthermore, we demonstrate CAX’s potential to accelerate research by presenting a collection of three novel cellular automata experiments, each implemented in just a few lines of code thanks to the library’s modular architecture. Notably, we show that a simple one-dimensional cellular automaton can outperform GPT-4 on the 1D-ARC challenge.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2502.18738" target="_blank">
+    <img src="assets/thumbnails/2025-02-26pytorchfir_xia.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### PyTorchFire: A GPU-Accelerated Wildfire Simulator with Differentiable Cellular Automata
+Published on **2025-02-26** by
+
+Zeyu **Xia**, Sibo **Cheng**
+
+[Arxiv](https://arxiv.org/abs/2502.18738) | [Paper](https://www.sciencedirect.com/science/article/pii/S1364815225000854) | [Code](https://github.com/xiazeyu/PyTorchFire) | [Project Page](https://pytorchfire.readthedocs.io/)
+
+<details>
+<summary><b>Abstract</b></summary>
+Accurate and rapid prediction of wildfire trends is crucial for effective management and mitigation. However, the stochastic nature of fire propagation poses significant challenges in developing reliable simulators. In this paper, we introduce PyTorchFire, an open-access, PyTorch-based software that leverages GPU acceleration. With our redesigned differentiable wildfire Cellular Automata (CA) model, we achieve millisecond-level computational efficiency, significantly outperforming traditional CPU-based wildfire simulators on real-world-scale fires at high resolution. Real-time parameter calibration is made possible through gradient descent on our model, aligning simulations closely with observed wildfire behavior both temporally and spatially, thereby enhancing the realism of the simulations. Our PyTorchFire simulator, combined with real-world environmental data, demonstrates superior generalizability compared to supervised learning surrogate models. Its ability to predict and calibrate wildfire behavior in real-time ensures accuracy, stability, and efficiency. PyTorchFire has the potential to revolutionize wildfire simulation, serving as a powerful tool for wildfire prediction and management.
 </details>
 
 </td>
@@ -148,6 +361,27 @@ Denoising Diffusion Models (DDMs) are widely used for high-quality image generat
 ### 2024
 <table><tr>
 <td width="150px">
+<a href="https://arxiv.org/pdf/2406.08298" target="_blank">
+    <img src="assets/thumbnails/2024-11-21adancaneu_xu.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### AdaNCA: Neural Cellular Automata As Adaptors For More Robust Vision Transformer
+Published on **2024-11-21** by
+
+Yitao **Xu**, Tong **Zhang**, Sabine **Süsstrunk**
+
+[Arxiv](https://arxiv.org/abs/2406.08298) | [Paper](https://dl.acm.org/doi/10.5555/3737916.3738725)
+
+<details>
+<summary><b>Abstract</b></summary>
+Vision Transformers (ViTs) demonstrate remarkable performance in image classification through visual-token interaction learning, particularly when equipped with local information via region attention or convolutions. Although such architectures improve the feature aggregation from different granularities, they often fail to contribute to the robustness of the networks. Neural Cellular Automata (NCA) enables the modeling of global visual-token representations through local interactions, with its training strategies and architecture design conferring strong generalization ability and robustness against noisy input. In this paper, we propose Adaptor Neural Cellular Automata (AdaNCA) for Vision Transformers that uses NCA as plug-and-play adaptors between ViT layers, thus enhancing ViT's performance and robustness against adversarial samples as well as out-of-distribution inputs. To overcome the large computational overhead of standard NCAs, we propose Dynamic Interaction for more efficient interaction learning. Using our analysis of AdaNCA placement and robustness improvement, we also develop an algorithm for identifying the most effective insertion points for AdaNCA. With less than a 3% increase in parameters, AdaNCA contributes to more than 10% absolute improvement in accuracy under adversarial attacks on the ImageNet1K benchmark. Moreover, we demonstrate with extensive evaluations across eight robustness benchmarks and four ViT architectures that AdaNCA, as a plug-and-play module, consistently improves the robustness of ViTs.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://arxiv.org/pdf/2410.23368" target="_blank">
     <img src="assets/thumbnails/2024-10-30ncadaptdy_ranem.jpg" width="140px">
 </a>
@@ -190,6 +424,51 @@ Medical image registration is a critical process that aligns various patient sca
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://arxiv.org/pdf/1809.01687" target="_blank">
+    <img src="assets/thumbnails/2024-10-01breasttumo_ali.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Breast tumor segmentation using neural cellular automata and shape guided segmentation in mammography images
+Published on **2024-10-01** by
+
+Mudassar **Ali**, Tong **Wu**, Haoji **Hu**, Tariq **Mahmood**
+
+[Arxiv](https://arxiv.org/abs/1809.01687) | [Paper](https://pubmed.ncbi.nlm.nih.gov/39352900/)
+
+<details>
+<summary><b>Abstract</b></summary>
+Purpose Using computer-aided design (CAD) systems, this research endeavors to enhance breast cancer segmentation by addressing data insufficiency and data complexity during model training. As perceived by computer vision models, the inherent symmetry and complexity of mammography images make segmentation difficult. The objective is to optimize the precision and effectiveness of medical imaging.
+Methods The study introduces a hybrid strategy combining shape-guided segmentation (SGS) and M3D-neural cellular automata (M3D-NCA), resulting in improved computational efficiency and performance. The implementation of Shape-guided segmentation (SGS) during the initialization phase, coupled with the elimination of convolutional layers, enables the model to effectively reduce computation time. The research proposes a novel loss function that combines segmentation losses from both components for effective training.
+Results The robust technique provided aims to improve the accuracy and consistency of breast tumor segmentation, leading to significant improvements in medical imaging and breast cancer detection and treatment.
+Conclusion This study enhances breast cancer segmentation in medical imaging using CAD systems. Combining shape-guided segmentation (SGS) and M3D-neural cellular automata (M3DNCA) is a hybrid approach that improves performance and computational efficiency by dealing with complex data and not having enough training data. The approach also reduces PLOS ONE
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809424006050" target="_blank">
+    <img src="assets/thumbnails/2024-10-01skinlesion_yue.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Skin lesion segmentation via Neural Cellular Automata
+Published on **2024-10-01** by
+
+Tao **Yue**, Cangtao **Chen**, Yue **Wang**, Wenhua **Zhang**, Na **Liu**, Songyi **Zhong**, Long **Li**, Quan **Zhang**
+
+[Paper](https://www.sciencedirect.com/science/article/abs/pii/S1746809424006050)
+
+<details>
+<summary><b>Abstract</b></summary>
+Skin melanoma is one of the most dangerous tumor lesions. In recent years, the number of cases and deaths caused by melanoma has been increasing. The discovery and segmentation of the lesion area are crucial for the timely diagnosis and treatment of melanoma. However, the lesion area is often similar to the healthy area, and the size scale changes greatly, which makes the segmentation of the skin lesion area a very challenging task. Neural Cellular Automata (NCA) is a model that can be described as a recurrent convolutional network. It achieves global consistency through multiple local information exchanges, thereby completing the processing of information. Recent research on NCA shows that such a local interactive model can segment low-resolution images well. However, for high-resolution images, direct use of NCA for processing is limited by high memory requirements and difficulty in model convergence. In this paper, in order to overcome these limitations, we propose a new NCA-based segmentation model, named UNCA. UNCA is a model with a U-shaped structure. The high-resolution image is down-sampled to obtain high-dimensional low-resolution features, which are then input into the NCA for information processing. Finally, the image size is restored by upsampling. The experimental results show that the UNCA proposed in this paper has achieved good results on the ISIC2017 dataset, surpassing most of the current methods.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://arxiv.org/pdf/2409.06888" target="_blank">
     <img src="assets/thumbnails/2024-09-10aqualitydi_qian.jpg" width="140px">
 </a>
@@ -206,6 +485,237 @@ Cheng **Qian**, Yulun **Zhang**, Varun **Bhatt**, Matthew Christopher **Fontaine
 <details>
 <summary><b>Abstract</b></summary>
 We use the Quality Diversity (QD) algorithm with Neural Cellular Automata (NCA) to generate benchmark maps for Multi-Agent Path Finding (MAPF) algorithms. Previously, MAPF algorithms are tested using fixed, human-designed benchmark maps. However, such fixed benchmark maps have several problems. First, these maps may not cover all the potential failure scenarios for the algorithms. Second, when comparing different algorithms, fixed benchmark maps may introduce bias leading to unfair comparisons between algorithms. In this work, we take advantage of the QD algorithm and NCA with different objectives and diversity measures to generate maps with patterns to comprehensively understand the performance of MAPF algorithms and be able to make fair comparisons between two MAPF algorithms to provide further information on the selection between two algorithms. Empirically, we employ this technique to generate diverse benchmark maps to evaluate and compare the behavior of different types of MAPF algorithms such as bounded-suboptimal algorithms, suboptimal algorithms, and reinforcement-learning-based algorithms. Through both single-planner experiments and comparisons between algorithms, we identify patterns where each algorithm excels and detect disparities in runtime or success rates between different algorithms.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2407.18114" target="_blank">
+    <img src="assets/thumbnails/2024-07-25unsupervis_kalkhof.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Unsupervised Training of Neural Cellular Automata on Edge Devices
+Published on **2024-07-25** by
+
+John **Kalkhof**, Amin **Ranem**, Anirban **Mukhopadhyay**
+
+[Arxiv](https://arxiv.org/abs/2407.18114) | [Code](https://github.com/MECLabTUDA/M3D-NCA)
+
+<details>
+<summary><b>Abstract</b></summary>
+The disparity in access to machine learning tools for medical imaging across different regions significantly limits the potential for universal healthcare innovation, particularly in remote areas. Our research addresses this issue by implementing Neural Cellular Automata (NCA) training directly on smartphones for accessible X-ray lung segmentation. We confirm the practicality and feasibility of deploying and training these advanced models on five Android devices, improving medical diagnostics accessibility and bridging the tech divide to extend machine learning benefits in medical imaging to low- and middle-income countries (LMICs). We further enhance this approach with an unsupervised adaptation method using the novel Variance-Weighted Segmentation Loss (VWSL), which efficiently learns from unlabeled data by minimizing the variance from multiple NCA predictions. This strategy notably improves model adaptability and performance across diverse medical imaging contexts without the need for extensive computational resources or labeled datasets, effectively lowering the participation threshold. Our methodology, tested on three multisite X-ray datasets—Padchest, ChestX-ray8, and MIMIC-III—demonstrates improvements in segmentation Dice accuracy by 0.7 to 2.8%, compared to the classic Med-NCA. Additionally, in extreme cases where no digital copy is available and images must be captured by a phone from an X-ray lightbox or monitor, VWSL enhances Dice accuracy by 5-20%, demonstrating the method’s robustness even with suboptimal image sources.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://direct.mit.edu/isal/proceedings/isal2024/36/99/123527" target="_blank">
+    <img src="assets/thumbnails/2024-07-22generegul_hintze.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Gene-Regulated Neural Cellular Automata
+Published on **2024-07-22** by
+
+Arend **Hintze**, Mustafa **Al-Hammadi**, Eric **Libby**
+
+[Paper](https://direct.mit.edu/isal/proceedings/isal2024/36/99/123527)
+
+<details>
+<summary><b>Abstract</b></summary>
+Abstract. This paper introduces a Gene Regulatory Neural Cellular Automata (ENIGMA), an innovative extension of the Neural Cellular Automata (NCA) framework aimed at modeling biological development with a greater degree of biological fidelity. Traditional NCAs, while capable of generating complex patterns through neural network-driven update rules, lack mechanisms that closely mimic biological processes such as cell-cell signaling and gene regulatory networks (GRNs). Our ENIGMA model addresses these limitations by incorporating update rules based on a simulated gene regulatory network driven by cell-cell signaling, optimized both through backpropagation and genetic algorithms. We demonstrate the structure and functionality of ENIGMA through various experiments, comparing its performance and properties with those of natural organisms. Our findings reveal that ENIGMA can successfully simulate complex cellular networks and exhibit phenomena such as homeotic transformations, pattern maintenance in variable tissue sizes, and the formation of simple regulatory motifs akin to those observed in developmental biology. The introduction of ENIGMA represents a significant step towards bridging the gap between computational models and the intricacies of biological development, offering a versatile tool for exploring developmental and evolutionary questions with profound implications for understanding gene regulation, pattern formation, and the emergent behavior of complex systems.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2407.05991" target="_blank">
+    <img src="assets/thumbnails/2024-07-19multitext_catrina.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Multi-Texture Synthesis through Signal Responsive Neural Cellular Automata
+Published on **2024-07-19** by
+
+Mirela-Magdalena **Catrina**, Ioana Cristina **Plajer**, Alexandra **Baicoianu**
+
+[Arxiv](https://arxiv.org/abs/2407.05991)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural Cellular Automata (NCA) have proven to be effective in a variety of fields, with numerous biologically inspired applications. One of the fields, in which NCAs perform well is the generation of textures, modelling global patterns from local interactions governed by uniform and coherent rules. This paper aims to enhance the usability of NCAs in texture synthesis by addressing a shortcoming of current NCA architectures for texture generation, which requires separately trained NCA for each individual texture. In this work, we train a single NCA for the evolution of multiple textures, based on individual examples. Our solution provides texture information in the state of each cell, in the form of an internally coded genomic signal, which enables the NCA to generate the expected texture. Such a neural cellular automaton not only maintains its regenerative capability but also allows for interpolation between learned textures and supports grafting techniques. This demonstrates the ability to edit generated textures and the potential for them to merge and coexist within the same automaton. We also address questions related to the influence of the genomic information and the cost function on the evolution of the NCA.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://dl.acm.org/doi/10.1145/3638529.3654150" target="_blank">
+    <img src="assets/thumbnails/2024-07-14evolvinghi_bielawski.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Evolving Hierarchical Neural Cellular Automata
+Published on **2024-07-14** by
+
+Kameron **Bielawski**, Nate **Gaylinn**, Cameron **Lunn**, Kevin **Motia**, Joshua **Bongard**
+
+[Paper](https://dl.acm.org/doi/10.1145/3638529.3654150) | [Code](https://github.com/ngaylinn/mocs-final)
+
+<details>
+<summary><b>Abstract</b></summary>
+Much is unknown about how living systems grow into, coordinate communication across, and maintain themselves as hierarchical arrangements of semi-independent cells, tissues, organs, and entire bodies, where each component at each level has its own goals and sensor, motor, and communication capabilities. Similar uncertainty surrounds exactly how selection acts on the components across these levels. Finally, growing interest in viewing intelligence not as something localized to the brain but rather distributed across biological hierarchies has renewed investigation into the nature of such hierarchies. Here we show that organizing neural cellular automata (NCAs) into a hierarchical structure can improve the ability to evolve them to perform morphogenesis and homeostasis, compared to non-hierarchical NCAs. The increased evolvability of hierarchical NCAs (HNCAs) compared to non-hierarchical NCAs suggests an evolutionary advantage to the formation and utilization of higher-order structures, across larger spatial scales, for some tasks, and suggests new ways to design and optimize NCA models and hierarchical arrangements of robots. The results presented here demonstrate the value of explicitly incorporating hierarchical structure into systems that must grow and maintain complex patterns. The introduced method may also serve as a platform to further investigate the evolutionary dynamics of multiscale systems.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2407.03018" target="_blank">
+    <img src="assets/thumbnails/2024-07-03anorganism_elbatel.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### An Organism Starts with a Single Pix-Cell: A Neural Cellular Diffusion for High-Resolution Image Synthesis
+Published on **2024-07-03** by
+
+Marawan **Elbatel**, Konstantinos **Kamnitsas**, Xiaomeng **Li**
+
+[Arxiv](https://arxiv.org/abs/2407.03018) | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72378-0_61) | [Code](https://github.com/xmed-lab/GeCA)
+
+<details>
+<summary><b>Abstract</b></summary>
+Generative modeling seeks to approximate the statistical properties of real data, enabling synthesis of new data that closely resembles the original distribution. Generative Adversarial Networks (GANs) and Denoising Diffusion Probabilistic Models (DDPMs) represent significant advancements in generative modeling, drawing inspiration from game theory and thermodynamics, respectively. Nevertheless, the exploration of generative modeling through the lens of biological evolution remains largely untapped. In this paper, we introduce a novel family of models termed Generative Cellular Automata (GeCA), inspired by the evolution of an organism from a single cell. GeCAs are evaluated as an effective augmentation tool for retinal disease classification across two imaging modalities: Fundus and Optical Coherence Tomography (OCT). In the context of OCT imaging, where data is scarce and the distribution of classes is inherently skewed, GeCA significantly boosts the performance of 11 different ophthalmological conditions, achieving a 12% increase in the average F1 score compared to conventional baselines. GeCAs outperform both diffusion methods that incorporate UNet or state-of-the art variants with transformer-based denoising models, under similar parameter constraints. Code is available at: https://github. com/xmed-lab/GeCA.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://ieeexplore.ieee.org/document/10650578" target="_blank">
+    <img src="assets/thumbnails/2024-06-30physicsin_navarin.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Physics-Informed Graph Neural Cellular Automata: an Application to Compartmental Modelling
+Published on **2024-06-30** by
+
+Nicolò **Navarin**, Paolo **Frazzetto**, Luca **Pasa**, Pietro **Verzelli**, Filippo **Visentin**, Alessandro **Sperduti**, Cesare **Alippi**
+
+[Paper](https://ieeexplore.ieee.org/document/10650578)
+
+<details>
+<summary><b>Abstract</b></summary>
+The recent outbreak of COVID-19 has spurred global collaborative research efforts to model and forecast the disease to improve preparation and control. Epidemiological models integrate experimental data and expert opinions to understand infection dynamics and control measures. Classical Machine Learning techniques often face challenges such as high data requirements, lack of interpretability, and difficulty integrating domain knowledge. A potential solution is to leverage Physically-Informed Machine Learning (PIML) models, which enhance models by incorporating known physical properties of viral spread. Additionally, epidemiological datasets are best represented as graphs, facilitating the modelling of interactions between individuals. In this paper, we propose a novel, interpretable graph-based PIML technique called SINDy-Graph to model infectious disease dynamics. Our approach is a Graph Cellular Automata architecture that combines the ability to identify dynamics for discovering the differential equations governing the physical phenomena under study using graphs modelling relationships between nodes (individuals). The experimental results demonstrate that integrating domain knowledge ensures better physical plausibility. In addition, our proposed model is easier to train and achieves a lower generalisation error compared to other baseline methods.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2404.06406" target="_blank">
+    <img src="assets/thumbnails/2024-06-20emergentdy_xu.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Emergent Dynamics in Neural Cellular Automata
+Published on **2024-06-20** by
+
+Yitao **Xu**, Ehsan **Pajouheshgar**, Sabine **Süsstrunk**
+
+[Arxiv](https://arxiv.org/abs/2404.06406) | [Paper](https://direct.mit.edu/isal/proceedings/isal2024/36/96/123544)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural Cellular Automata (NCA) models are trainable variations of traditional Cellular Automata (CA). Emergent motion in the patterns created by NCA has been successfully applied to synthesize dynamic textures. However, the conditions required for an NCA to display dynamic patterns remain unexplored. Here, we investigate the relationship between the NCA architecture and the emergent dynamics of the trained models. Specifically, we vary the number of channels in the cell state and the number of hidden neurons in the MultiLayer Perceptron (MLP), and draw a relationship between the combination of these two variables and the motion strength between successive frames. Our analysis reveals that the disparity and proportionality between these two variables have a strong correlation with the emergent dynamics in the NCA output. We thus propose a design principle for creating dynamic NCA.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2406.09654" target="_blank">
+    <img src="assets/thumbnails/2024-06-14coralaiin_barbieux.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Coralai: Intrinsic Evolution of Embodied Neural Cellular Automata Ecosystems
+Published on **2024-06-14** by
+
+Aidan **Barbieux**, Rodrigo **Canaan**
+
+[Arxiv](https://arxiv.org/abs/2406.09654) | [Code](https://github.com/aidanbx/coralai) | [Video](https://www.youtube.com/watch?v=NL8IZQY02-8)
+
+<details>
+<summary><b>Abstract</b></summary>
+This paper presents Coralai, a framework for exploring diverse ecosystems of Neural Cellular Automata (NCA). Organisms in Coralai utilize modular, GPU-accelerated Taichi kernels to interact, enact environmental changes, and evolve through local survival, merging, and mutation operations implemented with HyperNEAT and PyTorch. We provide an exploratory experiment implementing physics inspired by slime mold behavior showcasing the emergence of competition between sessile and mobile organisms, cycles of resource depletion and recovery, and symbiosis between diverse organisms. We conclude by outlining future work to discover simulation parameters through measures of multi-scale complexity and diversity. Code for Coralai is available at https: //github.com/aidanbx/coralai, video demos are available at https://www.youtube.com/watch?v= NL8IZQY02-8.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2401.06291" target="_blank">
+    <img src="assets/thumbnails/2024-05-13frequency_kalkhof.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Frequency-Time Diffusion with Neural Cellular Automata
+Published on **2024-05-13** by
+
+John **Kalkhof**, Arlene **Kühn**, Yannik **Frisch**, Anirban **Mukhopadhyay**
+
+[Arxiv](https://arxiv.org/abs/2401.06291)
+
+<details>
+<summary><b>Abstract</b></summary>
+Despite considerable success, large Denoising Diffusion Models (DDMs) with UNet backbone pose practical challenges, particularly on limited hardware and in processing gigapixel images. To address these limitations, we introduce two Neural Cellular Automata (NCA)-based DDMs: DiffNCA and FourierDiff-NCA. Capitalizing on the local communication capabilities of NCA, DiffNCA significantly reduces the parameter counts of NCA-based DDMs. Integrating Fourier-based diffusion enables global communication early in the diffusion process. This feature is particularly valuable in synthesizing complex images with important global features, such as the CelebA dataset. We demonstrate that even a 331k parameter Diff-NCA can generate 512 × 512 pathology slices, while FourierDiff-NCA (1.1m parameters) reaches a three times lower FID score of 43.86, compared to the four times bigger UNet (3.94m parameters) with a score of 128.2. Additionally, FourierDiff-NCA can perform diverse tasks such as super-resolution, out-of-distribution image synthesis, and inpainting without explicit training.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://pdfs.semanticscholar.org/1b31/ad84ad52ed735a04f7684bf5727a1620768d.pdf" target="_blank">
+    <img src="assets/thumbnails/2024-05-11neuralcell_zhang.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Neural Cellular Automata-based Land Use Changes Simulation
+Published on **2024-05-11** by
+
+Jinian **Zhang**, Lanfa **Liu**
+
+[Paper](https://pdfs.semanticscholar.org/1b31/ad84ad52ed735a04f7684bf5727a1620768d.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+Simulating land use and land cover changes (LUCC) is important for urban planning and environmental studies. In this study, we introduce a neural cellular automata (NCA) model that integrates biological principles and convolutional neural networks (CNNs) for land use simulation. We conduct experiments in the city of Wuhan, China. The NCA model achieved the highest performance with an OA of 0.858, F1 score of 0.753, Kappa coefficient of 0.799, and FOM of 0.427. Comparisons of land use data of Wuhan city from 2000 and 2010 with the simulated optimal results indicate that forest areas closer to urban centers are more susceptible to modernization processes, showing the advantage of NCA in accurately simulating land use changes in the central urban area.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2310.14809" target="_blank">
+    <img src="assets/thumbnails/2024-04-26learningsp_richardson.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Learning spatio-temporal patterns with Neural Cellular Automata
+Published on **2024-04-26** by
+
+Alex D. **Richardson**, Tibor **Antal**, Richard A. **Blythe**, Linus J. **Schumacher**
+
+[Arxiv](https://arxiv.org/abs/2310.14809) | [Paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011589)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural Cellular Automata (NCA) are a powerful combination of machine learning and mechanistic modelling. We train NCA to learn complex dynamics from time series of images and Partial Differential Equation (PDE) trajectories. Our method is designed to identify underlying local rules that govern large scale dynamic emergent behaviours. Previous work on NCA focuses on learning rules that give stationary emergent structures. We extend NCA to capture both transient and stable structures within the same system, as well as learning rules that capture the dynamics of Turing pattern formation in nonlinear PDEs. We demonstrate that NCA can generalise very well beyond their PDE training data, we show how to constrain NCA to respect given symmetries, and we explore the effects of associated hyperparameters on model performance and stability. Being able to learn arbitrary dynamics gives NCA great potential as a data driven modelling framework, especially for modelling biological pattern formation.
 </details>
 
 </td>
@@ -250,6 +760,48 @@ Aman **Bhargava**
 Neural cellular automata (NCA) are a fascinating class of computational models. I’m going to try convincing you of the following claims:
 1. It’s worthwhile emulating biological/neuronal computation. 2. NCA are strong algorithmic solution for designing neuromorphic algorithms. 3. Demo: NCA doing active inference
 integration with LLMs.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2403.15525" target="_blank">
+    <img src="assets/thumbnails/2024-03-22latentneur_menta.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Latent Neural Cellular Automata for Resource-Efficient Image Restoration
+Published on **2024-03-22** by
+
+Andrea **Menta**, Alberto **Archetti**, Matteo **Matteucci**
+
+[Arxiv](https://arxiv.org/abs/2403.15525) | [Code](https://github.com/Menta99/LatentNeuralCellularAutomata)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural cellular automata represent an evolution of the traditional cellular automata model, enhanced by the integration of a deep learning-based transition function. This shift from a manual to a datadriven approach significantly increases the adaptability of these models, enabling their application in diverse domains, including content generation and artificial life. However, their widespread application has been hampered by significant computational requirements. In this work, we introduce the Latent Neural Cellular Automata (LNCA) model, a novel architecture designed to address the resource limitations of neural cellular automata. Our approach shifts the computation from the conventional input space to a specially designed latent space, relying on a pre-trained autoencoder. We apply our model in the context of image restoration, which aims to reconstruct high-quality images from their degraded versions. This modification not only reduces the model’s resource consumption but also maintains a flexible framework suitable for various applications. Our model achieves a significant reduction in computational requirements while maintaining high reconstruction fidelity. This increase in efficiency allows for inputs up to 16 times larger than current state-of-the-art neural cellular automata models, using the same resources.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10480399" target="_blank">
+    <img src="assets/thumbnails/2024-03-09learningab_catrina.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Learning About Growing Neural Cellular Automata
+Published on **2024-03-09** by
+
+Sorana **Catrina**, Mirela **Catrina**, Alexandra **Băicoianu**, Ioana Cristina **Plajer**
+
+[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10480399)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural cellular automata have been proven effective in simulating morphogenetic processes. Developing such automata has been applied in 2D and 3D processes related to creating and regenerating complex structures and enabling their behaviors. However, neural cellular automata are inherently uncontrollable after the training process. Starting from a neural cellular automaton trained to generate a given shape from one living cell, this paper aims to gain insight into the behavior of the automaton, and to analyze the influence of the different image characteristics on the training and stabilization process and its shortcomings in different scenarios. For each considered shape, the automaton is trained on one RGB image of size 72 \times 72 pixels containing the shape on an uniform white background, in which each pixel represents a cell. The evolution of the automaton starts from one living cell, employing a shallow neural network for the update rule, followed by backpropagation after a variable number of evolutionary steps. We studied the behavior of the automaton and the way in which different components like symmetry, orientation and colours of the shape influence its growth and alteration after a number of epochs and discussed this thoroughly in the experimental section of the paper. We further discuss a pooling strategy, used to stabilize the model and illustrate the influence of this pooling on the training process. The benefits of this strategy are compared to the original model and the behavior of the automaton during its evolution is studied in detail. Finally, we compare the results of models using different filters in the first stage of feature selection. The main results of our study are the insights gained into how the neural cellular automaton works, what it is actually learning, and what influence this learning, as there are observable result differences depending on the characteristics of the input images and the filters used in the model.
 </details>
 
 </td>
@@ -344,6 +896,27 @@ We study life over the course of video game history as represented by their mech
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://arxiv.org/pdf/2309.13186" target="_blank">
+    <img src="assets/thumbnails/2023-09-22deeplearni_li.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Deep Learning with Photonic Neural Cellular Automata
+Published on **2023-09-22** by
+
+Gordon H. Y. **Li**, Christian R. **Leefmans**, James **Williams**, Robert M. **Gray**, Midya **Parto**, Alireza **Marandi**
+
+[Arxiv](https://arxiv.org/abs/2309.13186) | [Paper](https://pubmed.ncbi.nlm.nih.gov/39379344/)
+
+<details>
+<summary><b>Abstract</b></summary>
+Rapid advancements in deep learning over the past decade have fueled an insatiable demand for efficient and scalable hardware. Photonics offers a promising solution by leveraging the unique properties of light. However, conventional neural network architectures, which typically require dense programmable connections, pose several practical challenges for photonic realizations. To overcome these limitations, we propose and experimentally demonstrate Photonic Neural Cellular Automata (PNCA) for photonic deep learning with sparse connectivity. PNCA harnesses the speed and interconnectivity of photonics, as well as the self-organizing nature of cellular automata through local interactions to achieve robust, reliable, and efficient processing. We utilize linear light interference and parametric nonlinear optics for all-optical computations in a time-multiplexed photonic network to experimentally perform self-organized image classification. We demonstrate binary classification of images in the fashion-MNIST dataset using as few as 3 programmable photonic parameters, achieving an experimental accuracy of 98.0% with the ability to also recognize out-of-distribution data. The proposed PNCA approach can be adapted to a wide range of existing photonic hardware and provides a compelling alternative to conventional photonic neural networks by maximizing the advantages of light-based computing whilst mitigating their practical challenges. Our results showcase the potential of PNCA in advancing photonic deep learning and highlights a path for next-generation photonic computers.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://zenodo.org/records/8275919" target="_blank">
     <img src="assets/thumbnails/2023-08-30pathfindin.jpg" width="140px">
 </a>
@@ -386,6 +959,27 @@ Abstract. As opposed to the traditional view wherein intelligence was believed t
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://openreview.net/pdf?id=d7-ns6SZqp" target="_blank">
+    <img src="assets/thumbnails/2023-07-20revariat_aillet.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### [Re] Variational Neural Cellular Automata
+Published on **2023-07-20** by
+
+Albert **Aillet**, Simon **Sondén**
+
+[Paper](https://openreview.net/pdf?id=d7-ns6SZqp)
+
+<details>
+<summary><b>Abstract</b></summary>
+This report presents a reproduction of a part of the results from the paper ”Variational Neural Cellular Automata” published in ICLR 2022. The authors of the original paper build upon previous research around fully‐differentiable cellular automata called Neu‐ ral Cellular Automata (NCA) and Variational Auto‐Encoders (VAE). They propose a novel generative model, a VAE whose decoder is implemented using a NCA, which they name Variational Neural Cellular Automata (VNCA)
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://arxiv.org/pdf/2307.09320" target="_blank">
     <img src="assets/thumbnails/2023-07-18biomakerca_randazzo.jpg" width="140px">
 </a>
@@ -422,7 +1016,7 @@ Sidney **Pontes-Filho**, Stefano **Nichele**, Mikkel **Lepperød**
 
 <details>
 <summary><b>Abstract</b></summary>
-
+Self-organized criticality is a behavioral state in dynamical systems that is known to present the highest computation capabilities, i.e., information transmission, storage, and processing that stays in criticality independently of the initialization or tuning, such that the critical state is an attractor to the system.
 </details>
 
 </td>
@@ -727,6 +1321,48 @@ Information-theoretic fitness functions are becoming increasingly popular to pro
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://direct.mit.edu/isal/proceedings/isal2022/34/62/112313" target="_blank">
+    <img src="assets/thumbnails/2022-07-18gradientcl_kuriyama.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Gradient Climbing Neural Cellular Automata
+Published on **2022-07-18** by
+
+Shuto **Kuriyama**, Wataru **Noguchi**, Hiroyuki **Iizuka**, Keisuke **Suzuki**, Masahito **Yamamoto**
+
+[Paper](https://direct.mit.edu/isal/proceedings/isal2022/34/62/112313)
+
+<details>
+<summary><b>Abstract</b></summary>
+Abstract. Chemotaxis is a phenomenon whereby organisms like ameba direct their movements responding to their environmental gradients, often called gradient climbing. It is considered to be the origin of self-movement that characterizes life forms. In this work, we have simulated the gradient climbing behaviour on Neural Cellular Automata (NCA) that has recently been proposed as a model to simulate morphogenesis. NCA is a cellular automata model using deep networks for its learnable update rule and it generates a target cell pattern from a single cell through local interactions among cells. Our model, Gradient Climbing Neural Cellular Automata (GCNCA), has an additional feature that enables itself to move a generated pattern by responding to a gradient injected into its cell states.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2206.03563" target="_blank">
+    <img src="assets/thumbnails/2022-06-15twowaysofu_adams.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Two Ways of Understanding Social Dynamics: Analyzing the Predictability of Emergence of Objects in Reddit r/place Dependent on Locality in Space and Time
+Published on **2022-06-15** by
+
+Alyssa M. **Adams**, Javier **Fernandez**, Olaf **Witkowski**
+
+[Arxiv](https://arxiv.org/abs/2206.03563)
+
+<details>
+<summary><b>Abstract</b></summary>
+Lately, studying social dynamics in interacting agents has been boosted by the power of computer models, which bring the richness of qualitative work, while offering the precision, transparency, extensiveness, and replicability of statistical and mathematical approaches. A particular set of phenomena for the study of social dynamics is Web collaborative platforms. A dataset of interest is r/place, a collaborative social experiment held in 2017 on Reddit, which consisted of a shared online canvas of 1000 pixels by 1000 pixels co-edited by over a million recorded users over 72 hours. In this paper, we designed and compared two methods to analyze the dynamics of this experiment. Our ﬁrst method consisted in approximating the set of 2D cellular-automata-like rules used to generate the canvas images and how these rules change over time. The second method consisted in a convolutional neural network (CNN) that learned an approximation to the generative rules in order to generate the complex outcomes of the canvas. Our results indicate varying context-size dependencies for the predictability of different objects in r/place in time and space. They also indicate a surprising peak in difﬁculty to statistically infer behavioral rules towards the middle of the social experiment, while user interactions did not drop until before the end. The combination of our two approaches, one rule-based and the other statistical CNN-based, shows the ability to highlight diverse aspects of analyzing social dynamics.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://mainakdeb.github.io/posts/clip-guided-nca/" target="_blank">
     <img src="assets/thumbnails/2022-06-06clipguided.jpg" width="140px">
 </a>
@@ -853,6 +1489,27 @@ In contrast to deep reinforcement learning agents, biological neural networks ar
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://arxiv.org/pdf/2204.02099" target="_blank">
+    <img src="assets/thumbnails/2022-04-05collective_nadizar.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Collective control of modular soft robots via embodied Spiking Neural Cellular Automata
+Published on **2022-04-05** by
+
+Giorgia **Nadizar**, Eric **Medvet**, Stefano **Nichele**, Sidney **Pontes-Filho**
+
+[Arxiv](https://arxiv.org/abs/2204.02099)
+
+<details>
+<summary><b>Abstract</b></summary>
+Voxel-based Soft Robots (VSRs) are a form of modular soft robots, composed of several deformable cubes, i.e., voxels. Each VSR is thus an ensemble of simple agents, namely the voxels, which must cooperate to give rise to the overall VSR behavior. Within this paradigm, collective intelligence plays a key role in enabling the emerge of coordination, as each voxel is independently controlled, exploiting only the local sensory information together with some knowledge passed from its direct neighbors (distributed or collective control). In this work, we propose a novel form of collective control, inﬂuenced by Neural Cellular Automata (NCA) and based on the bio-inspired Spiking Neural Networks: the embodied Spiking NCA (SNCA). We experiment with different variants of SNCA, and ﬁnd them to be competitive with the state-of-the-art distributed controllers for the task of locomotion. In addition, our ﬁndings show signiﬁcant improvement with respect to the baseline in terms of adaptability to unforeseen environmental changes, which could be a determining factor for physical practicability of VSRs.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://direct.mit.edu/isal/article/doi/10.1162/isal_a_00521/112290/Adversarial-Takeover-of-Neural-Cellular-Automata" target="_blank">
     <img src="assets/thumbnails/2022-03-12adversaria_cavuoti.jpg" width="140px">
 </a>
@@ -958,6 +1615,27 @@ Andrew **Vardy**
 <details>
 <summary><b>Abstract</b></summary>
 Neural Cellular Automata (NCA) have been trained to produce target images and shapes and even to regenerate after damage. These are highly attractive properties that can inform work on collective robotic construction. We discuss concepts from NCA that may be useful for collective robotic construction and discuss how the problems of morphogenesis and construction differ. As a concrete first step, we propose a simplified variant of an existing NCA model to explore the consequences of reducing the number of state channels encoded. We find that the NCA can still reproduce trained images. This bodes well for translating ideas from N CAs to collective robotic construction.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.imperial.ac.uk/media/imperial-college/faculty-of-engineering/computing/public/2021-ug-projects/2021-msc-individual-projects/Convolutional-autoencoder-based-image-compression-in-the-image-sensor.pdf" target="_blank">
+    <img src="assets/thumbnails/2021-09-02neuralcell_dudziak.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Neural Cellular Automata on a Focal Plane
+Published on **2021-09-02** by
+
+Maciej **Dudziak**, Paul **Kelly**, Wayne **Luk**
+
+[Paper](https://www.imperial.ac.uk/media/imperial-college/faculty-of-engineering/computing/public/2021-ug-projects/2021-msc-individual-projects/Convolutional-autoencoder-based-image-compression-in-the-image-sensor.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+The cellular automata is a discrete mathematical model of computation that consists of a regular grid of cells, each being in one of the finite number of states, with its next iteration determined by a set of rules applied locally at each cell. Traditionally those rules are predefined and crafted for a specific, desired operation, though recently it has been shown that they can also be learned with convolutional neural networks and applied to perform image classification or segmentation. The locality of the computation and presence of independent and organised agents resembles the architecture of the Focal Plane Sensor Processors (FPSP), a family of vision chips where every pixel/photo-diode in the array is equipped with a processing unit allowing for computations directly on a focal plane. In this thesis, we investigate the suitability of FPSP architectures for hosting the neural cellular automata (NCA) by implementing an example automaton for the self-classification of MNIST digits. In the process, we present a comprehensive analysis of the computational and memory requirements of the NCA and relates them to the capabilities of existing FPSP devices, providing guidelines for the development of automata that is less resource consuming. We develop a step-by-step quantisation procedure customised for the application of neural cellular automata on FPSP, which reduces the 32-bit floating-point model into the integer representation with 5-bit weights, 10-bit input and 9-bit activations while entirely maintaining its performance and precision. Our implementation of this quantised NCA achieves an operation at 74 FPS with using 77.68 mJ energy per frame on the simulated FPSP device. This work could also be treated as an exploration of neural cellular automata as a potential general computation algorithm for the FPSP family architectures and also as an exploration for the possible development directions of the next generation of FPSPs. Hence, we conclude this thesis with a discussion on the discovered bottlenecks and limitations and describing the ideas on possible solutions, such as more sophisticated patch multiplexing/superpixels.
 </details>
 
 </td>

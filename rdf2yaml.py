@@ -61,6 +61,14 @@ def parse_rdf(rdf_file:Path):
         if "Attachment" in item.tag:
             # We already got a list of attachments before
             continue
+        if "Memo" in item.tag:
+            # Memos are notes that are not useful for exporting
+            continue
+        if "Journal" in item.tag:
+            # Journals are not needed for exports
+            continue
+
+        print(item)
         title = item.find("dc:title", ns)
         year = item.find("dc:date", ns)
         year2 = item.find("dcterms:dateSubmitted", ns)
@@ -125,7 +133,7 @@ def create_thumbnail(pdf_path: Path, paper_id) -> Path:
                 output_thumb.parent.mkdir(parents=True, exist_ok=True)
 
                 subprocess.run([
-                    "magick", "convert", "-background","white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
+                    "magick", "convert", "-background", "white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
                 ], check=True)
                 return output_thumb
             except Exception as e:
@@ -136,7 +144,7 @@ def create_thumbnail(pdf_path: Path, paper_id) -> Path:
     return output_thumb
 
 
-def export_yaml(papers, output_file="papers.auto.yaml"):
+def export_yaml(papers, *, output_file="papers.auto.yaml"):
     with open(output_file, "w", encoding="utf-8") as f:
         yaml.dump({
             "date": f"{datetime.datetime.now():%Y-%m-%d-%H-%M-%S}",
@@ -146,13 +154,19 @@ def export_yaml(papers, output_file="papers.auto.yaml"):
 
 
 def main():
-    path = r"C:\Users\woiwode\Desktop\tmp\Exportierte Einträge\Exportierte Einträge.rdf"
-    rdf_file = Path(path)
+    import argparse
+    parser = argparse.ArgumentParser(description="Parse RDF file and export papers to YAML.")
+    parser.add_argument("path", type=Path, help="Path to the RDF file")
+    parser.add_argument("--output_file", type=Path, default=Path("papers.auto.yaml"),
+                        help="Output YAML file (default: papers.auto.yaml)")
+    args = parser.parse_args()
+
+    rdf_file = args.path
     papers = parse_rdf(rdf_file)
     print(f"Found {len(papers)} papers in {rdf_file}")
     papers = sorted(papers, key=lambda p: p["year"])
-    export_yaml(papers)
-    print(f"Exported {len(papers)} papers to papers.auto.yaml")
+    export_yaml(papers, output_file=args.output_file)
+    print(f"Exported {len(papers)} papers to {args.output_file}")
 
 
 if __name__ == "__main__":
