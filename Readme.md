@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-09-23 00:57:36 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-09-23 01:04:16 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-06-30.
 
@@ -49,13 +49,12 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
+This collection has a total of 102 publications.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/papers_per_quarter_light.svg">
   <img alt="Histogram of number of publications per quarter." src="">
 </picture>
-
-![](assets/papers_per_quarter.png)
 
 ### 2025
 <table><tr>

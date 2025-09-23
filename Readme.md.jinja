@@ -48,13 +48,13 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
+This collection has a total of {{ papers | length }} publications.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/papers_per_quarter_light.svg">
   <img alt="Histogram of number of publications per quarter." src="">
 </picture>
 
-![](assets/papers_per_quarter.png)
 {%- for paper in papers | sort(attribute="year", reverse=true) -%}
 {# Update year if needed #}
 {%- if loop.changed(paper["year"][:4]) -%}
