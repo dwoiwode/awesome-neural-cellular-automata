@@ -55,8 +55,8 @@ This collection has a total of {{ papers | length }} publications.
   <img alt="Histogram of number of publications per quarter." src="">
 </picture>
 
-<!-- This is needed for correct histogram display -->
 ![](assets/papers_per_quarter.png)
+<!-- The line above is needed for correct histogram display -->
 {%- for paper in papers | sort(attribute="year", reverse=true) -%}
 {# Update year if needed #}
 {%- if loop.changed(paper["year"][:4]) -%}

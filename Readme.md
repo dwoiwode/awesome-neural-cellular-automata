@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-09-23 01:05:53 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-09-23 01:06:53 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-06-30.
 
@@ -56,8 +56,8 @@ This collection has a total of 102 publications.
   <img alt="Histogram of number of publications per quarter." src="">
 </picture>
 
-<!-- This is needed for correct histogram display -->
 ![](assets/papers_per_quarter.png)
+<!-- The line above is needed for correct histogram display -->
 
 ### 2025
 <table><tr>
