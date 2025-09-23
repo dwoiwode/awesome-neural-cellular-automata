@@ -2648,4 +2648,291 @@ papers:
     code: 'https://github.com/petroniocandido/st_nca'
   thumbnail: assets/thumbnail_placeholder.jpg
   abstract: Transformer-based neural network cells with distributed federated learning for flexible cellular automata topologies, aiming for large-scale forecasting of complex spatiotemporal processes.
+- id: 2025-06-25mixturesof_milite
+  title: 'Mixtures of Neural Cellular Automata: A Stochastic Framework for Growth
+    Modelling and Self-Organization'
+  year: '2025-06-25'
+  authors:
+  - - Salvatore
+    - Milite
+  - - Giulio
+    - Caravagna
+  - - Andrea
+    - Sottoriva
+  urls:
+    arxiv: 'https://arxiv.org/abs/2506.20486'
+  thumbnail: assets/thumbnails/2025-06-25mixturesof_milite.jpg
+  abstract: 'Neural Cellular Automata (NCAs) are a promising new approach to model
+    self-organizing processes, with potential applications in life science. However,
+    their deterministic nature limits their ability to capture the stochasticity of
+    real-world biological and physical systems. We propose the Mixture of Neural Cellular
+    Automata (MNCA), a novel framework incorporating the idea of mixture models into
+    the NCA paradigm. By combining probabilistic rule assignments with intrinsic noise,
+    MNCAs can model diverse local behaviors and reproduce the stochastic dynamics
+    observed in biological processes. We evaluate the effectiveness of MNCAs in three
+    key domains: (1) synthetic simulations of tissue growth and differentiation, (2)
+    image morphogenesis robustness, and (3) microscopy image segmentation. Results
+    show that MNCAs achieve superior robustness to perturbations, better recapitulate
+    real biological growth patterns, and provide interpretable rule segmentation.
+    These findings position MNCAs as a promising tool for modeling stochastic dynamical
+    systems and studying self-growth processes.'
+- id: 2025-06-28neuralcell_pajouheshgar
+  title: 'Neural Cellular Automata: From Cells to Pixels'
+  year: '2025-06-28'
+  authors:
+  - - Ehsan
+    - Pajouheshgar
+  - - Yitao
+    - Xu
+  - - Ali
+    - Abbasi
+  - - Alexander
+    - Mordvintsev
+  - - Wenzel
+    - Jakob
+  - - Sabine
+    - Süsstrunk
+  urls:
+    project_page: 'https://cells2pixels.github.io/'
+    arxiv: 'https://arxiv.org/abs/2506.22899'
+    demo_growing: 'https://cells2pixels.github.io/2d_growing_demo/'
+    demo_texture: 'https://cells2pixels.github.io/2d_pbr_demo/'
+  thumbnail: assets/thumbnails/2025-06-28neuralcell_pajouheshgar.jpg
+  abstract: Neural Cellular Automata (NCAs) are bio-inspired systems in which identical
+    cells self-organize to form complex and coherent patterns by repeatedly applying
+    simple local rules. NCAs display striking emergent behaviors including self-regeneration,
+    generalization and robustness to unseen situations, and spontaneous motion. Despite
+    their success in texture synthesis and morphogenesis, NCAs remain largely confined
+    to low-resolution grids. This limitation stems from (1) training time and memory
+    requirements that grow quadratically with grid size, (2) the strictly local propagation
+    of information which impedes long-range cell communication, and (3) the heavy
+    compute demands of real-time inference at high resolution. In this work, we overcome
+    this limitation by pairing NCA with a tiny, shared implicit decoder, inspired
+    by recent advances in implicit neural representations. Following NCA evolution
+    on a coarse grid, a lightweight decoder renders output images at arbitrary resolution.
+    We also propose novel loss functions for both morphogenesis and texture synthesis
+    tasks, specifically tailored for high-resolution output with minimal memory and
+    computation overhead. Combining our proposed architecture and loss functions brings
+    substantial improvement in quality, efficiency, and performance. NCAs equipped
+    with our implicit decoder can generate full-HD outputs in real time while preserving
+    their self-organizing, emergent properties. Moreover, because each MLP processes
+    cell states independently, inference remains highly parallelizable and efficient.
+    We demonstrate the applicability of our approach across multiple NCA variants
+    (on 2D, 3D grids, and 3D meshes) and multiple tasks, including texture generation
+    and morphogenesis (growing patterns from a seed), showing that with our proposed
+    framework, NCAs seamlessly scale to high-resolution outputs with minimal computational
+    overhead.
+- id: 2025-08-08identityin_stovold
+  title: Identity Increases Stability in Neural Cellular Automata
+  year: '2025-08-08'
+  authors:
+  - - James
+    - Stovold
+  urls:
+    arxiv: 'https://arxiv.org/abs/2508.06389'
+    code: 'https://github.com/jstovold/ALIFE2025'
+  thumbnail: assets/thumbnails/2025-08-08identityin_stovold.jpg
+  abstract: Neural Cellular Automata (NCAs) offer a way to study the growth of two-dimensional
+    artificial organisms from a single seed cell. From the outset, NCA-grown organisms
+    have had issues with stability, their natural boundary often breaking down and
+    exhibiting tumour-like growth or failing to maintain the expected shape. In this
+    paper, we present a method for improving the stability of NCA-grown organisms
+    by introducing an 'identity' layer with simple constraints during training. Results
+    show that NCAs grown in close proximity are more stable compared with the original
+    NCA model. Moreover, only a single identity value is required to achieve this
+    increase in stability. We observe emergent movement from the stable organisms,
+    with increasing prevalence for models with multiple identity values. This work
+    lays the foundation for further study of the interaction between NCA-grown organisms,
+    paving the way for studying social interaction at a cellular level in artificial
+    organisms.
+- id: 2025-08-13reservoirc_pontes-filho
+  title: Reservoir Computing with Evolved Critical Neural Cellular Automata
+  year: '2025-08-13'
+  authors:
+  - - Sidney
+    - Pontes-Filho
+  - - Stefano
+    - Nichele
+  - - Mikkel
+    - Lepperød
+  urls:
+    arxiv: 'https://arxiv.org/abs/2508.02218'
+    code: 'https://github.com/bioAI-Oslo/critical-nca-reservoir'
+  thumbnail: assets/thumbnails/2025-08-13reservoirc_pontes-filho.jpg
+  abstract: Criticality is a behavioral state in dynamical systems that is known to
+    present the highest computation capabilities, i.e., information transmission,
+    storage, and modification. Therefore, such systems are ideal candidates as a substrate
+    for reservoir computing, a subfield in artificial intelligence. Our choice of
+    a substrate is a cellular automaton (CA) governed by an artificial neural network,
+    also known as neural cellular automaton (NCA). We apply evolution strategy to
+    optimize the NCA to achieve criticality, demonstrated by power law distributions
+    in structures called avalanches. With an evolved critical NCA, the substrate is
+    tested for reservoir computing. Our evaluation of the substrate is performed with
+    two benchmarks, 5-bit memory task and image classification of handwritten digits.
+    The result of the 5-bit memory task achieved a perfect score and the system managed
+    to remember all 5 bits. The result for the image classification task matched and
+    sometimes surpassed the performance of the best elementary CA for this task. Moreover,
+    the proposed critical NCA may operate as a self-organized critical system, due
+    to its robustness to extreme initial conditions.
+- id: 2025-08-17attentionp_yang
+  title: Attention Pooling Enhances NCA-based Classification of Microscopy Images
+  year: '2025-08-17'
+  authors:
+  - - Chen
+    - Yang
+  - - Michael
+    - Deutges
+  - - Jingsong
+    - Liu
+  - - Han
+    - Li
+  - - Nassir
+    - Navab
+  - - Carsten
+    - Marr
+  - - Ario
+    - Sadafi
+  urls:
+    arxiv: 'https://arxiv.org/abs/2508.12324'
+    code: 'https://github.com/marrlab/aNCA'
+  thumbnail: assets/thumbnails/2025-08-17attentionp_yang.jpg
+  abstract: Neural Cellular Automata (NCA) offer a robust and interpretable approach
+    to image classification, making them a promising choice for microscopy image analysis.
+    However, a performance gap remains between NCA and larger, more complex architectures.
+    We address this challenge by integrating attention pooling with NCA to enhance
+    feature extraction and improve classification accuracy. The attention pooling
+    mechanism refines the focus on the most informative regions, leading to more accurate
+    predictions. We evaluate our method on eight diverse microscopy image datasets
+    and demonstrate that our approach significantly outperforms existing NCA methods
+    while remaining parameter-efficient and explainable. Furthermore, we compare our
+    method with traditional lightweight convolutional neural network and vision transformer
+    architectures, showing improved performance while maintaining a significantly
+    lower parameter count. Our results highlight the potential of NCA-based models
+    an alternative for explainable image classification.
+- id: 2025-08-17neuralcell_deutges
+  title: Neural Cellular Automata for Weakly Supervised Segmentation of White Blood
+    Cells
+  year: '2025-08-17'
+  authors:
+  - - Michael
+    - Deutges
+  - - Chen
+    - Yang
+  - - Raheleh
+    - Salehi
+  - - Nassir
+    - Navab
+  - - Carsten
+    - Marr
+  - - Ario
+    - Sadafi
+  urls:
+    arxiv: 'https://arxiv.org/abs/2508.12322'
+    code: 'https://github.com/marrlab/NCA-WSS'
+  thumbnail: assets/thumbnails/2025-08-17neuralcell_deutges.jpg
+  abstract: The detection and segmentation of white blood cells in blood smear images
+    is a key step in medical diagnostics, supporting various downstream tasks such
+    as automated blood cell counting, morphological analysis, cell classification,
+    and disease diagnosis and monitoring. Training robust and accurate models requires
+    large amounts of labeled data, which is both time-consuming and expensive to acquire.
+    In this work, we propose a novel approach for weakly supervised segmentation using
+    neural cellular automata (NCA-WSS). By leveraging the feature maps generated by
+    NCA during classification, we can extract segmentation masks without the need
+    for retraining with segmentation labels. We evaluate our method on three white
+    blood cell microscopy datasets and demonstrate that NCA-WSS significantly outperforms
+    existing weakly supervised approaches. Our work illustrates the potential of NCA
+    for both classification and segmentation in a weakly supervised framework, providing
+    a scalable and efficient solution for medical image analysis.
+- id: 2025-09-06missingdat_luu
+  title: Missing Data Imputation using Neural Cellular Automata
+  year: '2025-09-06'
+  authors:
+  - - Tin
+    - Luu
+  - - Binh
+    - Nguyen
+  - - Man
+    - Ngo
+  urls:
+    arxiv: 'https://arxiv.org/abs/2509.00651'
+    code: 'https://github.com/TrungTin98/NICA'
+  thumbnail: assets/thumbnails/2025-09-06missingdat_luu.jpg
+  abstract: When working with tabular data, missingness is always one of the most
+    painful problems. Throughout many years, researchers have continuously explored
+    better and better ways to impute missing data. Recently, with the rapid development
+    evolution in machine learning and deep learning, there is a new trend of leveraging
+    generative models to solve the imputation task. While the imputing version of
+    famous models such as Variational Autoencoders or Generative Adversarial Networks
+    were investigated, prior work has overlooked Neural Cellular Automata (NCA), a
+    powerful computational model. In this paper, we propose a novel imputation method
+    that is inspired by NCA. We show that, with some appropriate adaptations, an NCA-based
+    model is able to address the missing data imputation problem. We also provide
+    several experiments to evidence that our model outperforms state-of-the-art methods
+    in terms of imputation error and post-imputation performance.
+- id: 2025-09-06exploringt_pajouheshgar
+  title: Exploring the Landscape of Non-Equilibrium Memories with Neural Cellular
+    Automata
+  year: '2025-09-06'
+  authors:
+  - - Ehsan
+    - Pajouheshgar
+  - - Aditya
+    - Bhardwaj
+  - - Nathaniel
+    - Selub
+  - - Ethan
+    - Lake
+  urls:
+    project_page: 'https://memorynca.github.io/2D/'
+    arxiv: 'https://arxiv.org/abs/2508.15726'
+  thumbnail: assets/thumbnails/2025-09-06exploringt_pajouheshgar.jpg
+  abstract: 'We investigate the landscape of many-body memories: families of local
+    non-equilibrium dynamics that retain information about their initial conditions
+    for thermodynamically long time scales, even in the presence of arbitrary perturbations.
+    In two dimensions, the only well-studied memory is Toom''s rule. Using a combination
+    of rigorous proofs and machine learning methods, we show that the landscape of
+    2D memories is in fact quite vast. We discover memories that correct errors in
+    ways qualitatively distinct from Toom''s rule, have ordered phases stabilized
+    by fluctuations, and preserve information only in the presence of noise. Taken
+    together, our results show that physical systems can perform robust information
+    storage in many distinct ways, and demonstrate that the physics of many-body memories
+    is richer than previously realized. Interactive visualizations of the dynamics
+    studied in this work are available at https://memorynca.github.io/2D.'
+- id: 2025-09-14neuralcell_hartl
+  title: 'Neural cellular automata: applications to biology and beyond classical AI'
+  year: '2025-09-14'
+  authors:
+  - - Benedikt
+    - Hartl
+  - - Michael
+    - Levin
+  - - Léo
+    - Pio-Lopez
+  urls:
+    arxiv: 'https://arxiv.org/abs/2509.11131'
+  thumbnail: assets/thumbnails/2025-09-14neuralcell_hartl.jpg
+  abstract: Neural Cellular Automata (NCA) represent a powerful framework for modeling
+    biological self-organization, extending classical rule-based systems with trainable,
+    differentiable (or evolvable) update rules that capture the adaptive self-regulatory
+    dynamics of living matter. By embedding Artificial Neural Networks (ANNs) as local
+    decision-making centers and interaction rules between localized agents, NCA can
+    simulate processes across molecular, cellular, tissue, and system-level scales,
+    offering a multiscale competency architecture perspective on evolution, development,
+    regeneration, aging, morphogenesis, and robotic control. These models not only
+    reproduce biologically inspired target patterns but also generalize to novel conditions,
+    demonstrating robustness to perturbations and the capacity for open-ended adaptation
+    and reasoning. Given their immense success in recent developments, we here review
+    current literature of NCAs that are relevant primarily for biological or bioengineering
+    applications. Moreover, we emphasize that beyond biology, NCAs display robust
+    and generalizing goal-directed dynamics without centralized control, e.g., in
+    controlling or regenerating composite robotic morphologies or even on cutting-edge
+    reasoning tasks such as ARC-AGI-1. In addition, the same principles of iterative
+    state-refinement is reminiscent to modern generative Artificial Intelligence (AI),
+    such as probabilistic diffusion models. Their governing self-regulatory behavior
+    is constraint to fully localized interactions, yet their collective behavior scales
+    into coordinated system-level outcomes. We thus argue that NCAs constitute a unifying
+    computationally lean paradigm that not only bridges fundamental insights from
+    multiscale biology with modern generative AI, but have the potential to design
+    truly bio-inspired collective intelligence capable of hierarchical reasoning and
+    control.
 
