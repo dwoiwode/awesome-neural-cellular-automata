@@ -1,4 +1,4 @@
-<!-- This file was automatically created on 2025-09-23 01:06:53 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-10-09 08:55:54 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
 A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-06-30.
 
@@ -49,7 +49,8 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
-This collection has a total of 102 publications.
+This collection has a total of 106 publications.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/papers_per_quarter_light.svg">
@@ -57,10 +58,32 @@ This collection has a total of 102 publications.
 </picture>
 
 ![](assets/papers_per_quarter.png)
+
 <!-- The line above is needed for correct histogram display -->
 
 ### 2025
 <table><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2509.18659" target="_blank">
+    <img src="assets/thumbnails/2025-09-25smartcellu_moreno.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Smart Cellular Bricks for Decentralized Shape Classification and Damage Recovery
+Published on **2025-09-25** by
+
+Rodrigo **Moreno**, Andres **Faina**, Shyam **Sudhakaran**, Kathryn **Walker**, Sebastian **Risi**
+
+[Project Page](https://cellularbricks.github.io/) | [Arxiv](https://arxiv.org/abs/2509.18659)
+
+<details>
+<summary><b>Abstract</b></summary>
+Biological systems possess remarkable capabilities for self-recognition and morphological regeneration, often relying solely on local interactions. Inspired by these decentralized processes, we present a novel system of physical 3D bricks—simple cubic units equipped with local communication, processing, and sensing—that are capable of inferring their global shape class and detecting structural damage. Leveraging Neural Cellular Automata (NCA), a learned, fully-distributed algorithm, our system enables each module to independently execute the same neural network without access to any global state or positioning information. We demonstrate the ability of collections of hundreds of these cellular bricks to accurately classify a variety of 3D shapes through purely local interactions. The approach shows strong robustness to out-of-distribution shape variations and high tolerance to communication faults and failed modules. In addition to shape inference, the same decentralized framework is extended to detect missing or damaged components, allowing the collective to localize structural disruptions and to guide a recovery process. This work provides a physical realization of large-scale, decentralized self-recognition and damage detection, advancing the potential of robust, adaptive, and bio-inspired modular systems. Videos and code will be made available at: cellularbricks.github.io/.
+</details>
+
+</td>
+</tr><tr>
 <td width="150px">
 <a href="https://arxiv.org/pdf/2509.11131" target="_blank">
     <img src="assets/thumbnails/2025-09-14neuralcell_hartl.jpg" width="140px">
@@ -188,6 +211,27 @@ Criticality is a behavioral state in dynamical systems that is known to present 
 </td>
 </tr><tr>
 <td width="150px">
+<a href="https://hyunsoo0o0o0.github.io/SPH-NCA/" target="_blank">
+    <img src="assets/thumbnails/2025-08-10trainonce_kim.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Train Once, Generate Anywhere: Discretization Agnostic Neural Cellular Automata using SPH Method
+Published on **2025-08-10** by
+
+Hyunsoo **Kim**, Jinah **Park**
+
+[Project Page](https://hyunsoo0o0o0.github.io/SPH-NCA/) | [Preprint](https://hyunsoo0o0o0.github.io/SPH-NCA/media/abstract.pdf) | [Code](https://github.com/hyunsoo0o0o0/SPH-NCA) | [Poster](https://hyunsoo0o0o0.github.io/SPH-NCA/media/poster.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
 <a href="https://arxiv.org/pdf/2508.06389" target="_blank">
     <img src="assets/thumbnails/2025-08-08identityin_stovold.jpg" width="140px">
 </a>
@@ -204,6 +248,27 @@ James **Stovold**
 <details>
 <summary><b>Abstract</b></summary>
 Neural Cellular Automata (NCAs) offer a way to study the growth of two-dimensional artificial organisms from a single seed cell. From the outset, NCA-grown organisms have had issues with stability, their natural boundary often breaking down and exhibiting tumour-like growth or failing to maintain the expected shape. In this paper, we present a method for improving the stability of NCA-grown organisms by introducing an 'identity' layer with simple constraints during training. Results show that NCAs grown in close proximity are more stable compared with the original NCA model. Moreover, only a single identity value is required to achieve this increase in stability. We observe emergent movement from the stable organisms, with increasing prevalence for models with multiple identity values. This work lays the foundation for further study of the interaction between NCA-grown organisms, paving the way for studying social interaction at a cellular level in artificial organisms.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2507.12306" target="_blank">
+    <img src="assets/thumbnails/2025-07-16macegener_papadopoulos.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### MaCE: General Mass Conserving Dynamics for Cellular Automata
+Published on **2025-07-16** by
+
+Vassilis **Papadopoulos**, Etienne **Guichard**
+
+[Project Page](https://vassi.life/research/mace) | [Arxiv](https://arxiv.org/abs/2507.12306) | [Code](https://github.com/frotaur/MaceLenia) | [Video](https://www.youtube.com/watch?v=dCDdFQHcpC0) | [Videos](https://etimush.github.io/MaCE-Videos/) | [Poster](https://vassi.life/other/mace_poster.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+We present Mass-Conserving Evolution (MaCE), a general method for implementing mass conservation in Cellular Automata (CA). MaCE is a simple evolution rule that can be easily ’attached’ to existing CAs to make them mass-conserving, which tends to produce interesting behaviours more often, as patterns can no longer explode or die out. We first show that MaCE is numerically stable and admits a simple continuous limit. We then test MaCE on Lenia, and through several experiments, we demonstrate that it produces a wide variety of interesting behaviours, starting from the variety and abundance of solitons up to hints of intrinsic evolution in resourceconstrained environments. Finally, we showcase the versatility of MaCE by applying it to Neural-CAs and discrete CAs, and discuss promising research directions opened up by this scheme.
 </details>
 
 </td>
@@ -351,6 +416,27 @@ Sandeep Kumar **Sharma**, Chiranji Lal **Chowdhary**, Vijay Shankar **Sharma**, 
 <details>
 <summary><b>Abstract</b></summary>
 A layman in health systems is a person who doesn’t have any knowledge about health data i.e., X-ray, MRI, CT scan, and health examination reports, etc. The motivation behind the proposed invention is to help laymen to make medical images understandable. The health model is trained using a neural network approach that analyses user health examination data; predicts the type and level of the disease and advises precaution to the user. Cellular Automata (CA) technology has been integrated with the neural networks to segment the medical image. The CA analyzes the medical images pixel by pixel and generates a robust threshold value which helps to efficiently segment the image and identify accurate abnormal spots from the medical image. The proposed method has been trained and experimented using 10000+ medical images which are taken from various open datasets. Various text analysis measures i.e., BLEU, ROUGE, and WER are used in the research to validate the produced report. The BLEU and ROUGE calculate a similarity to decide how the generated text report is closer to the original report. The BLEU and ROUGE scores of the experimented images are approximately 0.62 and 0.90, claims that the produced report is very close to the original report. The WER score 0.14, claims that the generated report contains the most relevant words. The overall summary of the proposed research is that it provides a fruitful medical report with accurate disease and precautions to the laymen.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2412.17799" target="_blank">
+    <img src="assets/thumbnails/2025-05-16automating_kumar.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Automating the Search for Artificial Life with Foundation Models
+Published on **2025-05-16** by
+
+Akarsh **Kumar**, Chris **Lu**, Louis **Kirsch**, Yujin **Tang**, Kenneth O. **Stanley**, Phillip **Isola**, David **Ha**
+
+[Project Page](https://pub.sakana.ai/asal/) | [Arxiv](https://arxiv.org/abs/2412.17799) | [Code](https://github.com/SakanaAI/asal) | [Blog](https://sakana.ai/asal/)
+
+<details>
+<summary><b>Abstract</b></summary>
+With the recent Nobel Prize awarded for radical advances in protein discovery, foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize many scientific fields. Artificial Life (ALife) has not yet integrated FMs, thus presenting a major opportunity for the field to alleviate the historical burden of relying chiefly on manual design and trial-and-error to discover the configurations of lifelike simulations. This paper presents, for the first time, a successful realization of this opportunity using vision-language FMs. The proposed approach, called Automated Search for Artificial Life (ASAL), (1) finds simulations that produce target phenomena, (2) discovers simulations that generate temporally open-ended novelty, and (3) illuminates an entire space of interestingly diverse simulations. Because of the generality of FMs, ASAL works effectively across a diverse range of ALife substrates including Boids, Particle Life, Game of Life, Lenia, and Neural Cellular Automata. A major result highlighting the potential of this technique is the discovery of previously unseen Lenia and Boids lifeforms, as well as cellular automata that are open-ended like Conway's Game of Life. Additionally, the use of FMs allows for the quantification of previously qualitative phenomena in a human-aligned way. This new paradigm promises to accelerate ALife research beyond what is possible through human ingenuity alone.
 </details>
 
 </td>

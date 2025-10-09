@@ -2935,4 +2935,123 @@ papers:
     multiscale biology with modern generative AI, but have the potential to design
     truly bio-inspired collective intelligence capable of hierarchical reasoning and
     control.
-
+- id: 2025-07-16macegener_papadopoulos
+  title: 'MaCE: General Mass Conserving Dynamics for Cellular Automata'
+  year: '2025-07-16'
+  authors:
+  - - Vassilis
+    - Papadopoulos
+  - - Etienne
+    - Guichard
+  urls:
+    project_page: 'https://vassi.life/research/mace'
+    arxiv: 'https://arxiv.org/abs/2507.12306'
+    code: 'https://github.com/frotaur/MaceLenia'
+    video: 'https://www.youtube.com/watch?v=dCDdFQHcpC0'
+    videos: 'https://etimush.github.io/MaCE-Videos/'
+    poster: 'https://vassi.life/other/mace_poster.pdf'
+  thumbnail: assets/thumbnails/2025-07-16macegener_papadopoulos.jpg
+  abstract: We present Mass-Conserving Evolution (MaCE), a general method for implementing
+    mass conservation in Cellular Automata (CA). MaCE is a simple evolution rule that
+    can be easily ’attached’ to existing CAs to make them mass-conserving, which tends
+    to produce interesting behaviours more often, as patterns can no longer explode
+    or die out. We first show that MaCE is numerically stable and admits a simple
+    continuous limit. We then test MaCE on Lenia, and through several experiments,
+    we demonstrate that it produces a wide variety of interesting behaviours, starting
+    from the variety and abundance of solitons up to hints of intrinsic evolution
+    in resourceconstrained environments. Finally, we showcase the versatility of MaCE
+    by applying it to Neural-CAs and discrete CAs, and discuss promising research
+    directions opened up by this scheme.
+- id: 2025-08-10trainonce_kim
+  title: 'Train Once, Generate Anywhere: Discretization Agnostic Neural Cellular Automata
+    using SPH Method'
+  year: '2025-08-10'
+  authors:
+  - - Hyunsoo
+    - Kim
+  - - Jinah
+    - Park
+  urls:
+    project_page: 'https://hyunsoo0o0o0.github.io/SPH-NCA/'
+    preprint: 'https://hyunsoo0o0o0.github.io/SPH-NCA/media/abstract.pdf'
+    code: 'https://github.com/hyunsoo0o0o0/SPH-NCA'
+    poster: 'https://hyunsoo0o0o0.github.io/SPH-NCA/media/poster.pdf'
+  thumbnail: assets/thumbnails/2025-08-10trainonce_kim.jpg
+  abstract: ''
+- id: 2025-09-25smartcellu_moreno
+  title: Smart Cellular Bricks for Decentralized Shape Classification and Damage Recovery
+  year: '2025-09-25'
+  authors:
+  - - Rodrigo
+    - Moreno
+  - - Andres
+    - Faina
+  - - Shyam
+    - Sudhakaran
+  - - Kathryn
+    - Walker
+  - - Sebastian
+    - Risi
+  urls:
+    project_page: 'https://cellularbricks.github.io/'
+    arxiv: 'https://arxiv.org/abs/2509.18659'
+  thumbnail: assets/thumbnails/2025-09-25smartcellu_moreno.jpg
+  abstract: 'Biological systems possess remarkable capabilities for self-recognition
+    and morphological regeneration, often relying solely on local interactions. Inspired
+    by these decentralized processes, we present a novel system of physical 3D bricks—simple
+    cubic units equipped with local communication, processing, and sensing—that are
+    capable of inferring their global shape class and detecting structural damage.
+    Leveraging Neural Cellular Automata (NCA), a learned, fully-distributed algorithm,
+    our system enables each module to independently execute the same neural network
+    without access to any global state or positioning information. We demonstrate
+    the ability of collections of hundreds of these cellular bricks to accurately
+    classify a variety of 3D shapes through purely local interactions. The approach
+    shows strong robustness to out-of-distribution shape variations and high tolerance
+    to communication faults and failed modules. In addition to shape inference, the
+    same decentralized framework is extended to detect missing or damaged components,
+    allowing the collective to localize structural disruptions and to guide a recovery
+    process. This work provides a physical realization of large-scale, decentralized
+    self-recognition and damage detection, advancing the potential of robust, adaptive,
+    and bio-inspired modular systems. Videos and code will be made available at: cellularbricks.github.io/.'
+- id: 2025-05-16automating_kumar
+  title: Automating the Search for Artificial Life with Foundation Models
+  year: '2025-05-16'
+  authors:
+  - - Akarsh
+    - Kumar
+  - - Chris
+    - Lu
+  - - Louis
+    - Kirsch
+  - - Yujin
+    - Tang
+  - - Kenneth O.
+    - Stanley
+  - - Phillip
+    - Isola
+  - - David
+    - Ha
+  urls:
+    project_page: 'https://pub.sakana.ai/asal/'
+    arxiv: 'https://arxiv.org/abs/2412.17799'
+    code: 'https://github.com/SakanaAI/asal'
+    blog: 'https://sakana.ai/asal/'
+  thumbnail: assets/thumbnails/2025-05-16automating_kumar.jpg
+  abstract: With the recent Nobel Prize awarded for radical advances in protein discovery,
+    foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize
+    many scientific fields. Artificial Life (ALife) has not yet integrated FMs, thus
+    presenting a major opportunity for the field to alleviate the historical burden
+    of relying chiefly on manual design and trial-and-error to discover the configurations
+    of lifelike simulations. This paper presents, for the first time, a successful
+    realization of this opportunity using vision-language FMs. The proposed approach,
+    called Automated Search for Artificial Life (ASAL), (1) finds simulations that
+    produce target phenomena, (2) discovers simulations that generate temporally open-ended
+    novelty, and (3) illuminates an entire space of interestingly diverse simulations.
+    Because of the generality of FMs, ASAL works effectively across a diverse range
+    of ALife substrates including Boids, Particle Life, Game of Life, Lenia, and Neural
+    Cellular Automata. A major result highlighting the potential of this technique
+    is the discovery of previously unseen Lenia and Boids lifeforms, as well as cellular
+    automata that are open-ended like Conway's Game of Life. Additionally, the use
+    of FMs allows for the quantification of previously qualitative phenomena in a
+    human-aligned way. This new paradigm promises to accelerate ALife research beyond
+    what is possible through human ingenuity alone.
