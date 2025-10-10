@@ -1,4 +1,4 @@
-date: 2025-06-30-13-30-00
+date: 2025-10-10-12-15-00
 papers:
 - id: 2020-02-11growingneu_mordvintsev
   title: Growing Neural Cellular Automata
@@ -3055,3 +3055,31 @@ papers:
     of FMs allows for the quantification of previously qualitative phenomena in a
     human-aligned way. This new paradigm promises to accelerate ALife research beyond
     what is possible through human ingenuity alone.
+- id: 2025-10-08arotation_woiwode
+  title: A Rotation-Invariant Embedded Platform for (Neural) Cellular Automata
+  year: '2025-10-08'
+  authors:
+  - - Dominik
+    - Woiwode
+  - - Jakob
+    - Marten
+  - - Bodo
+    - Rosenhahn
+  urls:
+    project_page: 'https://dwoiwode.github.io/embedded_nca/'
+    arxiv: 'https://arxiv.org/abs/2510.07440'
+    code: 'https://github.com/dwoiwode/embedded_nca'
+    simulator: 'https://github.com/dwoiwode/embedded_nca/simulator'
+  thumbnail: assets/thumbnails/2025-10-08arotation_woiwode.jpg
+  abstract: 'This paper presents a rotation-invariant embedded platform for simulating
+    (neural) cellular automata (NCA) in modular robotic systems. Inspired by previous
+    work on physical NCA, we introduce key innovations that overcome limitations in
+    prior hardware designs. Our platform features a symmetric, modular structure,
+    enabling seamless connections between cells regardless of orientation. Additionally,
+    each cell is battery-powered, allowing it to operate independently and retain
+    its state even when disconnected from the collective. To demonstrate the platform''s
+    applicability, we present a novel rotation-invariant NCA model for isotropic shape
+    classification. The proposed system provides a robust foundation for exploring
+    the physical realization of NCA, with potential applications in distributed robotic
+    systems and self-organizing structures. Our implementation, including hardware,
+    software code, a simulator, and a video, is openly shared at: https://github.com/dwoiwode/embedded_nca'

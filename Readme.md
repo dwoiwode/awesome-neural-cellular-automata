@@ -1,6 +1,6 @@
-<!-- This file was automatically created on 2025-10-09 08:55:54 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-10-10 03:12:43 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-06-30.
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-10-10.
 
 > [!NOTE]
 > This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
@@ -49,7 +49,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
-This collection has a total of 106 publications.
+This collection has a total of 107 publications.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
@@ -63,6 +63,27 @@ This collection has a total of 106 publications.
 
 ### 2025
 <table><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2510.07440" target="_blank">
+    <img src="assets/thumbnails/2025-10-08arotation_woiwode.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### A Rotation-Invariant Embedded Platform for (Neural) Cellular Automata
+Published on **2025-10-08** by
+
+Dominik **Woiwode**, Jakob **Marten**, Bodo **Rosenhahn**
+
+[Project Page](https://dwoiwode.github.io/embedded_nca/) | [Arxiv](https://arxiv.org/abs/2510.07440) | [Code](https://github.com/dwoiwode/embedded_nca) | [Simulator](https://github.com/dwoiwode/embedded_nca/simulator)
+
+<details>
+<summary><b>Abstract</b></summary>
+This paper presents a rotation-invariant embedded platform for simulating (neural) cellular automata (NCA) in modular robotic systems. Inspired by previous work on physical NCA, we introduce key innovations that overcome limitations in prior hardware designs. Our platform features a symmetric, modular structure, enabling seamless connections between cells regardless of orientation. Additionally, each cell is battery-powered, allowing it to operate independently and retain its state even when disconnected from the collective. To demonstrate the platform's applicability, we present a novel rotation-invariant NCA model for isotropic shape classification. The proposed system provides a robust foundation for exploring the physical realization of NCA, with potential applications in distributed robotic systems and self-organizing structures. Our implementation, including hardware, software code, a simulator, and a video, is openly shared at: https://github.com/dwoiwode/embedded_nca
+</details>
+
+</td>
+</tr><tr>
 <td width="150px">
 <a href="https://arxiv.org/pdf/2509.18659" target="_blank">
     <img src="assets/thumbnails/2025-09-25smartcellu_moreno.jpg" width="140px">
