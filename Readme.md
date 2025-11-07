@@ -1,6 +1,6 @@
-<!-- This file was automatically created on 2025-10-10 03:12:43 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2025-11-07 00:36:33 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-10-10.
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-11-07.
 
 > [!NOTE]
 > This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
@@ -49,7 +49,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
-This collection has a total of 107 publications.
+This collection has a total of 108 publications.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
@@ -63,6 +63,27 @@ This collection has a total of 107 publications.
 
 ### 2025
 <table><tr>
+<td width="150px">
+<a href="https://pub.sakana.ai/pdnca/" target="_blank">
+    <img src="assets/thumbnails/2025-10-31petridish_zhang.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Petri Dish Neural Cellular Automata
+Published on **2025-10-31** by
+
+Ivy **Zhang**, Sebastian **Risi**, Luke **Darlow**
+
+[Project Page](https://pub.sakana.ai/pdnca/) | [Paper](https://pub.sakana.ai/pdnca/assets/pdf/pdnca.pdf) | [Code](https://github.com/SakanaAI/petri-dish-nca)
+
+<details>
+<summary><b>Abstract</b></summary>
+Artificial life simulations in search of open-endedness are often based on artificial evolution. While such systems can generate complexity, gradient-based learning remains under-explored and may offer a complementary path to open-endedness. We introduce Petri Dish Neural Cellular Automata (PD-NCA): a differentiable multi-agent substrate consisting of a competitive population of neural cellular automata (NCA), trained continuously as an artificial life simulation. Differentiable PD-NCA enable end-to-end learning in a competitive, multi-agent system, which we hypothesize can induce open-ended complexification. Importantly, and unlike typical NCA experiments, the models in our experiments are continuously learning through gradient descent. Exploratory experiments demonstrate that PD-NCA show signs of emergent behavioral complexity and cooperation. More broadly, our work introduces a new substrate where learning could potentially combine with evolution to form open-ended systems.
+</details>
+
+</td>
+</tr><tr>
 <td width="150px">
 <a href="https://arxiv.org/pdf/2510.07440" target="_blank">
     <img src="assets/thumbnails/2025-10-08arotation_woiwode.jpg" width="140px">

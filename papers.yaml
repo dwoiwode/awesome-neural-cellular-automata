@@ -1,4 +1,4 @@
-date: 2025-10-10-12-15-00
+date: 2025-11-07-01-36-00
 papers:
 - id: 2020-02-11growingneu_mordvintsev
   title: Growing Neural Cellular Automata
@@ -3083,3 +3083,28 @@ papers:
     the physical realization of NCA, with potential applications in distributed robotic
     systems and self-organizing structures. Our implementation, including hardware,
     software code, a simulator, and a video, is openly shared at: https://github.com/dwoiwode/embedded_nca'
+- id: 2025-10-31petridish_zhang
+  title: Petri Dish Neural Cellular Automata
+  year: '2025-10-31'
+  authors:
+  - - Ivy
+    - Zhang
+  - - Sebastian
+    - Risi
+  - - Luke
+    - Darlow
+  urls:
+    project_page: 'https://pub.sakana.ai/pdnca/'
+    paper: 'https://pub.sakana.ai/pdnca/assets/pdf/pdnca.pdf'
+    code: 'https://github.com/SakanaAI/petri-dish-nca'
+  thumbnail: assets/thumbnails/2025-10-31petridish_zhang.jpg
+  abstract: 'Artificial life simulations in search of open-endedness are often based on artificial evolution. 
+    While such systems can generate complexity, gradient-based learning remains under-explored and may offer a 
+    complementary path to open-endedness. We introduce Petri Dish Neural Cellular Automata (PD-NCA): 
+    a differentiable multi-agent substrate consisting of a competitive population of neural cellular automata (NCA), 
+    trained continuously as an artificial life simulation. Differentiable PD-NCA enable end-to-end learning in a 
+    competitive, multi-agent system, which we hypothesize can induce open-ended complexification. Importantly, 
+    and unlike typical NCA experiments, the models in our experiments are continuously learning through gradient 
+    descent. Exploratory experiments demonstrate that PD-NCA show signs of emergent behavioral complexity and 
+    cooperation. More broadly, our work introduces a new substrate where learning could potentially combine 
+    with evolution to form open-ended systems.'
