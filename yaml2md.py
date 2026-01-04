@@ -17,7 +17,6 @@ def create_date_histograms(papers):
         dates = [datetime.datetime.strptime(paper["year"], "%Y-%m-%d") for paper in papers]
         now = datetime.datetime.now()
 
-
         # Prepare for yearly histogram
         years = [date.year for date in dates]
         year_counts = Counter(years)
@@ -61,12 +60,14 @@ def create_date_histograms(papers):
         # Yearly bars in the background
         ax_year = ax_quarter.twinx()
         for year, (position, width) in year_position_map.items():
-            ax_year.bar(position, year_counts.get(year, 0), width=width, alpha=0.2, label='Yearly Counts', color=color_years,
+            ax_year.bar(position, year_counts.get(year, 0), width=width, alpha=0.2, label='Yearly Counts',
+                        color=color_years,
                         align='center')
 
         # plt.figure(figsize=(10, 5))
-        ax_quarter.bar(full_quarters, [quarter_counts.get(quarter, 0) for quarter in full_quarters], width=0.6, color=color_quarters)
-        ax_quarter.set_title('Publications per Quarter',  fontweight='bold')
+        ax_quarter.bar(full_quarters, [quarter_counts.get(quarter, 0) for quarter in full_quarters], width=0.6,
+                       color=color_quarters)
+        ax_quarter.set_title('Publications per Quarter', fontweight='bold')
         ax_quarter.set_xlabel('Quarter')
         ax_quarter.set_ylabel('Number of Publications')
 
@@ -83,7 +84,6 @@ def create_date_histograms(papers):
                 ax_quarter.axvline(x=i + 0.5, color=color_years, linestyle='--')
 
         return fig
-
 
     # Light Mode Figure
     color_years = "#00509B"

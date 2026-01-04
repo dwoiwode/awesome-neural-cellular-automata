@@ -1,6 +1,6 @@
-<!-- This file was automatically created on 2025-11-07 00:36:33 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2026-01-04 19:47:09 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2025-11-07.
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2026-01-04.
 
 > [!NOTE]
 > This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
@@ -49,7 +49,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
-This collection has a total of 108 publications.
+This collection has a total of 114 publications.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
@@ -63,6 +63,111 @@ This collection has a total of 108 publications.
 
 ### 2025
 <table><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2512.13397" target="_blank">
+    <img src="assets/thumbnails/2025-12-15rncaself_silbernagel.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### rNCA: Self-Repairing Segmentation Masks
+Published on **2025-12-15** by
+
+Malte **Silbernagel**, Albert **Alonso**, Jens **Petersen**, Bulat **Ibragimov**, Marleen de **Bruijne**, Madeleine K. **Wyburd**
+
+[Arxiv](https://arxiv.org/abs/2512.13397) | [Code](https://github.com/maltesilber/rnca)
+
+<details>
+<summary><b>Abstract</b></summary>
+Accurately predicting topologically correct masks remains a difficult task for general segmentation models, which often produce fragmented or disconnected outputs. Fixing these artifacts typically requires handcrafted refinement rules or architectures specialized to a particular task. Here, we show that Neural Cellular Automata (NCA) can be directly repurposed as an effective refinement mechanism, using local, iterative updates guided by image context to repair segmentation masks. By training on imperfect masks and ground truths, the automaton learns the structural properties of the target shape while relying solely on local information. When applied to coarse, globally predicted masks, the learned dynamics progressively reconnect broken regions, prune loose fragments and converge towards stable, topologically consistent results. We show how refinement NCA (rNCA) can be easily applied to repair common topological errors produced by different base segmentation models and tasks: for fragmented retinal vessels, it yields 2–3% gains in Dice/clDice and improves Betti Errors, reducing β0 errors by 60% and β1 by 20%; for myocardium, it repairs 61.5% of broken cases in a zero-shot setting while lowering ASSD and HD by 19% and 16%, respectively. This showcases NCA as effective and broadly applicable refiners. Code available at www.github.com/maltesilber/rnca.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2512.08360" target="_blank">
+    <img src="assets/thumbnails/2025-12-09conditiona_sakour.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Conditional Morphogenesis: Emergent Generation of Structural Digits via Neural Cellular Automata
+Published on **2025-12-09** by
+
+Ali **Sakour**
+
+[Arxiv](https://arxiv.org/abs/2512.08360) | [Code](https://github.com/alisakour/Conditional-NCA-Digits)
+
+<details>
+<summary><b>Abstract</b></summary>
+Biological systems exhibit remarkable morphogenetic plasticity, where a single genome can encode various specialized cellular structures triggered by local chemical signals. In the domain of Deep Learning, Differentiable Neural Cellular Automata (NCA) have emerged as a paradigm to mimic this self-organization. However, existing NCA research has predominantly focused on continuous texture synthesis or single-target object recovery, leaving the challenge of class-conditional structural generation largely unexplored.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.ijcsejournal.org/wp-content/uploads/2025/12/Self-Organizing-Dynamic-Graph-Neural-Cellular-Automata-for-History-Dependent-Computation.pdf" target="_blank">
+    <img src="assets/thumbnails/2025-12-04selforgan_moyo.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Self-Organizing Dynamic Graph Neural Cellular Automata for History-Dependent Computation
+Published on **2025-12-04** by
+
+Tofara **Moyo**, Panashe **Chiurunge**
+
+[Paper](https://www.ijcsejournal.org/wp-content/uploads/2025/12/Self-Organizing-Dynamic-Graph-Neural-Cellular-Automata-for-History-Dependent-Computation.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+We present a self-organizing Neural Cellular Automaton (NCA) equipped with dynamic, learnable graph connectivity that adapts its computational topology in response to input history. The system exhibits history-dependent behavior: distinct input sequences induce divergent graph structures, enabling memory without explicit recurrence. We interpret the NCA as a fixed physical substrate (a lattice of identical units) that dynamically reconfigures its functional circuitry through edge modulation. We further propose a novel harmonic decoupling mechanism—mapping node activations to musical chords and traversing the circle of fifths between timesteps—to maximally decorrelate sequential representations, thereby reducing interference and enabling long-range communication across the graph. We argue that scaling such a system to brain-like dimensions (∼ 1011 nodes) with this decoupling paradigm could yield humanlevel learning efficiency, as the graph learns to specialize local neighborhoods for distinct computational roles. Experimental results on sequence transformation tasks confirm that different inputs follow distinct graph-evolution trajectories, demonstrating emergent memory bias and dynamic specialization.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://openreview.net/pdf?id=tkGnjTNHm2" target="_blank">
+    <img src="assets/thumbnails/2025-11-14artificial_salcedo.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Artificial Dancing Intelligence: Neural Cellular Automata for Visual Performance of Music
+Published on **2025-11-14** by
+
+Carlos Mariano **Salcedo**, Eran **Egozy**
+
+[Paper](https://openreview.net/pdf?id=tkGnjTNHm2) | [Project Page](https://adi2026.netlify.app/) | [Code](https://github.com/adi-eaim-2026/adi_eaim2026_copy) | [Openreview](https://openreview.net/forum?id=tkGnjTNHm2)
+
+<details>
+<summary><b>Abstract</b></summary>
+We present Artificial Dancing Intelligence (ADI), an interactive neural music visualizer that is accessed through a web app, but performs inference entirely on local devices. Our approach enables anyone to create music-driven visuals while leveraging the expressive and sometimes unpredictable dynamics of self-organized systems. ADI uses an audio stream’s average energy (known as RMS) to modulate a neural cellular automata (NCA) that produces visual patterns that move and ’dance’ along with the audio stream in real-time. Through the web interface, users can adjust the relationship between the music’s energy and the NCA system to create unique visual performances out of any music audio stream. ADI achieves smooth, real-time responsiveness on modern consumer devices.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_18/paper.pdf" target="_blank">
+    <img src="assets/thumbnails/2025-11-13volumetric_wang.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Volumetric Temporal Texture for Smoke Stylization using Dynamic Radiance Fields
+Published on **2025-11-13** by
+
+Dongqing **Wang**, Ehsan **Pajouheshgar**, Yitao **Xu**, Tong **Zhang**, Sabine **Süsstrunk**
+
+[Paper](https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_18/paper.pdf)
+
+<details>
+<summary><b>Abstract</b></summary>
+The exemplar-based stylization of dynamic 3D volume sequences remains challenging in computer graphics. The difficulty lies not only in maintaining the styling features concerning a reference image across multiviews and time frames, but also in preserving visually plausible motion as the original smoke simulation, within a reasonable time and computational resources. In this work, we introduce Volumetric Neural Cellular Automata (VNCA), a novel method that synthesizes volumetric temporal textures for smoke stylizations in real-time. Our method formats radiance fields atop the self-emerging Neural Cellular Automata (NCA) and generates a dynamic sequence of stylized color and density volumes. The synthesized temporal textures align with the input sequence’s overall motion patterns while matching the style of a reference image. We use flow-guided supervision to align the texture’s temporal motion with that of the perceived smoke sequence, reducing the training time by over an order of magnitude. We demonstrate that VNCA can be easily adapted for mesh stylization, akin to solid texture modeling, extending its application beyond dynamic volume simulations.
+</details>
+
+</td>
+</tr><tr>
 <td width="150px">
 <a href="https://pub.sakana.ai/pdnca/" target="_blank">
     <img src="assets/thumbnails/2025-10-31petridish_zhang.jpg" width="140px">
@@ -80,6 +185,27 @@ Ivy **Zhang**, Sebastian **Risi**, Luke **Darlow**
 <details>
 <summary><b>Abstract</b></summary>
 Artificial life simulations in search of open-endedness are often based on artificial evolution. While such systems can generate complexity, gradient-based learning remains under-explored and may offer a complementary path to open-endedness. We introduce Petri Dish Neural Cellular Automata (PD-NCA): a differentiable multi-agent substrate consisting of a competitive population of neural cellular automata (NCA), trained continuously as an artificial life simulation. Differentiable PD-NCA enable end-to-end learning in a competitive, multi-agent system, which we hypothesize can induce open-ended complexification. Importantly, and unlike typical NCA experiments, the models in our experiments are continuously learning through gradient descent. Exploratory experiments demonstrate that PD-NCA show signs of emergent behavioral complexity and cooperation. More broadly, our work introduces a new substrate where learning could potentially combine with evolution to form open-ended systems.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://openreview.net/pdf?id=OEPtIlPOaq" target="_blank">
+    <img src="assets/thumbnails/2025-10-09investigat_mahajan.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Investigating dynamics of Neural Cellular Automata applied to image data in diverse complex systems
+Published on **2025-10-09** by
+
+Vaibhav **Mahajan**, Soumya **Banerjee**
+
+[Paper](https://openreview.net/pdf?id=OEPtIlPOaq) | [Openreview](https://openreview.net/forum?id=OEPtIlPOaq)
+
+<details>
+<summary><b>Abstract</b></summary>
+Neural cellular automata (NCA) provide a powerful computational paradigm for modelling morphogenetic processes through local interactions and selforganization. We apply NCAs to a number of prototypical complex systems ranging from morphogenesis to reaction-diffusion systems. We explore the capacity of NCA to not only replicate complex visual patterns, but also to learn the underlying update rules of dynamic systems from spatiotemporal image sequences. We reproduce the behaviour of a morphogenesis system through various training regimes and demonstrate how training strategies critically inﬂuence the ability of the NCA to grow, persist, and regenerate patterns from visual data. We ﬁnd that NCAs cannot be applied “out of the box" to these diverse problems but must be adapted. We introduce a stratiﬁed multi-step training process that can be used to train NCAs to replicate diverse complex systems from image observations. Our approach demonstrates the potential for learning complex system dynamics from purely visual observations, a key capability for imageomics applications. Lastly we ﬁnd that NCAs use the hidden channels to generalize to novel behaviour. We further analyse the role of hidden channels in encoding spatial memory and guiding complex pattern formation. Our experiments provide new insights into how neural CA can be adapted as general-purpose models for learning, replicating, and possibly innovating system dynamics from image-based observations. Our ﬁndings illustrate the versatility of NCA as a self-organising and rule-learning system (albeit with complex training regimes) and suggest broader applications in modelling natural and artiﬁcial systems through visual pattern analysis.
 </details>
 
 </td>
