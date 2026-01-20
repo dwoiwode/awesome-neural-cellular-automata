@@ -133,7 +133,7 @@ def create_thumbnail(pdf_path: Path, paper_id) -> Path:
                 output_thumb.parent.mkdir(parents=True, exist_ok=True)
 
                 subprocess.run([
-                    "magick", "convert", "-background", "white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
+                    "magick", "-background", "white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
                 ], check=True)
                 return output_thumb
             except Exception as e:
