@@ -1,6 +1,6 @@
-<!-- This file was automatically created on 2026-01-04 19:47:09 UTC. Any manual changes will be lost! -->
+<!-- This file was automatically created on 2026-01-20 18:48:41 UTC. Any manual changes will be lost! -->
 # Awesome Neural Cellular Automata
-A list of paper and resources regarding Neural Cellular Automata. Last updated: 2026-01-04.
+A list of paper and resources regarding Neural Cellular Automata. Last updated: 2026-01-20.
 
 > [!NOTE]
 > This repository has been researched, compiled, and maintained to the best of my knowledge and ability.
@@ -49,7 +49,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - [Hexells](https://github.com/znah/hexells) - SwissGL Implementation of Hexells ([Demo](https://znah.net/hexells/))
 
 ## List of Publications
-This collection has a total of 114 publications.
+This collection has a total of 116 publications.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/papers_per_quarter_dark.svg">
@@ -222,7 +222,7 @@ Published on **2025-10-08** by
 
 Dominik **Woiwode**, Jakob **Marten**, Bodo **Rosenhahn**
 
-[Project Page](https://dwoiwode.github.io/embedded_nca/) | [Arxiv](https://arxiv.org/abs/2510.07440) | [Code](https://github.com/dwoiwode/embedded_nca) | [Simulator](https://github.com/dwoiwode/embedded_nca/simulator)
+[Project Page](https://dwoiwode.github.io/embedded_nca/) | [Paper](https://direct.mit.edu/isal/proceedings-pdf/isal2025/37/79/2567169/isal.a.907.pdf) | [Arxiv](https://arxiv.org/abs/2510.07440) | [Code](https://github.com/dwoiwode/embedded_nca) | [Simulator](https://github.com/dwoiwode/embedded_nca/simulator)
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -395,6 +395,27 @@ Hyunsoo **Kim**, Jinah **Park**
 <details>
 <summary><b>Abstract</b></summary>
 
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://arxiv.org/pdf/2508.06993" target="_blank">
+    <img src="assets/thumbnails/2025-08-09octreenca_lemke.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### OctreeNCA: Single-Pass 184 MP Segmentation on Consumer Hardware
+Published on **2025-08-09** by
+
+Nick **Lemke**, John **Kalkhof**, Niklas **Babendererde**, Anirban **Mukhopadhyay**
+
+[Arxiv](https://arxiv.org/abs/2508.06993) | [Code](https://github.com/MECLabTUDA/OctreeNCA)
+
+<details>
+<summary><b>Abstract</b></summary>
+Medical applications demand segmentation of large inputs, like prostate MRIs, pathology slices, or videos of surgery. These inputs should ideally be inferred at once to provide the model with proper spatial or temporal context. When segmenting large inputs, the VRAM consumption of the GPU becomes the bottleneck. Architectures like UNets or Vision Transformers scale very poorly in VRAM consumption, resulting in patch- or frame-wise approaches that compromise global consistency and inference speed. The lightweight Neural Cellular Automaton (NCA) is a bio-inspired model that is by construction size-invariant. However, due to its local-only communication rules, it lacks global knowledge. We propose OctreeNCA by generalizing the neighborhood definition using an octree data structure. Our generalized neighborhood definition enables the efficient traversal of global knowledge. Since deep learning frameworks are mainly developed for large multi-layer networks, their implementation does not fully leverage the advantages of NCAs. We implement an NCA inference function in CUDA that further reduces VRAM demands and increases inference speed. Our OctreeNCA segments high-resolution images and videos quickly while occupying 90% less VRAM than a UNet during evaluation. This allows us to segment 184 Megapixel pathology slices or 1-minute surgical videos at once. Our implementation is publicly available: https://github.com/MECLabTUDA/OctreeNCA.
 </details>
 
 </td>
@@ -626,6 +647,27 @@ Ettienne **Guichard**, Felix **Reimers**, Mia-Katrin **Kvalsund**, Mikkel Elle *
 <details>
 <summary><b>Abstract</b></summary>
 The Abstraction and Reasoning Corpus (ARC), later renamed ARC-AGI, poses a fundamental challenge in artificial general intelligence (AGI), requiring solutions that exhibit robust abstraction and reasoning capabilities across diverse tasks, while only few (with median count of three) correct examples are presented. While ARC-AGI remains very challenging for artificial intelligence systems, it is rather easy for humans. This paper introduces ARC-NCA, a developmental approach leveraging standard Neural Cellular Automata (NCA) and NCA enhanced with hidden memories (EngramNCA) to tackle the ARC-AGI benchmark. NCAs are employed for their inherent ability to simulate complex dynamics and emergent patterns, mimicking developmental processes observed in biological systems. Developmental solutions may offer a promising avenue for enhancing AI's problem-solving capabilities beyond mere training data extrapolation. ARC-NCA demonstrates how integrating developmental principles into computational models can foster adaptive reasoning and abstraction. We show that our ARC-NCA proof-of-concept results may be comparable to, and sometimes surpass, that of ChatGPT 4.5, at a fraction of the cost.
+</details>
+
+</td>
+</tr><tr>
+<td width="150px">
+<a href="https://www.nature.com/articles/s44335-025-00026-4" target="_blank">
+    <img src="assets/thumbnails/2025-05-06parameter_kalkhof.jpg" width="140px">
+</a>
+</td>
+<td>
+
+#### Parameter-efficient diffusion with neural cellular automata
+Published on **2025-05-06** by
+
+John **Kalkhof**, Arlene **Kühn**, Yannik **Frisch**, Anirban **Mukhopadhyay**
+
+[Paper](https://www.nature.com/articles/s44335-025-00026-4) | [Code](https://github.com/MECLabTUDA/M3D-NCA)
+
+<details>
+<summary><b>Abstract</b></summary>
+Traditional Denoising Diffusion Models (DDMs) with UNet backbones are over-parameterized, compromising their effectiveness on limited hardware and in processing gigapixel images. To address this inefficiency, we introduce two Neural Cellular Automata (NCA)-based DDMs: Diff-NCA and FourierDiff-NCA. Leveraging the efficient local communication of NCA, Diff-NCA drastically reduces parameter counts, effectively generating 512 × 512 pathology slices with just 336k parameters. Extending this approach, FourierDiff-NCA integrates Fourier-based diffusion to facilitate early global communication, essential for handling complex datasets such as CelebA. With only 1.1 m parameters, it achieves a more than two times lower FID score of 49.48 compared to the four times larger UNet, which scores 128.2. This performance disparity underscores the utility of NCA-based methods in enhancing parameter efficiency. FourierDiff-NCA also demonstrates versatility by performing tasks such as super-resolution, out-of-distribution image synthesis, and inpainting without task-specific training.
 </details>
 
 </td>

@@ -1,4 +1,4 @@
-date: 2026-01-04-20-43-00
+date: 2026-01-20-19-48-00
 papers:
 - id: 2020-02-11growingneu_mordvintsev
   title: Growing Neural Cellular Automata
@@ -3067,6 +3067,7 @@ papers:
     - Rosenhahn
   urls:
     project_page: 'https://dwoiwode.github.io/embedded_nca/'
+    paper: 'https://direct.mit.edu/isal/proceedings-pdf/isal2025/37/79/2567169/isal.a.907.pdf'
     arxiv: 'https://arxiv.org/abs/2510.07440'
     code: 'https://github.com/dwoiwode/embedded_nca'
     simulator: 'https://github.com/dwoiwode/embedded_nca/simulator'
@@ -3282,3 +3283,67 @@ papers:
     illustrate the versatility of NCA as a self-organising and rule-learning system
     (albeit with complex training regimes) and suggest broader applications in modelling
     natural and artiﬁcial systems through visual pattern analysis.
+- id: 2025-05-06parameter_kalkhof
+  title: Parameter-efficient diffusion with neural cellular automata
+  year: '2025-05-06'
+  authors:
+  - - John
+    - Kalkhof
+  - - Arlene
+    - Kühn
+  - - Yannik
+    - Frisch
+  - - Anirban
+    - Mukhopadhyay
+  urls:
+    paper: 'https://www.nature.com/articles/s44335-025-00026-4'
+    code: 'https://github.com/MECLabTUDA/M3D-NCA'
+  thumbnail: assets/thumbnails/2025-05-06parameter_kalkhof.jpg
+  abstract: 'Traditional Denoising Diffusion Models (DDMs) with UNet backbones are
+    over-parameterized, compromising their effectiveness on limited hardware and in
+    processing gigapixel images. To address this inefficiency, we introduce two Neural
+    Cellular Automata (NCA)-based DDMs: Diff-NCA and FourierDiff-NCA. Leveraging the
+    efficient local communication of NCA, Diff-NCA drastically reduces parameter counts,
+    effectively generating 512 × 512 pathology slices with just 336k parameters. Extending
+    this approach, FourierDiff-NCA integrates Fourier-based diffusion to facilitate
+    early global communication, essential for handling complex datasets such as CelebA.
+    With only 1.1 m parameters, it achieves a more than two times lower FID score
+    of 49.48 compared to the four times larger UNet, which scores 128.2. This performance
+    disparity underscores the utility of NCA-based methods in enhancing parameter
+    efficiency. FourierDiff-NCA also demonstrates versatility by performing tasks
+    such as super-resolution, out-of-distribution image synthesis, and inpainting
+    without task-specific training.'
+- id: 2025-08-09octreenca_lemke
+  title: 'OctreeNCA: Single-Pass 184 MP Segmentation on Consumer Hardware'
+  year: '2025-08-09'
+  authors:
+  - - Nick
+    - Lemke
+  - - John
+    - Kalkhof
+  - - Niklas
+    - Babendererde
+  - - Anirban
+    - Mukhopadhyay
+  urls:
+    arxiv: 'https://arxiv.org/abs/2508.06993'
+    code: 'https://github.com/MECLabTUDA/OctreeNCA'
+  thumbnail: assets/thumbnails/2025-08-09octreenca_lemke.jpg
+  abstract: 'Medical applications demand segmentation of large inputs, like prostate
+    MRIs, pathology slices, or videos of surgery. These inputs should ideally be inferred
+    at once to provide the model with proper spatial or temporal context. When segmenting
+    large inputs, the VRAM consumption of the GPU becomes the bottleneck. Architectures
+    like UNets or Vision Transformers scale very poorly in VRAM consumption, resulting
+    in patch- or frame-wise approaches that compromise global consistency and inference
+    speed. The lightweight Neural Cellular Automaton (NCA) is a bio-inspired model
+    that is by construction size-invariant. However, due to its local-only communication
+    rules, it lacks global knowledge. We propose OctreeNCA by generalizing the neighborhood
+    definition using an octree data structure. Our generalized neighborhood definition
+    enables the efficient traversal of global knowledge. Since deep learning frameworks
+    are mainly developed for large multi-layer networks, their implementation does
+    not fully leverage the advantages of NCAs. We implement an NCA inference function
+    in CUDA that further reduces VRAM demands and increases inference speed. Our OctreeNCA
+    segments high-resolution images and videos quickly while occupying 90% less VRAM
+    than a UNet during evaluation. This allows us to segment 184 Megapixel pathology
+    slices or 1-minute surgical videos at once. Our implementation is publicly available:
+    https://github.com/MECLabTUDA/OctreeNCA.'
