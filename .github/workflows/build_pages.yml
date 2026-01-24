@@ -1,0 +1,59 @@
+name: "Build Pages"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'papers.yaml'
+      - 'template.html'
+      - 'build_site.py'
+      - '.github/workflows/build-site.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+
+jobs:
+  deploy_pages:
+    name: Build html site and deploy github pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+      - name: Clear old pages files
+        run: |
+          rm -rf ./dist
+          mkdir ./dist
+      - name: Build site
+        run: |
+          python build_site.py  --output dist/index.html
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
