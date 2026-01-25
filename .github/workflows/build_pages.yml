@@ -4,12 +4,11 @@ on:
   push:
     branches:
       - main
-      - github_pages
     paths:
       - 'papers.yaml'
       - 'template.html'
       - 'build_site.py'
-      - '.github/workflows/build-site.yml'
+      - '.github/workflows/build_pages.yml'
   workflow_dispatch:
 permissions:
   contents: write
