@@ -20,7 +20,7 @@ from dateutil import parser
 import yaml
 
 
-def unify_year(year: Optional[Element], year2:Optional[Element]) -> str:
+def unify_year(year: Optional[Element], year2: Optional[Element]) -> str:
     if year is None:
         year = year2
     if year is None:
@@ -36,7 +36,7 @@ def unify_year(year: Optional[Element], year2:Optional[Element]) -> str:
         return "Unknown"
 
 
-def parse_rdf(rdf_file:Path):
+def parse_rdf(rdf_file: Path):
     rdf_file = Path(rdf_file)
     tree = ET.parse(rdf_file)
     root = tree.getroot()
@@ -51,7 +51,7 @@ def parse_rdf(rdf_file:Path):
         'link': 'http://purl.org/rss/1.0/modules/link/'
     }
 
-    attachments =  {
+    attachments = {
         list(item.attrib.values())[0]: item
         for item in root.findall(".//z:Attachment", ns)
     }
@@ -99,6 +99,9 @@ def parse_rdf(rdf_file:Path):
             "paper": "",
             "code": "",
         }
+        tags = [
+            "UNTAGGED?"
+        ]
 
         title_text = title.text if title is not None else "Unknown Title"
         year = unify_year(year, year2)
@@ -110,6 +113,7 @@ def parse_rdf(rdf_file:Path):
             "year": year,
             "authors": authors if authors else [],
             "urls": urls,
+            "tags": tags,
             "thumbnail": create_thumbnail(pdf_path, id_text).as_posix(),
             "abstract": abstract.text if abstract is not None else "",
         })
@@ -117,9 +121,8 @@ def parse_rdf(rdf_file:Path):
     return papers
 
 
-
 def generate_id(title, year, authors):
-    id_ =  year + re.sub(r'[^a-zA-Z0-9]', '', title.lower().replace(" ", "")[:10])
+    id_ = year + re.sub(r'[^a-zA-Z0-9]', '', title.lower().replace(" ", "")[:10])
     if len(authors) > 0:
         id_ += "_" + authors[0][1].lower()
     return id_
@@ -132,9 +135,11 @@ def create_thumbnail(pdf_path: Path, paper_id) -> Path:
             try:
                 output_thumb.parent.mkdir(parents=True, exist_ok=True)
 
-                subprocess.run([
-                    "magick", "-background", "white","-flatten", f"{pdf_path}[0]", "-resize", "300x", str(output_thumb)
-                ], check=True)
+                proc = subprocess.run([
+                    "magick", "-background", "white", f"{pdf_path}[0]", "-flatten", "-resize", "300x", str(output_thumb)
+                ], stderr=subprocess.PIPE)
+                if proc.returncode != 0:
+                    raise RuntimeError(proc.stderr)
                 return output_thumb
             except Exception as e:
                 warnings.warn(f"Converting {pdf_path} to thumbnail failed: {e}")
@@ -148,7 +153,7 @@ def export_yaml(papers, *, output_file="papers.auto.yaml"):
     with open(output_file, "w", encoding="utf-8") as f:
         yaml.dump({
             "date": f"{datetime.datetime.now():%Y-%m-%d-%H-%M-%S}",
-            "papers":papers,
+            "papers": papers,
         }, f, allow_unicode=True, default_flow_style=False, sort_keys=False
         )
 

@@ -26,15 +26,16 @@ def create_thumbnail(
         # Use the magick command to create a thumbnail
         if path.name.endswith(".pdf"):
             cmd =[
-                "magick", "convert",
+                "magick",
                 "-background", "white",
-                "-flatten", f"{path.absolute().resolve()}[0]",
+                f"{path.absolute().resolve()}[0]",
+                "-flatten",
                 "-resize", f"{thumbnail_width}x",
             ]
         else:
             # Expecting image
             cmd = [
-                "magick", "convert",
+                "magick",
                 str(path.absolute().resolve()),
                 "-thumbnail", f"{thumbnail_width}x"
             ]
