@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - github_pages
     paths:
       - 'papers.yaml'
       - 'template.html'
