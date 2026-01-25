@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Awesome Neural Cellular Automata</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --primary-accent: #10AE48;
+            --primary-dark: #00821D;
+            --secondary-accent: #A8D154;
+            --tertiary-accent: #EF6C32;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #e9ecef;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --border-color: #dee2e6;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --bg-tertiary: #404040;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+            --border-color: #495057;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 2px solid var(--primary-accent);
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-accent);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .nav-links {
+            text-align: center;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.2s;
+            border: 2px solid var(--primary-accent);
+        }
+
+        .nav-links a:hover {
+            background: var(--primary-accent);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-accent);
+            box-shadow: var(--shadow);
+        }
+
+        .stat-card h3 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .stat-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-accent);
+        }
+
+        .stat-card .subtext {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .chart-section {
+            background: var(--bg-secondary);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .chart-section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .chart {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .heatmap-container {
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        .month-heatmap {
+            display: inline-grid;
+            grid-template-columns: auto repeat(12, minmax(35px, 1fr));
+            gap: 3px;
+            font-size: 0.75rem;
+            margin-top: 15px;
+        }
+
+        .heatmap-cell {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            min-width: 35px;
+            cursor: default;
+        }
+
+        .heatmap-label {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 8px 10px 8px 8px;
+        }
+
+        .heatmap-month-label {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--bg-tertiary);
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .chart {
+                min-height: 300px;
+            }
+
+            .month-heatmap {
+                grid-template-columns: auto repeat(12, minmax(30px, 1fr));
+            }
+
+            .heatmap-cell {
+                min-width: 30px;
+                font-size: 0.65rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>📊 Awesome Neural Cellular Automata - Statistics</h1>
+        <div class="nav-links">
+            <a href="index.html">← Back to Papers</a>
+            <button id="toggleTheme">🌓 Dark Mode</button>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- General Statistics -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Papers</h3>
+            <div class="value">{{ stats.total_papers }}</div>
+        </div>
+        <div class="stat-card">
+            <h3>Unique Authors</h3>
+            <div class="value">{{ stats.total_unique_authors }}</div>
+            <div class="subtext">{{ stats.avg_coauthors }} Avg Co-authors</div>
+        </div>
+        <div class="stat-card">
+            <h3>Avg Abstract length</h3>
+            <div class="value">{{ stats.avg_abstract_length_words }}</div>
+            <div class="subtext">→ {{ stats.avg_abstract_length_chars }} characters</div>
+        </div>
+        <div class="stat-card">
+            <h3>Last 30 days</h3>
+            <div class="value">?</div>
+            <div class="subtext">? per day</div>
+        </div>
+        <div class="stat-card">
+            <h3>Last 90 days</h3>
+            <div class="value">?</div>
+            <div class="subtext">? per day</div>
+        </div>
+        <div class="stat-card">
+            <h3>Last 365 days</h3>
+            <div class="value">?</div>
+            <div class="subtext">? per day</div>
+        </div>
+    </div>
+
+    <!-- Cumulative Timeline -->
+    <div class="chart-section">
+        <h2>📈 Cumulative Growth Over Time</h2>
+        <div id="cumulativeChart" class="chart"></div>
+    </div>
+
+    <!-- Papers by Year -->
+    <div class="chart-section">
+        <h2>📅 Papers by Year</h2>
+        <div id="yearChart" class="chart"></div>
+    </div>
+
+    <!-- Papers by Quarter -->
+    <div class="chart-section">
+        <h2>📆 Papers by Quarter</h2>
+        <div id="quarterChart" class="chart"></div>
+    </div>
+
+    <!-- Month Heatmap -->
+    <div class="chart-section">
+        <h2>🗓️ Publication Activity Heatmap</h2>
+        <div class="heatmap-container">
+            <div class="month-heatmap">
+                <div class="heatmap-label"></div>
+                {% for month in ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] %}
+                    <div class="heatmap-month-label">{{ month }}</div>
+                {% endfor %}
+
+                {% for row in stats.month_heatmap %}
+                    <div class="heatmap-label">{{ row.year }}</div>
+                    {% for month_data in row.months %}
+                        <div class="heatmap-cell"
+                             style="background-color: {{ get_heatmap_color(month_data.count) }}; color: {% if month_data.count > 3 %}white{% else %}var(--text-primary){% endif %};"
+                             title="{{ row.year }}-{{ '%02d' | format(month_data.month) }}: {{ month_data.count }} papers">
+                            {% if month_data.count > 0 %}{{ month_data.count }}{% endif %}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Resource Statistics -->
+    <h2 style="color: var(--primary-dark); margin-bottom: 15px;">🔗 Resource Availability</h2>
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>With Code</h3>
+            <div class="value">{{ stats.resource_percentages.code }}%</div>
+            <div class="subtext">{{ stats.resource_stats.code }} papers</div>
+        </div>
+        <div class="stat-card">
+            <h3>On arXiv</h3>
+            <div class="value">{{ stats.resource_percentages.arxiv }}%</div>
+            <div class="subtext">{{ stats.resource_stats.arxiv }} papers</div>
+        </div>
+        <div class="stat-card">
+            <h3>With Project Page</h3>
+            <div class="value">{{ stats.resource_percentages.project_page }}%</div>
+            <div class="subtext">{{ stats.resource_stats.project_page }} papers</div>
+        </div>
+        <div class="stat-card">
+            <h3>With Paper Link</h3>
+            <div class="value">{{ stats.resource_percentages.paper }}%</div>
+            <div class="subtext">{{ stats.resource_stats.paper }} papers</div>
+        </div>
+    </div>
+
+
+    <!-- Top Tags -->
+    <div class="chart-section">
+        <h2>🏷️ Most Popular Tags</h2>
+        <div id="tagsChart" class="chart"></div>
+    </div>
+
+    <!-- Top Authors -->
+    <div class="chart-section">
+        <h2>👥 Most Published Authors</h2>
+        <div id="authorsChart" class="chart"></div>
+    </div>
+</div>
+
+<script>
+    // Theme management
+    let theme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+
+    document.getElementById('toggleTheme').addEventListener('click', () => {
+        theme = theme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateCharts();
+    });
+
+    // Plotly configuration based on theme
+    function getPlotlyConfig() {
+        const isDark = theme === 'dark';
+        return {
+            paper_bgcolor: isDark ? '#2d2d2d' : '#f8f9fa',
+            plot_bgcolor: isDark ? '#2d2d2d' : '#f8f9fa',
+            font: {color: isDark ? '#e9ecef' : '#212529'},
+            gridcolor: isDark ? '#495057' : '#dee2e6'
+        };
+    }
+
+    // Data from Jinja2
+    const stats = {{ stats | tojson }};
+
+    // Calculate dynamic date-based statistics
+    function calculateDynamicStats() {
+        const now = new Date();
+        const papers = {{ stats.cumulative_timeline | tojson }};
+
+        let last30 = 0, last90 = 0, last365 = 0;
+
+        papers.forEach(entry => {
+            const paperDate = new Date(entry.date);
+            const daysAgo = (now - paperDate) / (1000 * 60 * 60 * 24);
+
+            if (daysAgo <= 30) last30++;
+            if (daysAgo <= 90) last90++;
+            if (daysAgo <= 365) last365++;
+        });
+
+        // Update the stat cards
+        document.querySelector('.stat-card:nth-child(4) .value').textContent = `${last30}`;
+        document.querySelector('.stat-card:nth-child(5) .value').textContent = `${last90}`;
+        document.querySelector('.stat-card:nth-child(6) .value').textContent = `${last365}`;
+        document.querySelector('.stat-card:nth-child(4) .subtext').textContent = `${(last30 / 30).toFixed(2)} per day`;
+        document.querySelector('.stat-card:nth-child(5) .subtext').textContent = `${(last90 / 90).toFixed(2)} per day`;
+        document.querySelector('.stat-card:nth-child(6) .subtext').textContent = `${(last365 / 365).toFixed(2)} per day`;
+    }
+
+    function updateCharts() {
+        const config = getPlotlyConfig();
+        const layout_base = {
+            ...config,
+            margin: {t: 30, r: 30, b: 50, l: 60},
+            hovermode: 'closest'
+        };
+
+        // Cumulative Timeline
+        const cumulativeDates = stats.cumulative_timeline.map(d => d.date);
+        const cumulativePapers = stats.cumulative_timeline.map(d => d.paper_count);
+        const cumulativeAuthors = stats.cumulative_timeline.map(d => d.author_count);
+
+        const shapesCumulative = stats.year_boundaries.map(date => ({
+            type: 'line',
+            x0: date,
+            x1: date,
+            y0: 0,
+            y1: 1,
+            yref: 'paper',
+            line: {
+                color: config.gridcolor,
+                width: 2,
+                dash: 'dash'
+            }
+        }));
+
+        Plotly.newPlot('cumulativeChart', [
+            {
+                x: cumulativeDates,
+                y: cumulativePapers,
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Papers',
+                line: {color: '#10AE48', width: 3}
+            },
+            {
+                x: cumulativeDates,
+                y: cumulativeAuthors,
+                type: 'scatter',
+                mode: 'lines',
+                name: 'Unique Authors',
+                yaxis: 'y2',
+                line: {color: '#A8D154', width: 3}
+            }
+        ], {
+            ...layout_base,
+            yaxis: {title: 'Total Papers', gridcolor: config.gridcolor},
+            yaxis2: {
+                title: 'Unique Authors',
+                overlaying: 'y',
+                side: 'right',
+                gridcolor: config.gridcolor
+            },
+            showlegend: true,
+            shapes: shapesCumulative
+        });
+
+        // Papers by Year
+        Plotly.newPlot('yearChart', [{
+            x: Object.keys(stats.papers_by_year),
+            y: Object.values(stats.papers_by_year),
+            type: 'bar',
+            marker: {color: '#10AE48'}
+        }], {
+            ...layout_base,
+            yaxis: {title: 'Number of Papers', gridcolor: config.gridcolor},
+            xaxis: {title: 'Year'}
+        });
+
+        // Papers by Quarter with vertical lines for year boundaries
+        const quarterKeys = Object.keys(stats.papers_by_quarter);
+        const quarterValues = Object.values(stats.papers_by_quarter);
+
+        // Find year boundaries
+        const yearBoundaries = [];
+        lastYear = null;
+        quarterKeys.forEach((quarter, idx) => {
+            const year = quarter.split('-')[0];
+            if (lastYear && year !== lastYear) {
+                yearBoundaries.push(idx - 0.5);
+            }
+            lastYear = year;
+        });
+
+        const shapes = yearBoundaries.map(x => ({
+            type: 'line',
+            x0: x,
+            x1: x,
+            y0: 0,
+            y1: 1,
+            yref: 'paper',
+            line: {
+                color: config.gridcolor,
+                width: 2,
+                dash: 'dash'
+            }
+        }));
+
+        Plotly.newPlot('quarterChart', [{
+            x: quarterKeys,
+            y: quarterValues,
+            type: 'bar',
+            marker: {color: '#A8D154'}
+        }], {
+            ...layout_base,
+            yaxis: {title: 'Number of Papers', gridcolor: config.gridcolor},
+            xaxis: {title: 'Quarter', tickangle: -45},
+            shapes: shapes
+        });
+
+        // Top Tags
+        const topTags = stats.top_tags.slice(0, 15);
+        Plotly.newPlot('tagsChart', [{
+            x: topTags.map(t => t[1]),
+            y: topTags.map(t => t[0]),
+            type: 'bar',
+            orientation: 'h',
+            marker: {color: '#10AE48'}
+        }], {
+            ...layout_base,
+            xaxis: {title: 'Number of Papers', gridcolor: config.gridcolor},
+            yaxis: {autorange: 'reversed'},
+            height: Math.max(400, topTags.length * 30)
+        });
+
+        // Top Authors
+        const topAuthors = stats.top_authors.slice(0, 20);
+        Plotly.newPlot('authorsChart', [{
+            x: topAuthors.map(a => a[1]),
+            y: topAuthors.map(a => a[0]),
+            type: 'bar',
+            orientation: 'h',
+            marker: {color: '#A8D154'}
+        }], {
+            ...layout_base,
+            xaxis: {title: 'Number of Papers', gridcolor: config.gridcolor},
+            yaxis: {autorange: 'reversed'},
+            height: Math.max(500, topAuthors.length * 30)
+        });
+    }
+
+    // Initial render
+    calculateDynamicStats();
+    updateCharts();
+</script>
+</body>
+</html>

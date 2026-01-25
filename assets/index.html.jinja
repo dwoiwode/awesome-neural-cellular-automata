@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦎 Awesome Neural Cellular Automata</title>
+    <style>
+        :root {
+            --primary-accent: #10AE48;
+            --primary-dark: #00821D;
+            --secondary-accent: #A8D154;
+            --tertiary-accent: #EF6C32;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #e9ecef;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --border-color: #dee2e6;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --bg-tertiary: #404040;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+            --border-color: #495057;
+            --shadow: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 2px solid var(--primary-accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+            transition: padding 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 5px 0;
+        }
+
+        header.scrolled h1 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        header.scrolled .controls {
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary-accent);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        a {
+            color: var(--primary-accent);
+        }
+
+        a:hover {
+            color: var(--secondary-accent);
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+        }
+
+        .search-box input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        select, button {
+            padding: 8px 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        select:hover, button:hover {
+            background: var(--bg-tertiary);
+        }
+
+        button.active {
+            background: var(--primary-accent);
+            color: white;
+            border-color: var(--primary-accent);
+        }
+
+        .tag-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .tag-label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .tag-btn {
+            padding: 6px 12px;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .tag-btn.special {
+            border-color: var(--secondary-accent);
+            color: var(--primary-dark);
+        }
+
+        .tag-btn:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .tag-btn.included {
+            background: var(--primary-accent);
+            color: white;
+            border-color: var(--primary-accent);
+        }
+
+        .tag-btn.excluded {
+            background: var(--tertiary-accent);
+            color: white;
+            border-color: var(--tertiary-accent);
+        }
+
+        .tag-btn .tag-icon {
+            font-size: 0.75rem;
+        }
+
+        .view-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .stats {
+            padding: 12px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .stats-text {
+            color: var(--text-secondary);
+        }
+
+        .disclaimer {
+            padding: 20px;
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--primary-accent);
+            border-radius: 6px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .disclaimer h3 {
+            color: var(--primary-accent);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .disclaimer p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contribute-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: var(--primary-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .contribute-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        [data-theme="dark"] .highlight {
+            background-color: #ffd700;
+        }
+
+        /* Paper List Styles */
+        .papers-container {
+            margin-top: 15px;
+        }
+
+        .year-group, .letter-group {
+            margin-bottom: 25px;
+        }
+
+        .group-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--primary-accent);
+            border-radius: 4px;
+            cursor: pointer;
+            user-select: none;
+            margin-bottom: 12px;
+            transition: background 0.2s;
+        }
+
+        .group-header:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .group-header h2 {
+            font-size: 1.3rem;
+            margin: 0;
+            color: var(--primary-dark);
+        }
+
+        .group-toggle {
+            font-size: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .group-toggle.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .group-content {
+            display: grid;
+            gap: 15px;
+            transition: max-height 0.3s ease-out, opacity 0.3s;
+        }
+
+        .group-content.collapsed {
+            display: none;
+        }
+
+        /* Grid View - High density, 3 columns */
+        .papers-grid {
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        }
+
+        /* List View - Full width cards */
+        .papers-list {
+            grid-template-columns: 1fr;
+        }
+
+        /* Compact Grid - 4 columns, minimal spacing */
+        .papers-compact-grid {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 10px;
+        }
+
+        /* Table View - Dense information */
+        .papers-table {
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        /* Paper Card */
+        .paper-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .paper-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .paper-card.list-view {
+            flex-direction: row;
+        }
+
+        .paper-card.table-view {
+            flex-direction: row;
+            border-radius: 4px;
+        }
+
+        .paper-card.compact-grid-view .paper-content {
+            padding: 10px;
+        }
+
+        .paper-thumbnail {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 300 / 388;
+            object-fit: cover;
+            background: var(--bg-tertiary);
+        }
+
+        .paper-card.list-view .paper-thumbnail {
+            width: 150px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .paper-card.table-view .paper-thumbnail {
+            width: 80px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .paper-card.compact-grid-view .paper-thumbnail {
+            aspect-ratio: 300 / 388;
+        }
+
+        .paper-content {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .paper-card.table-view .paper-content {
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .paper-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            line-height: 1.3;
+            color: var(--text-primary);
+        }
+
+        .paper-card.table-view .paper-title {
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        .paper-card.compact-grid-view .paper-title {
+            font-size: 1rem;
+        }
+
+        .paper-meta {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .paper-card.table-view .paper-meta {
+            font-size: 0.8rem;
+        }
+
+        .paper-authors {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .paper-card.table-view .paper-authors {
+            font-size: 0.8rem;
+        }
+
+        .author-name {
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+
+        .author-name.clickable {
+            color: var(--primary-accent);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .author-name.clickable:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .paper-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .paper-card.table-view .paper-links {
+            gap: 4px;
+        }
+
+        .paper-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+
+        .paper-card.table-view .paper-link {
+            padding: 3px 8px;
+            font-size: 0.75rem;
+        }
+
+        .paper-link:hover {
+            background: var(--primary-accent);
+            color: white;
+            border-color: var(--primary-accent);
+        }
+
+        .link-icon {
+            font-size: 0.85rem;
+        }
+
+        /* Abstract */
+        .paper-abstract {
+            margin-top: auto;
+        }
+
+        .abstract-toggle {
+            background: none;
+            border: none;
+            color: var(--primary-accent);
+            cursor: pointer;
+            padding: 5px 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .paper-card.table-view .abstract-toggle {
+            font-size: 0.75rem;
+        }
+
+        .abstract-toggle:hover {
+            color: var(--primary-dark);
+        }
+
+        .abstract-content {
+            margin-top: 8px;
+            padding: 12px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .paper-card.table-view .abstract-content {
+            padding: 8px;
+            font-size: 0.8rem;
+        }
+
+        .abstract-content.expanded {
+            display: block;
+        }
+
+        /* Paper Tags */
+        .paper-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 5px;
+        }
+
+        .paper-tag {
+            padding: 2px 8px;
+            background: var(--secondary-accent);
+            color: var(--primary-dark);
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .paper-tag.special {
+            background: var(--primary-accent);
+            color: white;
+        }
+
+        /* Hidden Papers */
+        .paper-card.hidden {
+            display: none;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+            display: none;
+        }
+
+        .no-results.visible {
+            display: block;
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-accent);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.4rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                min-width: 100%;
+            }
+
+            .tag-filters, .view-controls {
+                width: 100%;
+            }
+
+            .papers-grid, .papers-compact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .paper-card.list-view, .paper-card.table-view {
+                flex-direction: column;
+            }
+
+            .paper-card.list-view .paper-thumbnail,
+            .paper-card.table-view .paper-thumbnail {
+                width: 100%;
+            }
+
+            .stats {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .disclaimer {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tag-btn {
+                flex: 1;
+                min-width: calc(50% - 4px);
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div style="display: flex">
+                <h1 style="flex: 1"><img src="assets/emoji_u1f98e.png" alt="🦎" style="height: 1.5em; width: auto; vertical-align: middle; margin-right: 8px;"> Awesome Neural Cellular Automata</h1>
+                <a href="stats.html"><button>📈Statistics</button></a>
+            </div>
+
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search by title, author, or abstract...">
+                </div>
+
+                <select id="sortSelect">
+                    <option value="date-newest">Date (Newest First)</option>
+                    <option value="date-oldest">Date (Oldest First)</option>
+                    <option value="title-az">Title (A-Z)</option>
+                    <option value="title-za">Title (Z-A)</option>
+                </select>
+
+                <select id="viewSelect">
+                    <option value="grid">Grid View</option>
+                    <option value="list">List View</option>
+                    <option value="compact-grid">Compact Grid</option>
+                    <option value="table">Table View</option>
+                </select>
+
+                <button id="toggleTheme">🌓 Dark Mode</button>
+            </div>
+
+            <div class="controls">
+                <div class="tag-filters">
+                    <span class="tag-label">Tags:</span>
+                    <button class="tag-btn special" data-tag="project_page" title="Click once: include, twice: exclude, third: clear">
+                        🌐 Project Page
+                    </button>
+                    <button class="tag-btn special" data-tag="code" title="Click once: include, twice: exclude, third: clear">
+                        💻 Code
+                    </button>
+                    <button class="tag-btn special" data-tag="arxiv" title="Click once: include, twice: exclude, third: clear">
+                        📚 arXiv
+                    </button>
+                    <button class="tag-btn special" data-tag="paper" title="Click once: include, twice: exclude, third: clear">
+                        📄 Paper
+                    </button>
+                    <button id="clearAllFilters" style="margin-left: 10px;">🔄 Clear All Filters</button>
+                    <div id="dynamicTags"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="disclaimer">
+            <h3>About This Collection</h3>
+            <p>A list of papers and resources regarding Neural Cellular Automata. Last updated: <strong id="lastUpdated">{{ date.strftime('%Y-%m-%d') }}</strong></p>
+            <p>This repository has been researched, compiled, and maintained to the best of my knowledge and ability. While I strive for accuracy and completeness, there may be mistakes or updates needed over time. I welcome suggestions, improvements, and contributions from the community. Please feel free to open an <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata/issues" target="_blank">issue</a> or submit a <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata/pulls" target="_blank">pull request</a> if you have any recommendations or changes.</p>
+            <p>To contribute, please update the <code>papers.yaml</code> on <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata" target="_blank">GitHub</a>.</p>
+            <p><strong>Especially for the Tag system every help is appreciated!</strong></p>
+            <p>Thank you for your support and collaboration!</p>
+        </div>
+
+        <div class="stats">
+            <span class="stats-text" id="paperCount">Loading papers...</span>
+        </div>
+
+        <div id="papersContainer" class="papers-container"></div>
+
+        <div class="no-results" id="noResults">
+            <h3 style="color:var(--tertiary-accent)">No papers found</h3>
+            <p>Try adjusting your search or tag filters</p>
+        </div>
+    </div>
+
+    <script>
+        // Papers data
+        const papersData = {{ papers_json }};
+
+        // State
+        let state = {
+            papers: [],
+            filteredPapers: [],
+            searchTerm: '',
+            tagFilters: {}, // {tag: 'include'|'exclude'|null}
+            allTags: new Set(),
+            sortBy: 'date-newest',
+            viewMode: 'grid',
+            theme: localStorage.getItem('theme') || 'light',
+            collapsedGroups: new Set()
+        };
+
+        // Initialize
+        function init() {
+            // Process papers and extract tags
+            state.papers = papersData.map(p => {
+                const tags = new Set();
+
+                // Add URL-based special tags
+                if (p.urls) {
+                    if (p.urls.code) tags.add('code');
+                    if (p.urls.arxiv) tags.add('arxiv');
+                    if (p.urls.project_page) tags.add('project_page');
+                    if (p.urls.paper) tags.add('paper');
+                }
+
+                // Add regular tags if they exist
+                if (p.tags && Array.isArray(p.tags)) {
+                    p.tags.forEach(tag => {
+                        tags.add(tag);
+                        if (tag !== 'code') {
+                            state.allTags.add(tag);
+                        }
+                    });
+                }
+
+                return {
+                    ...p,
+                    tags: Array.from(tags),
+                    searchText: `${p.title} ${p.authors.map(a => a.join(' ')).join(' ')} ${p.abstract}`.toLowerCase()
+                };
+            });
+
+            renderDynamicTags();
+            loadStateFromURL();
+            applyTheme();
+            render();
+            attachEventListeners();
+            setupScrollHeader();
+        }
+
+        // Scroll header
+        function setupScrollHeader() {
+            let lastScroll = 0;
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                const header = document.getElementById('header');
+
+                if (currentScroll > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                lastScroll = currentScroll;
+            });
+        }
+
+        // URL State Management
+        function loadStateFromURL() {
+            const params = new URLSearchParams(window.location.search);
+
+            if (params.has('search')) state.searchTerm = params.get('search');
+            if (params.has('sort')) state.sortBy = params.get('sort');
+            if (params.has('view')) state.viewMode = params.get('view');
+
+            if (params.has('tags')) {
+                const tagParams = params.get('tags').split(',');
+                tagParams.forEach(tagParam => {
+                    const [tag, mode] = tagParam.split(':');
+                    if (mode === 'inc' || mode === 'exc') {
+                        state.tagFilters[tag] = mode === 'inc' ? 'include' : 'exclude';
+                    }
+                });
+            }
+
+            // Update UI
+            document.getElementById('searchInput').value = state.searchTerm;
+            document.getElementById('sortSelect').value = state.sortBy;
+            document.getElementById('viewSelect').value = state.viewMode;
+
+            Object.entries(state.tagFilters).forEach(([tag, mode]) => {
+                const btn = document.querySelector(`[data-tag="${tag}"]`);
+                if (btn) {
+                    btn.classList.remove('included', 'excluded');
+                    if (mode === 'include') btn.classList.add('included');
+                    if (mode === 'exclude') btn.classList.add('excluded');
+                }
+            });
+        }
+
+        function updateURL() {
+            const params = new URLSearchParams();
+
+            if (state.searchTerm) params.set('search', state.searchTerm);
+            if (state.sortBy !== 'date-newest') params.set('sort', state.sortBy);
+            if (state.viewMode !== 'grid') params.set('view', state.viewMode);
+
+            const tagParams = Object.entries(state.tagFilters)
+                .filter(([_, mode]) => mode !== null)
+                .map(([tag, mode]) => `${tag}:${mode === 'include' ? 'inc' : 'exc'}`)
+                .join(',');
+            if (tagParams) params.set('tags', tagParams);
+
+            const newURL = params.toString() ? `${window.location.pathname}?${params}` : window.location.pathname;
+            window.history.replaceState({}, '', newURL);
+        }
+
+        // Theme
+        function applyTheme() {
+            document.documentElement.setAttribute('data-theme', state.theme);
+            localStorage.setItem('theme', state.theme);
+        }
+
+        function toggleTheme() {
+            state.theme = state.theme === 'light' ? 'dark' : 'light';
+            applyTheme();
+        }
+
+        // Dynamic Tags
+        function renderDynamicTags() {
+            const container = document.getElementById('dynamicTags');
+            const regularTags = Array.from(state.allTags).sort();
+
+            if (regularTags.length === 0) return;
+
+            container.innerHTML = regularTags.map(tag => `
+                <button class="tag-btn" data-tag="${tag}" title="Click once: include, twice: exclude, third: clear">
+                    ${tag}
+                </button>
+            `).join('');
+
+            // Attach event listeners to dynamic tags
+            container.querySelectorAll('.tag-btn').forEach(btn => {
+                btn.addEventListener('click', () => handleTagClick(btn.dataset.tag, btn));
+            });
+        }
+
+        // Tag filtering
+        function handleTagClick(tag, btn) {
+            const currentState = state.tagFilters[tag];
+
+            if (!currentState) {
+                // First click: include
+                state.tagFilters[tag] = 'include';
+                btn.classList.add('included');
+                btn.classList.remove('excluded');
+            } else if (currentState === 'include') {
+                // Second click: exclude
+                state.tagFilters[tag] = 'exclude';
+                btn.classList.remove('included');
+                btn.classList.add('excluded');
+            } else {
+                // Third click: clear
+                state.tagFilters[tag] = null;
+                btn.classList.remove('included', 'excluded');
+            }
+
+            render();
+        }
+
+        // Filtering & Sorting
+        function filterAndSort() {
+            let papers = [...state.papers];
+
+            // Search filter
+            if (state.searchTerm) {
+                const term = state.searchTerm.toLowerCase();
+                papers = papers.filter(p => p.searchText.includes(term));
+            }
+
+            // Tag filters
+            const includeTags = Object.entries(state.tagFilters)
+                .filter(([_, mode]) => mode === 'include')
+                .map(([tag, _]) => tag);
+
+            const excludeTags = Object.entries(state.tagFilters)
+                .filter(([_, mode]) => mode === 'exclude')
+                .map(([tag, _]) => tag);
+
+            if (includeTags.length > 0) {
+                papers = papers.filter(p =>
+                    includeTags.every(tag => p.tags.includes(tag))
+                );
+            }
+
+            if (excludeTags.length > 0) {
+                papers = papers.filter(p =>
+                    !excludeTags.some(tag => p.tags.includes(tag))
+                );
+            }
+
+            // Sort
+            papers.sort((a, b) => {
+                switch (state.sortBy) {
+                    case 'date-newest':
+                        return b.year.localeCompare(a.year);
+                    case 'date-oldest':
+                        return a.year.localeCompare(b.year);
+                    case 'title-az':
+                        return a.title.localeCompare(b.title);
+                    case 'title-za':
+                        return b.title.localeCompare(a.title);
+                    default:
+                        return 0;
+                }
+            });
+
+            state.filteredPapers = papers;
+            updateURL();
+        }
+
+        // Rendering
+        function render() {
+            filterAndSort();
+
+            const container = document.getElementById('papersContainer');
+            const noResults = document.getElementById('noResults');
+
+            // Update stats
+            document.getElementById('paperCount').textContent =
+                `Showing ${state.filteredPapers.length} of ${state.papers.length} papers`;
+
+            // Show/hide clear all button
+            const hasActiveFilters = state.searchTerm || Object.values(state.tagFilters).some(v => v !== null);
+            document.getElementById('clearAllFilters').style.display = hasActiveFilters ? 'inline-block' : 'none';
+
+            // Check if no results
+            if (state.filteredPapers.length === 0) {
+                container.innerHTML = '';
+                noResults.classList.add('visible');
+                return;
+            }
+
+            noResults.classList.remove('visible');
+
+            // Group papers
+            const groups = groupPapers(state.filteredPapers);
+
+            const viewClass = `papers-${state.viewMode}`;
+
+            container.innerHTML = groups.map(group => `
+                <div class="${state.sortBy.startsWith('date') ? 'year-group' : 'letter-group'}">
+                    <div class="group-header" onclick="toggleGroup('${group.key}')">
+                        <span class="group-toggle ${state.collapsedGroups.has(group.key) ? 'collapsed' : ''}">▼</span>
+                        <h2>${group.key}</h2>
+                        <span class="stats-text">(${group.papers.length} papers)</span>
+                    </div>
+                    <div class="group-content ${state.collapsedGroups.has(group.key) ? 'collapsed' : ''} ${viewClass}" id="group-${group.key}">
+                        ${group.papers.map(renderPaperCard).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function groupPapers(papers) {
+            const groups = {};
+
+            papers.forEach(paper => {
+                let key;
+                if (state.sortBy.startsWith('date')) {
+                    key = paper.year.substring(0, 4);
+                } else {
+                    key = paper.title.charAt(0).toUpperCase();
+                }
+
+                if (!groups[key]) groups[key] = [];
+                groups[key].push(paper);
+            });
+
+            return Object.entries(groups)
+                .map(([key, papers]) => ({ key, papers }))
+                .sort((a, b) => {
+                    if (state.sortBy === 'date-oldest' || state.sortBy === 'title-az') {
+                        return a.key.localeCompare(b.key);
+                    }
+                    return b.key.localeCompare(a.key);
+                });
+        }
+
+        function renderPaperCard(paper) {
+            const viewClass = `${state.viewMode}-view`;
+
+            return `
+                <div class="paper-card ${viewClass}">
+                    <img src="${paper.thumbnail}" alt="${paper.title}" class="paper-thumbnail" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22388%22%3E%3Crect fill=%22%23ddd%22 width=%22300%22 height=%22388%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22%3ENo Image%3C/text%3E%3C/svg%3E'">
+                    <div class="paper-content">
+                        <h3 class="paper-title">${highlightText(paper.title)}</h3>
+                        <div class="paper-meta">Published: ${paper.year}</div>
+                        <div class="paper-authors">
+                            ${paper.authors.map(author =>
+                                `<span class="author-name clickable" onclick="filterByAuthor('${author[0]} ${author[1]}')">${author[0]} <strong>${author[1]}</strong></span>`
+                            ).join(', ')}
+                        </div>
+                        ${renderLinks(paper.urls)}
+                        ${renderTags(paper.tags)}
+                        <div class="paper-abstract">
+                            <button class="abstract-toggle" onclick="toggleAbstract('${paper.id}')">
+                                <span class="toggle-icon" id="toggle-${paper.id}">▶</span>
+                                Abstract
+                            </button>
+                            <div class="abstract-content" id="abstract-${paper.id}">
+                                ${highlightText(paper.abstract)}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderLinks(urls) {
+            if (!urls) return '';
+
+            const iconMap = {
+                project_page: '🌐',
+                paper: '📄',
+                code: '💻',
+                arxiv: '📄',
+                pdf: '📑',
+                demo: '🎮',
+                video: '🎥'
+            };
+
+            const links = Object.entries(urls)
+                .filter(([key, url]) => url)
+                .map(([key, url]) => {
+                    const icon = iconMap[key] || '🔗';
+                    const label = key.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    return `<a href="${url}" class="paper-link" target="_blank" rel="noopener">
+                        <span class="link-icon">${icon}</span>${label}
+                    </a>`;
+                })
+                .join('');
+
+            return links ? `<div class="paper-links">${links}</div>` : '';
+        }
+
+        function renderTags(tags) {
+            if (!tags || tags.length === 0) return '';
+
+            const specialTags = ['code', 'arxiv', 'project_page', "paper"];
+            // Filter out special tags
+            const displayTags = tags.filter(tag => !specialTags.includes(tag));
+
+            if (displayTags.length === 0) return '';
+
+            return `<div class="paper-tags">${displayTags.map(tag =>
+                `<span class="paper-tag">${tag}</span>`
+            ).join('')}</div>`;
+        }
+
+        function highlightText(text) {
+            if (!state.searchTerm) return text;
+            const regex = new RegExp(`(${state.searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\            return Object.entries')})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        }
+
+        // Event Handlers
+        function toggleGroup(key) {
+            if (state.collapsedGroups.has(key)) {
+                state.collapsedGroups.delete(key);
+            } else {
+                state.collapsedGroups.add(key);
+            }
+            render();
+        }
+
+        function toggleAbstract(id) {
+            const content = document.getElementById(`abstract-${id}`);
+            const toggle = document.getElementById(`toggle-${id}`);
+            content.classList.toggle('expanded');
+            toggle.textContent = content.classList.contains('expanded') ? '▼' : '▶';
+        }
+
+        function filterByAuthor(authorName) {
+            state.searchTerm = authorName;
+            document.getElementById('searchInput').value = authorName;
+            render();
+        }
+
+        function attachEventListeners() {
+            // Search
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                state.searchTerm = e.target.value;
+                render();
+            });
+
+            // Sort
+            document.getElementById('sortSelect').addEventListener('change', (e) => {
+                state.sortBy = e.target.value;
+                state.collapsedGroups.clear();
+                render();
+            });
+
+            // View mode
+            document.getElementById('viewSelect').addEventListener('change', (e) => {
+                state.viewMode = e.target.value;
+                render();
+            });
+
+            // Tag buttons (special tags)
+            document.querySelectorAll('.tag-btn.special').forEach(btn => {
+                btn.addEventListener('click', () => handleTagClick(btn.dataset.tag, btn));
+            });
+
+            // Clear all filters
+            document.getElementById('clearAllFilters').addEventListener('click', () => {
+                state.searchTerm = '';
+                state.tagFilters = {};
+                document.getElementById('searchInput').value = '';
+                document.querySelectorAll('.tag-btn').forEach(btn => {
+                    btn.classList.remove('included', 'excluded');
+                });
+                render();
+            });
+
+            // Theme toggle
+            document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+        }
+
+        // Start
+        init();
+    </script>
+</body>
+</html>
