@@ -6,7 +6,8 @@ on:
       - main
     paths:
       - 'papers.yaml'
-      - 'template.html'
+      - 'assets/index.html.jinja'
+      - 'assets/stats.html.jinja'
       - 'build_site.py'
       - '.github/workflows/build_pages.yml'
   workflow_dispatch:
@@ -46,7 +47,7 @@ jobs:
           cp -r ./assets ./dist/assets
       - name: Build site
         run: |
-          python build_site.py  --output dist/index.html
+          python build_site.py  --output dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

@@ -648,7 +648,10 @@
 <body>
     <header id="header">
         <div class="container">
-            <h1><img src="assets/emoji_u1f98e.png" alt="🦎" style="height: 1.5em; width: auto; vertical-align: middle; margin-right: 8px;"> Awesome Neural Cellular Automata</h1>
+            <div style="display: flex">
+                <h1 style="flex: 1"><img src="assets/emoji_u1f98e.png" alt="🦎" style="height: 1.5em; width: auto; vertical-align: middle; margin-right: 8px;"> Awesome Neural Cellular Automata</h1>
+                <a href="stats.html"><button>📈Statistics</button></a>
+            </div>
 
             <div class="controls">
                 <div class="search-box">
@@ -675,14 +678,17 @@
             <div class="controls">
                 <div class="tag-filters">
                     <span class="tag-label">Tags:</span>
+                    <button class="tag-btn special" data-tag="project_page" title="Click once: include, twice: exclude, third: clear">
+                        🌐 Project Page
+                    </button>
                     <button class="tag-btn special" data-tag="code" title="Click once: include, twice: exclude, third: clear">
                         💻 Code
                     </button>
                     <button class="tag-btn special" data-tag="arxiv" title="Click once: include, twice: exclude, third: clear">
                         📚 arXiv
                     </button>
-                    <button class="tag-btn special" data-tag="project_page" title="Click once: include, twice: exclude, third: clear">
-                        🌐 Project Page
+                    <button class="tag-btn special" data-tag="paper" title="Click once: include, twice: exclude, third: clear">
+                        📄 Paper
                     </button>
                     <button id="clearAllFilters" style="margin-left: 10px;">🔄 Clear All Filters</button>
                     <div id="dynamicTags"></div>
@@ -697,6 +703,7 @@
             <p>A list of papers and resources regarding Neural Cellular Automata. Last updated: <strong id="lastUpdated">{{ date.strftime('%Y-%m-%d') }}</strong></p>
             <p>This repository has been researched, compiled, and maintained to the best of my knowledge and ability. While I strive for accuracy and completeness, there may be mistakes or updates needed over time. I welcome suggestions, improvements, and contributions from the community. Please feel free to open an <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata/issues" target="_blank">issue</a> or submit a <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata/pulls" target="_blank">pull request</a> if you have any recommendations or changes.</p>
             <p>To contribute, please update the <code>papers.yaml</code> on <a href="https://github.com/dwoiwode/awesome-neural-cellular-automata" target="_blank">GitHub</a>.</p>
+            <p><strong>Especially for the Tag system every help is appreciated!</strong></p>
             <p>Thank you for your support and collaboration!</p>
         </div>
 
@@ -740,13 +747,16 @@
                     if (p.urls.code) tags.add('code');
                     if (p.urls.arxiv) tags.add('arxiv');
                     if (p.urls.project_page) tags.add('project_page');
+                    if (p.urls.paper) tags.add('paper');
                 }
 
                 // Add regular tags if they exist
                 if (p.tags && Array.isArray(p.tags)) {
                     p.tags.forEach(tag => {
                         tags.add(tag);
-                        state.allTags.add(tag);
+                        if (tag !== 'code') {
+                            state.allTags.add(tag);
+                        }
                     });
                 }
 
@@ -1064,7 +1074,7 @@
         function renderTags(tags) {
             if (!tags || tags.length === 0) return '';
 
-            const specialTags = ['code', 'arxiv', 'project_page'];
+            const specialTags = ['code', 'arxiv', 'project_page', "paper"];
             // Filter out special tags
             const displayTags = tags.filter(tag => !specialTags.includes(tag));
 
