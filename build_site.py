@@ -10,30 +10,49 @@ import datetime
 from pathlib import Path
 
 import yaml
+from jinja2 import Environment, FileSystemLoader
 
 
 def load_papers(yaml_path: Path):
     with yaml_path.open("r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    return data.get("papers", [])
+    papers = []
+    for paper in data.get("papers", []):
+        tags = []
+        for tag in paper.get("tags", []):
+            if isinstance(tag, str) and not tag.endswith("?"):
+                tags.append(tag)
+        if tags:
+            paper["tags"] = tags
+        else:
+            paper.pop("tags", None)
+        papers.append(paper)
+    return papers
 
+def paper_json_to_str(papers) -> str:
+    s = "[\n"
+    for paper in papers:
+        s += f"{json.dumps(paper, ensure_ascii=False, separators=(",", ":"))},\n"
+    return s + "]"
 
 def generate_html(papers, template_path: Path, output_path: Path):
-    template = template_path.read_text(encoding="utf-8")
+    # Set up Jinja2 environment
+    env = Environment(loader=FileSystemLoader("assets"))  # Load from current directory
+    template = env.get_template(template_path.name)
 
-    papers_json = json.dumps(papers, ensure_ascii=False, indent=2)
-    html = template.replace(
-        "/* PAPERS_DATA_PLACEHOLDER */",
-        f"const papersData = {papers_json};",
-    )
+    data = {
+        "papers_json": paper_json_to_str(papers),
+        "date": datetime.datetime.now(datetime.UTC)
+    }
 
-    build_time = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M:%S UTC")
-    html = html.replace(
-        "<!-- BUILD_TIMESTAMP -->",
-        f"<!-- Built: {build_time} -->",
-    )
+    # Render template with data
+    output = template.render(**data)
 
-    output_path.write_text(html, encoding="utf-8")
+    # Save the output to a Markdown file
+    output_path.write_text(
+        f"<!-- This file was automatically created on {datetime.datetime.now(datetime.UTC):%Y-%m-%d %H:%M:%S} UTC. Any manual changes will be lost! -->\n{output}",
+        encoding="utf-8")
+
     print(f"✓ Generated {output_path} with {len(papers)} papers")
 
 
@@ -52,7 +71,7 @@ def parse_args():
     parser.add_argument(
         "--template",
         type=Path,
-        default=script_dir / "assets" / "template.html",
+        default=script_dir / "assets" / "template.html.jinja",
         help="Path to HTML template",
     )
     parser.add_argument(
