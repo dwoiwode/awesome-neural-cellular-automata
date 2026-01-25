@@ -1,6 +1,6 @@
 # Awesome Neural Cellular Automata
 <div align="center">
-    A list of paper and resources regarding Neural Cellular Automata inspired by MrNerf's [Awesome 3D Gaussian Splatting](https://github.com/MrNeRF/awesome-3D-gaussian-splatting).
+    A list of paper and resources regarding Neural Cellular Automata inspired by MrNerf's <a href='https://github.com/MrNeRF/awesome-3D-gaussian-splatting'>Awesome 3D Gaussian Splatting</a>.
 
   [**Browse the Paper List**](https://dwoiwode.github.io/awesome-neural-cellular-automata/)
 </div>
@@ -15,6 +15,11 @@
 > You can run `build_site.py` locally to generate the `index.html` and `stats.html` respectively.
 >
 > Thank you for your support and collaboration!
+
+> [!IMPORTANT]  
+> This repository moved to a github.io HTML web page for a better look and more features. You can find the list here:
+> [**Paper List**](https://dwoiwode.github.io/awesome-neural-cellular-automata/)
+
 
 ## Seminal Paper introducing Neural Cellular Automata
 <table>
@@ -31,12 +36,10 @@ Published on **2020-02-11** by
 
 Alexander **Mordvintsev**, Ettore **Randazzo**, Eyvind **Niklasson**, Michael **Levin**
 
-[Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb) | [Project Page](https://distill.pub/2020/growing-ca/)
+[Project Page/Paper](https://distill.pub/2020/growing-ca/) | [Code](https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/growing_ca.ipynb)
 
-<details>
-<summary><b>Abstract</b></summary>
+<b>Abstract</b>
 Training an end-to-end differentiable, self-organising cellular automata model of morphogenesis, able to both grow and regenerate specific patterns.
-</details>
 
 </td>
 </tr>
