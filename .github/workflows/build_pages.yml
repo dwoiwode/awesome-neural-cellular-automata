@@ -43,6 +43,7 @@ jobs:
         run: |
           rm -rf ./dist
           mkdir ./dist
+          cp -r ./assets ./dist/assets
       - name: Build site
         run: |
           python build_site.py  --output dist/index.html
