@@ -2714,6 +2714,9 @@ papers:
   urls:
     paper: https://www.nature.com/articles/s41598-025-94032-y.pdf
     code: https://github.com/Arfat673/Intelligent-health-model-for-medical-imaging-to-guide-laymen-using-neural-cellular-automata
+  tags:
+  - Medical
+  - Segmentation
   thumbnail: assets/thumbnails/2025-05-20intelligen_sharma.jpg
   abstract: A layman in health systems is a person who doesn’t have any knowledge
     about health data i.e., X-ray, MRI, CT scan, and health examination reports, etc.
@@ -2851,7 +2854,7 @@ papers:
   - - Lucas
     - Astore
   - - Frederico G.
-    - Guimarães ORCID iD icon
+    - Guimarães
   urls:
     code: https://github.com/petroniocandido/st_nca
   thumbnail: assets/thumbnail_placeholder.jpg
@@ -3046,6 +3049,9 @@ papers:
   urls:
     arxiv: https://arxiv.org/abs/2508.12322
     code: https://github.com/marrlab/NCA-WSS
+  tags:
+  - Medical
+  - Segmentation
   thumbnail: assets/thumbnails/2025-08-17neuralcell_deutges.jpg
   abstract: The detection and segmentation of white blood cells in blood smear images
     is a key step in medical diagnostics, supporting various downstream tasks such
@@ -3738,3 +3744,66 @@ papers:
     structured noise for seed states. This approach is inspired by techniques that
     have historically amplified the expressiveness of classical continuous CA. All
     code and example videos are publicly available on https://github.com/MagnusPetersen/MNNCA.
+- id: 2026-01-18logoscaa_utimula
+  title: 'LOGOS-CA: A Cellular Automaton Using Natural Language as State and Rule'
+  year: '2026-01-18'
+  authors:
+  - - Keishu
+    - Utimula
+  urls:
+    arxiv: https://arxiv.org/abs/2602.00036
+    code: https://github.com/A5size/LOGOS-CA
+  tags:
+  - 2D Grid
+  thumbnail: assets/thumbnails/2026-01-18logoscaa_utimula.jpg
+  abstract: Large Language Models (LLMs), trained solely on massive text data, have
+    achieved high performance on the Winograd Schema Challenge (WSC), a benchmark
+    proposed to measure commonsense knowledge and reasoning abilities about the real
+    world. This suggests that the language produced by humanity describes a significant
+    portion of the world with considerable nuance. In this study, we attempt to harness
+    the high expressive power of language within cellular automata. Specifically,
+    we express cell states and rules in natural language and delegate their updates
+    to an LLM. Through this approach, cellular automata can transcend the constraints
+    of merely numerical states and fixed rules, providing us with a richer platform
+    for simulation. Here, we propose LOGOS-CA (Language Oriented Grid Of Statements
+    - Cellular Automaton) as a natural framework to achieve this and examine its capabilities.
+    We confirmed that LOGOS-CA successfully performs simple forest fire simulations
+    and also serves as an intriguing subject for investigation from an Artificial
+    Life (ALife) perspective. In this paper, we report the results of these experiments
+    and discuss directions for future research using LOGOS-CA.
+- id: 2026-02-05neuralpart_kim
+  title: 'Neural Particle Automata: Learning Self-Organizing Particle Dynamics'
+  year: '2026-02-05'
+  authors:
+  - - Hyunsoo
+    - Kim
+  - - Ehsan
+    - Pajouheshgar
+  - - Sabine
+    - Süsstrunk
+  - - Wenzel
+    - Jakob
+  - - Jinah
+    - Park
+  urls:
+    project_page: https://selforg-npa.github.io/
+    arxiv: https://arxiv.org/abs/2601.16096
+  tags:
+  - Particles
+  thumbnail: assets/thumbnails/2026-02-05neuralpart_kim.jpg
+  abstract: 'We introduce Neural Particle Automata (NPA), a Lagrangian generalization
+    of Neural Cellular Automata (NCA) from static lattices to dynamic particle systems.
+    Unlike classical Eulerian NCA where cells are pinned to pixels or voxels, NPA
+    model each cell as a particle with a continuous position and internal state, both
+    updated by a shared, learnable neural rule. This particle-based formulation yields
+    clear individuation of cells, allows heterogeneous dynamics, and concentrates
+    computation only on regions where activity is present. At the same time, particle
+    systems pose challenges: neighborhoods are dynamic, and a naive implementation
+    of local interactions scale quadratically with the number of particles. We address
+    these challenges by replacing grid-based neighborhood perception with differentiable
+    Smoothed Particle Hydrodynamics (SPH) operators backed by memory-efficient, CUDA-accelerated
+    kernels, enabling scalable end-to-end training. Across tasks including morphogenesis,
+    point-cloud classification, and particle-based texture synthesis, we show that
+    NPA retain key NCA behaviors such as robustness and self-regeneration, while enabling
+    new behaviors specific to particle systems. Together, these results position NPA
+    as a compact neural model for learning self-organizing particle dynamics.'
