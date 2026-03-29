@@ -3931,3 +3931,70 @@ papers:
     attacks, the framework maintains over 96% accuracy with an inference latency of
     only 9.45 ms. These findings validate the capability of SG-GNC to provide resilient,
     endogenous defense in complex heterogeneous environments.
+- id: 2026-02-01adaptivecl_khamidov
+  title: 'Adaptive Closed-Loop Bioelectric Control of Cancer Cell Phenotype: A Navigation-Based
+    Framework and Experimental Roadmap'
+  year: '2026-02-01'
+  authors:
+  - - Ulugbek
+    - Khamidov
+  urls:
+    paper: https://www.academia.edu/164692110/Adaptive_Closed_Loop_Bioelectric_Control_of_Cancer_Cell_Phenotype_A_Navigation_Based_Framework_and_Experimental_Roadmap
+  thumbnail: assets/thumbnails/2026-02-01adaptivecl_khamidov.jpg
+  abstract: 'Cancer cells are consistently depolarized (resting membrane potential
+    Vmem ≈ −10 to −30 mV) relative to healthy diﬀerentiated cells (Vmem ≈ −60 to −90
+    mV), and gap junctional intercellular communication (GJIC) is disrupted in most
+    solid tumors. In model organisms these bioelectric changes have been shown to
+    causally contribute to the malignant phenotype: artiﬁcial depolarization of normal
+    cells induces neoplastic behavior, while forced hyperpolarization suppresses oncogenedriven
+    tumorigenesis. Existing bioelectric interventions are open-loop—a stimulus is
+    applied and the outcome observed post hoc. Here we propose the Adaptive Closed-Loop
+    Bioelectric Navigator (ACBN), an integrated sensing–computation–intervention platform
+    that continuously monitors cellular bioelectric state, classiﬁes the mode of dysregulation
+    using a proposed four-category framework (KIND), and delivers targeted micro-corrections
+    through multiple channels in a closed-loop feedback architecture. We illustrate
+    the control logic using Neural Cellular Automata as a synthetic test system and
+    present a concrete, low-cost (∼$10,000) experimental protocol for in vitro validation
+    using MCF-7 breast cancer cells, including internal calibration procedures, phototoxicity
+    assessment, cross-validation with multiple hyperpolarizing agents, single-cell
+    analysis, and explicit falsiﬁcation criteria. We do not claim that bioelectric
+    modulation alone is suﬃcient for cancer treatment; rather, we propose that closed-loop
+    bioelectric control represents an underexplored therapeutic layer that may complement
+    existing approaches. The central open question—whether bioelectric normalization
+    can produce durable phenotypic reversal in human cancer cells—is experimentally
+    testable and constitutes the primary falsiﬁcation criterion for this framework.'
+- id: 2026-03-02dalilearns_bhate
+  title: DALI Learns Rules Generating Spatiotemporal Transcriptions
+  year: '2026-03-02'
+  authors:
+  - - Salil
+    - Bhate
+  - - Sandeep
+    - Kambhampati
+  - - Mehrtash
+    - Babadi
+  - - Fei
+    - Chen
+  - - Caroline
+    - Uhler
+  urls:
+    paper: https://openreview.net/pdf?id=BM4SEEUJwi
+    code: https://github.com/broadinstitute/latent-dynamical-systems
+    openreview: https://openreview.net/forum?id=BM4SEEUJwi
+  thumbnail: assets/thumbnails/2026-03-02dalilearns_bhate.jpg
+  abstract: 'Learning how molecular interactions dictate the self-organization of
+    biological systems is a longstanding goal in developmental biology. Time-series
+    spatial transcriptomics (spatiotemporal transcriptomics) provides data to interrogate
+    such dynamic tissue processes. Existing computational methods for spatiotemporal
+    transcriptomics focus on aligning cells and spatial regions across timepoints
+    and learning the spatiotemporal determinants of cell-fate transitions, but do
+    not identify interactions between local spatial processes that generate developmental
+    patterns. To address this, we introduce Dynamical Analysis of Latent Interactions
+    (DALI), a framework that takes as input a time series of spatial transcriptomic
+    snapshots and simultaneously fits a latent partial differential equation (PDE)
+    and a spatial registration model to learn rules that generate tissue development.
+    On two Stereo-seq datasets of Zebrafish and Mouse embryogenesis, DALI learns rules
+    that predict gene expression from held-out tissue regions better than baseline
+    approaches. We furthermore interpret these rules: the learned latent variables
+    correspond to meaningful gene programs, and their learned interactions to developmentally
+    important signaling interactions with previous causal evidence.'
