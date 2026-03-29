@@ -3915,7 +3915,7 @@ papers:
   urls:
     paper: https://www.mdpi.com/1999-4893/19/3/195
   doi: 10.3390/a19030195
-  thumbnail: assets/thumbnails/2026-03-29asecurityf_hou.jpg
+  thumbnail: assets/thumbnails/2026-03-05asecurityf_hou.jpg
   abstract: As smart grids evolve into complex cyber-physical systems, conventional
     static defenses struggle to address time-varying topologies and Advanced Persistent
     Threats (APTs). We propose the Security Framework for Resilient Smart Grids based
