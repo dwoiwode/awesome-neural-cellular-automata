@@ -194,7 +194,7 @@ papers:
     to locomote. These results take a step towards equipping artificial systems with
     regenerative capacities and could potentially allow for more robust operations
     in a variety of situations and environments. The code for the experiments in this
-    paper is available at: http://github.com/KazuyaHoribe/ RegeneratingSoftRobots.'
+    paper is available at: https://github.com/KazuyaHoribe/RegeneratingSoftRobots.'
 - id: 2021-02-11selforgan_niklasson
   title: Self-Organising Textures
   year: '2021-02-11'
@@ -3744,6 +3744,32 @@ papers:
     structured noise for seed states. This approach is inspired by techniques that
     have historically amplified the expressiveness of classical continuous CA. All
     code and example videos are publicly available on https://github.com/MagnusPetersen/MNNCA.
+- id: 2026-01-02implicitfr_kraus
+  title: Implicit Fracture Morphology Modeling of Pre-stressed Glass via Neural Cellular
+    Automata
+  year: '2026-01-02'
+  authors:
+  - - Michael A.
+    - Kraus
+  - - Jens
+    - Schneider
+  urls:
+    project_page: https://mkrausai.github.io/research/01_SciML/04_NCA_GlassFracture/
+    paper: https://link.springer.com/chapter/10.1007/978-3-031-93213-7_18
+  doi: 10.1007/978-3-031-93213-7_18
+  thumbnail: assets/thumbnails/2026-01-02implicitfr_kraus.jpg
+  abstract: Since decades, researcher are investigating the modeling of the fracture
+    morphology of glasses—especially for prestressed glasses. As an alternative to
+    existing mechanics-based or explicit statistical approaches, we propose neural
+    implicit modeling via Neural Cellular Automata (NCA) to simulate microstructure
+    development during the fracture process in pre-stressed glasses. Based on convolutional
+    neural network, NCA can learn essential fracture features, such as preferred growth
+    direction and geometric features of the fracture particles. The proposed NCA are
+    more accurate than the “BREAK” method towards texture and geometrical features
+    as well as orders of magnitude faster than the conventional Phase-Field or Finite-Element-based
+    models. While this study employs images of fractured glass panes as training data,
+    NCA can also be trained based on any microstructural simulation data or a mix
+    of synthetic and actual data.
 - id: 2026-01-18logoscaa_utimula
   title: 'LOGOS-CA: A Cellular Automaton Using Natural Language as State and Rule'
   year: '2026-01-18'
@@ -3807,9 +3833,9 @@ papers:
     NPA retain key NCA behaviors such as robustness and self-regeneration, while enabling
     new behaviors specific to particle systems. Together, these results position NPA
     as a compact neural model for learning self-organizing particle dynamics.'
-- id: 2026-03-29trainingla_lee
+- id: 2026-03-09trainingla_lee
   title: Training Language Models via Neural Cellular Automata
-  year: '2026-03-29'
+  year: '2026-03-09'
   authors:
   - - Dan
     - Lee
@@ -3823,7 +3849,7 @@ papers:
     project_page: https://hanseungwook.github.io/blog/nca-pre-pre-training/
     paper: https://arxiv.org/pdf/2603.10055
     code: https://github.com/danihyunlee/nca-pre-pretraining
-  thumbnail: assets/thumbnails/2026-03-29trainingla_lee.jpg
+  thumbnail: assets/thumbnails/2026-03-09trainingla_lee.jpg
   abstract: 'Pre-training is crucial for large language models (LLMs), as it is when
     most representations and capabilities are acquired. However, natural language
     pre-training has problems: high-quality text is finite, it contains human biases,
@@ -3842,3 +3868,37 @@ papers:
     while math and web text favor more complex ones. These results enable systematic
     tuning of the synthetic distribution to target domains. More broadly, our work
     opens a path toward more efficient models with fully synthetic pre-training.'
+- id: 2026-03-05asecurityf_hou
+  title: A Security Framework for Resilient Smart Grids Based on Self-Organizing Graph
+    Neural Cellular Automata
+  year: '2026-03-05'
+  authors:
+  - - Rongxu
+    - Hou
+  - - Yiying
+    - Zhang
+  - - Siwei
+    - Li
+  - - Yeshen
+    - He
+  - - Pizhen
+    - Zhang
+  urls:
+    paper: https://www.mdpi.com/1999-4893/19/3/195
+  doi: 10.3390/a19030195
+  thumbnail: assets/thumbnails/2026-03-29asecurityf_hou.jpg
+  abstract: As smart grids evolve into complex cyber-physical systems, conventional
+    static defenses struggle to address time-varying topologies and Advanced Persistent
+    Threats (APTs). We propose the Security Framework for Resilient Smart Grids based
+    on Self-Organizing Graph Neural Cellular Automata (SG-GNC). Specifically, a Neural
+    Homeostatic Embedding (NHE) mechanism utilizes variational graph autoencoders
+    to construct a continuous health manifold for unsupervised anomaly detection,
+    while a Neural Cellular Automata (NCA) engine employs shared-weight local rules
+    to empower nodes with decentralized self-healing capabilities. Finally, a Generative
+    Adversarial Immunity (GAI) strategy facilitates active defense co-evolution, enhancing
+    robustness against zero-day attacks. Experimental results on the IEEE 118 and
+    300-bus systems demonstrate an average detection accuracy of 98.23%, significantly
+    outperforming benchmarks. In scenarios involving dynamic topology and zero-day
+    attacks, the framework maintains over 96% accuracy with an inference latency of
+    only 9.45 ms. These findings validate the capability of SG-GNC to provide resilient,
+    endogenous defense in complex heterogeneous environments.
