@@ -194,7 +194,7 @@ papers:
     to locomote. These results take a step towards equipping artificial systems with
     regenerative capacities and could potentially allow for more robust operations
     in a variety of situations and environments. The code for the experiments in this
-    paper is available at: https://github.com/KazuyaHoribe/RegeneratingSoftRobots.'
+    paper is available at: http://github.com/KazuyaHoribe/ RegeneratingSoftRobots.'
 - id: 2021-02-11selforgan_niklasson
   title: Self-Organising Textures
   year: '2021-02-11'
@@ -3797,6 +3797,35 @@ papers:
     and also serves as an intriguing subject for investigation from an Artificial
     Life (ALife) perspective. In this paper, we report the results of these experiments
     and discuss directions for future research using LOGOS-CA.
+- id: 2026-02-04smartafle_kalkhof
+  title: 'SMART: A Flexible, Interpretable, and Scalable Spatio-temporal Brain Atlas
+    from High-Resolution Imaging Data'
+  year: '2026-02-04'
+  authors:
+  - - John
+    - Kalkhof
+  - - Marco
+    - Lorenzi
+  urls:
+    preprint: https://hal.science/hal-05489861/
+  thumbnail: assets/thumbnails/2026-02-04smartafle_kalkhof.jpg
+  abstract: 'We introduce SMART, a framework for building a flexible, interpretable,
+    and scalable spatio-temporal brain atlas from time-series of high-resolution 3D
+    medical images. Existing approaches to spatio-temporal atlas construction rely
+    on black-box generative models that lack flexibility, limit interpretability,
+    and struggle to scale to high-dimensional data. SMART overcomes these challenges
+    through a novel approach to obtain spatio-temporal disentanglement by decoupling
+    global group-wise disease dynamics from patient-specific local anatomical changes.
+    Guided by anatomically inspired priors, SMART models interpretable global trajectories
+    across brain regions through the optimization of region-specific differential
+    equations. Local anatomical changes are estimated via dense diffeomorphic displacements
+    parameterized by a flexible and scalable multi-scale Neural Cellular Automata.
+
+    Evaluated on five longitudinal MRI datasets in Alzheimer''s disease (ADNI-1/GO/2,
+    OASIS-3, AIBL; > 1,400 subjects), SMART achieves state-of-the-art forecasting
+    accuracy and improved temporal consistency over adversarial and diffusion baselines.
+    Our approach offers a new paradigm to flexible, interpretable, and scalable modeling
+    of spatio-temporal changes in high-dimensional image time-series.'
 - id: 2026-02-05neuralpart_kim
   title: 'Neural Particle Automata: Learning Self-Organizing Particle Dynamics'
   year: '2026-02-05'

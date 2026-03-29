@@ -89,7 +89,7 @@ def parse_rdf(rdf_file: Path):
         if link_ref is not None:
             attachment = attachments.get(list(link_ref.attrib.values())[0])
             if attachment is not None:
-                resource = attachment.find("rdf:resource", ns)
+                resource = attachment.find("z:path", ns)
                 if resource is not None:
                     pdf_path = rdf_file.parent / list(resource.attrib.values())[0]
 
@@ -128,21 +128,29 @@ def generate_id(title, year, authors):
     return id_
 
 
-def create_thumbnail(pdf_path: Path, paper_id) -> Path:
+def create_thumbnail(pdf_path: Path, paper_id, *, force=True) -> Path:
     output_thumb = Path("assets/thumbnails/") / f"{paper_id}.jpg"
-    if not output_thumb.exists():
+    if not output_thumb.exists() or force:
         if pdf_path is not None:
             try:
                 output_thumb.parent.mkdir(parents=True, exist_ok=True)
+                cmd = [
+                    "magick",
+                    "-background", "white",
+                    f"{pdf_path.absolute().resolve()}[0]",
+                    "-flatten",
+                    "-resize", f"300x",
+                    str(output_thumb)
+                ]
 
-                proc = subprocess.run([
-                    "magick", "-background", "white", f"{pdf_path}[0]", "-flatten", "-resize", "300x", str(output_thumb)
-                ], stderr=subprocess.PIPE)
+                proc = subprocess.run(cmd, stderr=subprocess.PIPE)
                 if proc.returncode != 0:
                     raise RuntimeError(proc.stderr)
                 return output_thumb
             except Exception as e:
                 warnings.warn(f"Converting {pdf_path} to thumbnail failed: {e}")
+        else:
+            warnings.warn(f"No pdf at {pdf_path} found")
 
         output_thumb.write_bytes(Path("assets/thumbnail_placeholder.jpg").read_bytes())
 
