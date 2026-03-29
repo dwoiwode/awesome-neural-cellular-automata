@@ -1,12 +1,11 @@
 [project]
 name = "awesome-neural-cellular-automata"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "A list of paper and resources regarding Neural Cellular Automata"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "jinja2>=3.1.6",
-    "matplotlib>=3.10.1",
     "python-dateutil>=2.9.0.post0",
     "pyyaml>=6.0.2",
 ]

@@ -3807,3 +3807,38 @@ papers:
     NPA retain key NCA behaviors such as robustness and self-regeneration, while enabling
     new behaviors specific to particle systems. Together, these results position NPA
     as a compact neural model for learning self-organizing particle dynamics.'
+- id: 2026-03-29trainingla_lee
+  title: Training Language Models via Neural Cellular Automata
+  year: '2026-03-29'
+  authors:
+  - - Dan
+    - Lee
+  - - Seungwook
+    - Han
+  - - Akarsh
+    - Kumar
+  - - Pulkit
+    - Agrawal
+  urls:
+    project_page: https://hanseungwook.github.io/blog/nca-pre-pre-training/
+    paper: https://arxiv.org/pdf/2603.10055
+    code: https://github.com/danihyunlee/nca-pre-pretraining
+  thumbnail: assets/thumbnails/2026-03-29trainingla_lee.jpg
+  abstract: 'Pre-training is crucial for large language models (LLMs), as it is when
+    most representations and capabilities are acquired. However, natural language
+    pre-training has problems: high-quality text is finite, it contains human biases,
+    and it entangles knowledge with reasoning. This raises a fundamental question:
+    is natural language the only path to intelligence? We propose using neural cellular
+    automata (NCA) to generate synthetic, non-linguistic data for pre-pre-training
+    LLMs--training on synthetic-then-natural language. NCA data exhibits rich spatiotemporal
+    structure and statistics resembling natural language while being controllable
+    and cheap to generate at scale. We find that pre-pre-training on only 164M NCA
+    tokens improves downstream language modeling by up to 6% and accelerates convergence
+    by up to 1.6x. Surprisingly, this even outperforms pre-pre-training on 1.6B tokens
+    of natural language from Common Crawl with more compute. These gains also transfer
+    to reasoning benchmarks, including GSM8K, HumanEval, and BigBench-Lite. Investigating
+    what drives transfer, we find that attention layers are the most transferable,
+    and that optimal NCA complexity varies by domain: code benefits from simpler dynamics,
+    while math and web text favor more complex ones. These results enable systematic
+    tuning of the synthetic distribution to target domains. More broadly, our work
+    opens a path toward more efficient models with fully synthetic pre-training.'
