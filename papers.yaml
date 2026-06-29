@@ -3703,6 +3703,7 @@ papers:
   tags:
   - 3D Grid
   - Segmentation
+  - Medical
   thumbnail: assets/thumbnails/2023-10-01m3dncaro_kalkhof.jpg
   abstract: Medical image segmentation relies heavily on large-scale deep learning
     models, such as UNet-based architectures. However, the real-world utility of such
@@ -3808,6 +3809,8 @@ papers:
     - Lorenzi
   urls:
     preprint: https://hal.science/hal-05489861/
+  tags:
+  - Medical
   thumbnail: assets/thumbnails/2026-02-04smartafle_kalkhof.jpg
   abstract: 'We introduce SMART, a framework for building a flexible, interpretable,
     and scalable spatio-temporal brain atlas from time-series of high-resolution 3D
@@ -3940,6 +3943,8 @@ papers:
     - Khamidov
   urls:
     paper: https://www.academia.edu/164692110/Adaptive_Closed_Loop_Bioelectric_Control_of_Cancer_Cell_Phenotype_A_Navigation_Based_Framework_and_Experimental_Roadmap
+  tags:
+  - Medical
   thumbnail: assets/thumbnails/2026-02-01adaptivecl_khamidov.jpg
   abstract: 'Cancer cells are consistently depolarized (resting membrane potential
     Vmem ≈ −10 to −30 mV) relative to healthy diﬀerentiated cells (Vmem ≈ −60 to −90
@@ -4012,6 +4017,9 @@ papers:
   urls:
     arxiv: https://arxiv.org/abs/2604.10639
     code: https://github.com/LPioL/BraiNCA
+  tags:
+  - ALIFE
+  - Medical
   thumbnail: assets/thumbnails/2026-04-02braincabr_pio-lopez.jpg
   abstract: 'Most of the Neural Cellular Automata (NCAs) defined in the literature
     have a common theme: they are based on regular grids with a Moore neighborhood
