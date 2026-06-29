@@ -238,7 +238,7 @@ papers:
     code: https://github.com/real-itu/3d-artefacts-nca
     video: https://www.youtube.com/watch?v=-EzztzKoPeo
   tags:
-  - ALIFE 2021
+  - ALIFE
   thumbnail: assets/thumbnails/2021-03-15growing3da_sudhakaran.jpg
   abstract: 'Neural Cellular Automata (NCAs) have been proven effective in simulating
     morphogenetic processes, the continuous construction of complex structures from
@@ -384,7 +384,7 @@ papers:
     arxiv: https://arxiv.org/abs/2107.06862
     code: https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/reaction_diffusion_textures.ipynb
   tags:
-  - ALIFE 2021
+  - ALIFE
   thumbnail: assets/thumbnails/2021-06-22differenti_mordvintsev.jpg
   abstract: Reaction-Diffusion (RD) systems provide a computational framework that
     governs many pattern formation processes in nature. Current RD system design practices
@@ -439,7 +439,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2021/33/116/102923
     code: https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/async.ipynb
   tags:
-  - ALIFE 2021
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2021-07-19asynchroni_niklasson.jpg
   abstract: Abstract. Cellular Automata have intrigued curious minds for the better
@@ -587,7 +587,7 @@ papers:
     project_page: https://letteraunica.github.io/neural_cellular_automata/
     code: https://github.com/LetteraUnica/neural_cellular_automata
   tags:
-  - ALIFE 2022
+  - ALIFE
   thumbnail: assets/thumbnails/2022-03-12adversaria_cavuoti.jpg
   abstract: 'The biggest open problems in the life sciences concern the algorithms
     by which competent subunits (cells) could cooperate to form large-scale structures
@@ -708,7 +708,7 @@ papers:
     code structured seeds: https://github.com/google-research/self-organising-systems/blob/master/isotropic_nca/blogpost_isonca_structured_seeds_pytorch.ipynb
     code rotation invariant: https://github.com/google-research/self-organising-systems/blob/master/isotropic_nca/blogpost_isonca_single_seed_pytorch.ipynb
   tags:
-  - ALIFE 2022
+  - ALIFE
   thumbnail: assets/thumbnails/2022-05-03growingiso_mordvintsev.jpg
   abstract: 'Modeling the ability of multicellular organisms to build and maintain
     their bodies through local interactions between individual cells (morphogenesis)
@@ -946,7 +946,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2023/35/82/116945
     arxiv: https://arxiv.org/pdf/2305.13425
   tags:
-  - ALIFE 2023
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2023-07-24eincasmem_barbieux.jpg
   abstract: This paper presents EINCASM, a prototype system employing a novel framework
@@ -1044,7 +1044,7 @@ papers:
     arxiv: https://arxiv.org/abs/2302.10197
     code: https://github.com/google-research/self-organising-systems/tree/master/isotropic_nca
   tags:
-  - ALIFE 2023
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2023-02-19growingste_randazzo.jpg
   abstract: 'Neural Cellular Automata (NCA) models have shown remarkable capacity
@@ -1167,7 +1167,7 @@ papers:
     code: https://github.com/LanaSina/NCA_self_replication
     videos: https://youtube.com/playlist?list=PLYuu1RcSnrYRhophmfolv_lmx7Qz8AP1P
   tags:
-  - ALIFE 2023
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2023-05-22selfrepli_sinapayen.jpg
   abstract: This paper reports on patterns exhibiting self-replication with spontaneous,
@@ -1189,7 +1189,7 @@ papers:
     arxiv: https://arxiv.org/abs/2305.12971
     code: https://github.com/jstovold/ALIFE2023
   tags:
-  - ALIFE 2023
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2023-05-22neuralcell_stovold.jpg
   abstract: 'Neural Cellular Automata (NCAs) are a model of morphogenesis, capable
@@ -1255,7 +1255,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/120/123522
     code: https://github.com/google-research/self-organising-systems/tree/master/self_organising_systems/biomakerca
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-07-22simulating_randazzo.jpg
   abstract: 'We introduce Biomaker CA: a Biome Maker project using Cellular Automata
@@ -1287,7 +1287,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/122/123537
     code: https://github.com/koutefra/dinca
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-07-22unlockingn_koutensky.jpg
   abstract: This study presents Dynamics Identification via Neural Cellular Automata
@@ -1311,7 +1311,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2023/35/20/116844
     code: https://github.com/RituPande/hnca
   tags:
-  - ALIFE 2023
+  - ALIFE
   - 2D Grid
   - Hierarchical
   thumbnail: assets/thumbnails/2023-07-24hierarchic_pande.jpg
@@ -1536,7 +1536,7 @@ papers:
     code: https://github.com/IVRL/NoiseNCA
     video: https://www.youtube.com/watch?v=vb0oKr7o6kw
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-04-09noisencan_pajouheshgar.jpg
   abstract: Neural Cellular Automata (NCA) is a class of Cellular Automata where the
@@ -1873,7 +1873,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2022/34/62/112313
   tags:
-  - ALIFE 2022
+  - ALIFE
   thumbnail: assets/thumbnails/2022-07-18gradientcl_kuriyama.jpg
   abstract: Chemotaxis is a phenomenon whereby organisms like ameba direct their movements
     responding to their environmental gradients, often called gradient climbing. It
@@ -1999,7 +1999,7 @@ papers:
     arxiv: https://arxiv.org/abs/2403.15525
     code: https://github.com/Menta99/LatentNeuralCellularAutomata
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-03-22latentneur_menta.jpg
   abstract: Neural cellular automata represent an evolution of the traditional cellular
@@ -2112,7 +2112,7 @@ papers:
     code: https://github.com/aidanbx/coralai
     video: https://www.youtube.com/watch?v=NL8IZQY02-8
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-06-14coralaiin_barbieux.jpg
   abstract: 'This paper presents Coralai, a framework for exploring diverse ecosystems
@@ -2140,7 +2140,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/96/123544
     arxiv: https://arxiv.org/abs/2404.06406
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2024-06-20emergentdy_xu.jpg
   abstract: Neural Cellular Automata (NCA) models are trainable variations of traditional
@@ -2310,7 +2310,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/99/123527
   tags:
-  - ALIFE 2024
+  - ALIFE
   thumbnail: assets/thumbnails/2024-07-22generegul_hintze.jpg
   abstract: This paper introduces a Gene Regulatory Neural Cellular Automata (ENIGMA),
     an innovative extension of the Neural Cellular Automata (NCA) framework aimed
@@ -2604,7 +2604,7 @@ papers:
     arxiv: https://arxiv.org/abs/2504.11855
     code: https://github.com/etimush/EngramNCA
   tags:
-  - ALIFE 2025
+  - ALIFE
   - 2D Grid
   - Hierarchical
   thumbnail: assets/thumbnails/2025-04-16engramnca_guichard.jpg
@@ -2755,7 +2755,7 @@ papers:
     arxiv: https://arxiv.org/abs/2506.04912
     code: https://colab.research.google.com/github/google-research/self-organising-systems/blob/master/notebooks/diffLogic_CA.ipynb
   tags:
-  - ALIFE 2025
+  - ALIFE
   thumbnail: assets/thumbnails/2025-06-05differenti_miotti.jpg
   abstract: 'This paper introduces Differentiable Logic Cellular Automata (DiffLogic
     CA), a novel combination of Neural Cellular Automata (NCA) and Differentiable
@@ -2788,7 +2788,7 @@ papers:
     paper: https://direct.mit.edu/isal/proceedings/isal2025/37/16/134083
     arxiv: https://arxiv.org/abs/2506.15746
   tags:
-  - ALIFE 2025
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2025-06-18neuralcell_xu.jpg
   abstract: Cellular automata and their differentiable counterparts, Neural Cellular
@@ -2826,7 +2826,7 @@ papers:
     code: https://github.com/etimush/ARC_NCA/
     video: https://etimush.github.io/ARC-NCA-Videos/
   tags:
-  - ALIFE 2025
+  - ALIFE
   thumbnail: assets/thumbnails/2025-05-13-arcnca_guichard.jpg
   abstract: The Abstraction and Reasoning Corpus (ARC), later renamed ARC-AGI, poses
     a fundamental challenge in artificial general intelligence (AGI), requiring solutions
@@ -2946,7 +2946,7 @@ papers:
     arxiv: https://arxiv.org/abs/2508.06389
     code: https://github.com/jstovold/ALIFE2025
   tags:
-  - ALIFE 2025
+  - ALIFE
   - 2D Grid
   thumbnail: assets/thumbnails/2025-08-08identityin_stovold.jpg
   abstract: Neural Cellular Automata (NCAs) offer a way to study the growth of two-dimensional
@@ -2977,7 +2977,7 @@ papers:
     arxiv: https://arxiv.org/abs/2508.02218
     code: https://github.com/bioAI-Oslo/critical-nca-reservoir
   tags:
-  - ALIFE 2025
+  - ALIFE
   thumbnail: assets/thumbnails/2025-08-13reservoirc_pontes-filho.jpg
   abstract: Criticality is a behavioral state in dynamical systems that is known to
     present the highest computation capabilities, i.e., information transmission,
@@ -3260,7 +3260,7 @@ papers:
     code: https://github.com/SakanaAI/asal
     blog: https://sakana.ai/asal/
   tags:
-  - ALIFE 2025
+  - ALIFE
   thumbnail: assets/thumbnails/2025-05-16automating_kumar.jpg
   abstract: With the recent Nobel Prize awarded for radical advances in protein discovery,
     foundation models (FMs) for exploring large combinatorial spaces promise to revolutionize
@@ -3297,7 +3297,7 @@ papers:
     code: https://github.com/dwoiwode/embedded_nca
     simulator: https://github.com/dwoiwode/embedded_nca/simulator
   tags:
-  - ALIFE 2025
+  - ALIFE
   - 2D Grid
   - Robots
   - Classification
@@ -3597,7 +3597,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2025/37/12/134031
   tags:
-  - ALIFE 2025
+  - ALIFE
   thumbnail: assets/thumbnails/2025-10-06devncaco_gaskin.jpg
   abstract: 'The developing nervous system is not silent, before birth most amniote
     animals exhibit spontaneous neural activity. This activity has further been shown
@@ -3624,7 +3624,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/91/123454
   tags:
-  - ALIFE 2024
+  - ALIFE
   thumbnail: assets/thumbnails/2024-07-22developmen_sato.jpg
   abstract: ''
 - id: 2024-07-22emergentmu_mordvintsev
@@ -3639,7 +3639,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/28/123503
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   - Hierarchical
   thumbnail: assets/thumbnails/2024-07-22emergentmu_mordvintsev.jpg
@@ -3665,7 +3665,7 @@ papers:
   urls:
     paper: https://direct.mit.edu/isal/proceedings/isal2024/36/115/123448
   tags:
-  - ALIFE 2024
+  - ALIFE
   - 2D Grid
   - Hierarchical
   thumbnail: assets/thumbnails/2024-07-22enablingev_bielawski.jpg
@@ -3998,3 +3998,318 @@ papers:
     approaches. We furthermore interpret these rules: the learned latent variables
     correspond to meaningful gene programs, and their learned interactions to developmentally
     important signaling interactions with previous causal evidence.'
+- id: 2026-04-02braincabr_pio-lopez
+  title: 'BraiNCA: brain-inspired neural cellular automata and applications to morphogenesis
+    and motor control'
+  year: '2026-04-02'
+  authors:
+  - - Léo
+    - Pio-Lopez
+  - - Benedikt
+    - Hartl
+  - - Michael
+    - Levin
+  urls:
+    arxiv: https://arxiv.org/abs/2604.10639
+    code: https://github.com/LPioL/BraiNCA
+  thumbnail: assets/thumbnails/2026-04-02braincabr_pio-lopez.jpg
+  abstract: 'Most of the Neural Cellular Automata (NCAs) defined in the literature
+    have a common theme: they are based on regular grids with a Moore neighborhood
+    (one-hop neighbour). They don’t take into account long-range connections and more
+    complex topologies as we can find in the brain. In this paper, we introduce BraiNCA,
+    a brain-inspired NCA with an attention layer, long-range connections and complex
+    topology. BraiNCAs shows better results in terms of robustness and speed of learning
+    on the two tasks compared to Vanilla NCAs establishing that incorporating attention-based
+    message selection together with explicit long-range edges can yield more sample-efficient
+    and damage-tolerant self-organization than purely local, grid-based update rules.
+    These results support the hypothesis that, for tasks requiring distributed coordination
+    over extended spatial and temporal scales, the choice of interaction topology
+    and the ability to dynamically route information will impact the robustness and
+    speed of learning of an NCA. More broadly, BraiNCA provides brain-inspired NCA
+    formulation that preserves the decentralized “local update” principle while better
+    reflecting non-local connectivity patterns, making it a promising substrate for
+    studying collective computation under biologically-realistic network structure
+    and evolving cognitive substrates.'
+- id: 2026-04-14stabilitya_kvalsund
+  title: Stability and Geometry of Attractors in Neural Cellular Automata
+  year: '2026-04-14'
+  authors:
+  - - Mia-Katrin
+    - Kvalsund
+  - - James
+    - Stovold
+  urls:
+    arxiv: https://arxiv.org/pdf/2604.12720
+    code: https://github.com/mia-katrin/attractors
+  tags:
+  - ALIFE
+  thumbnail: assets/thumbnails/2026-04-14stabilitya_kvalsund.jpg
+  abstract: Throughout the literature on Neural Cellular Automata (NCAs), it is often
+    taken for granted that the systems learn attractors. This is shown through evolving
+    the system for many timesteps and noting visual similarity to the goal state.
+    There remain many questions after such an analysis. Namely, what kind of attractors
+    do we have? Is their behavior ordered or chaotic? Can we estimate stability over
+    very long time horizons? What really happens in the attractor when perturbations
+    are applied? In this paper, we present a case study to help answer these questions,
+    with methods drawn from the literature on dynamical systems theory.
+- id: 2026-05-12anewkindof_spitznagel
+  title: A New Kind of Network? Review and Reference Implementation of Neural Cellular
+    Automata
+  year: '2026-05-12'
+  authors:
+  - - Martin
+    - Spitznagel
+  - - Janis
+    - Keuper
+  urls:
+    project_page: https://www.neural-cellular-automata.org/
+    openreview: https://openreview.net/forum?id=NRwjj0ZLq0
+    arxiv: https://arxiv.org/pdf/2604.24990
+    code: https://github.com/mspitzna/NCAtorch
+    video: https://tmlr.infinite-conf.org/paper_pages/NRwjj0ZLq0.html
+  thumbnail: assets/thumbnails/2026-05-12anewkindof_spitznagel.jpg
+  abstract: 'Stephen Wolfram proclaimed in his 2003 seminal work “A New Kind Of Science”
+    that simple recursive programs in the form of Cellular Automata (CA) are a promising
+    approach to replace currently used mathematical formalizations, e.g. differential
+    equations, to improve the modeling of complex systems. Over two decades later,
+    while Cellular Automata have still been waiting for a substantial breakthrough
+    in scientific applications, recent research showed new and promising approaches
+    which combine Wolfram’s ideas with learnable Artificial Neural Networks: So-called
+    Neural Cellular Automata (NCA) are able to learn the complex update rules of CA
+    from data samples, allowing them to model complex, self-organizing generative
+    systems.'
+- id: 2026-05-13texturereg_catrina
+  title: Texture Regenerating and Grafting Using Genome-Driven Neural Cellular Automata
+  year: '2026-05-13'
+  authors:
+  - - Mirela-Magdalena
+    - Catrina
+  - - Ioana Cristina
+    - Plajer
+  - - Alexandra
+    - Băicoianu
+  urls:
+    arxiv: https://arxiv.org/abs/2605.13630
+  thumbnail: assets/thumbnails/2026-05-13texturereg_catrina.jpg
+  abstract: This study significantly advances multi-texture synthesis using Neural
+    Cellular Automata (NCAs) by introducing a novel training methodology that enables
+    robust self-regeneration of textures in damaged regions. This inherent healing
+    mechanism, essential for dynamic and adaptive systems, extends beyond traditional
+    computer graphics applications, highlighting the fundamental self-organizing properties
+    of NCAs. Furthermore, we present a versatile grafting technique, enabling the
+    seamless combination of distinct textures. This is achieved efficiently during
+    the inference phase, without requiring specialized retraining, through precise
+    initialization of the NCA’s genome channels. Our findings demonstrate the generation
+    of high-quality, complex textures with fluid transitions, showcasing a powerful
+    and efficient paradigm for dynamic texture composition and self-repair in autonomous
+    systems.
+- id: 2026-05-26measuringp_sadafi
+  title: Measuring Prediction Uncertainty in Neural Cellular Automata
+  year: '2026-05-26'
+  authors:
+  - - Ario
+    - Sadafi
+  - - Michael
+    - Deutges
+  - - Nassir
+    - Navab
+  - - Carsten
+    - Marr
+  urls:
+    arxiv: https://arxiv.org/abs/2605.26726
+    code: https://github.com/marrlab/resilience
+  thumbnail: assets/thumbnails/2026-05-26measuringp_sadafi.jpg
+  abstract: Neural cellular automata (NCA) provide a lightweight alternative to encoder–decoder
+    segmentation networks. However, it can be difficult to decide when a prediction
+    should be trusted. Here, we study uncertainty estimation for NCA-based medical
+    image segmentation without modifying the underlying architecture or retraining
+    the model. Our approach is motivated by viewing the NCA as a dynamical system
+    where convergent attractors correspond to confident predictions.
+- id: 2026-06-10neuralpar_zhenirovskyy
+  title: Neural-Parameterized Cellular Automata for Wildfire Spread
+  year: '2026-06-10'
+  authors:
+  - - Maksym
+    - Zhenirovskyy
+  - - Ion
+    - Matei
+  - - Rohit
+    - Vuppala
+  - - Takuya
+    - Kurihana
+  - - Hon Yung
+    - Wonga
+  urls:
+    arxiv: https://arxiv.org/abs/2606.11676
+    code: https://github.com/mzhen77/neural-ca-wildfire
+  thumbnail: assets/thumbnails/2026-06-10neuralpar_zhenirovskyy.jpg
+  abstract: Traditional wildfire models rely on rigid, low-dimensional parameters
+    and static fuel maps, frequently underpredicting fire spread. To address this
+    weakness, we introduce a hybrid deep-learning parameterized Probabilistic Cellular
+    Automata (CA) framework implemented in JAX. Our approach employs a Multi-Scale
+    Convolutional Neural Network to dynamically generate spatially varying parameters
+    that govern fire-spread probability, wind alignment, and slope influence. This
+    hybrid design captures complex, nonlinear environmental interactions while preserving
+    the physical interpretability of the underlying three-state CA. The JAX implementation
+    enables hardware acceleration and gradientbased parameter calibration. Evaluated
+    on six large-scale wildfires in the western United States, the model maintains
+    𝐼𝑜𝑈 > 0.6 over 72-hour forecast horizons after a 10-day data assimilation window
+    during which the model is fitted incrementally to observed perimeters; the resulting
+    forecast is a conditional projection of fire growth under the suppression regime
+    already encoded in those observations.
+- id: 2026-06-10visualisin_stovold
+  title: Visualising the Attractor Landscape of Neural Cellular Automata
+  year: '2026-06-10'
+  authors:
+  - - James
+    - Stovold
+  - - Mia-Katrin
+    - Kvalsund
+  - - Harald Michael
+    - Ludwig
+  - - Varun
+    - Sharma
+  - - Alexander
+    - Mordvintsev
+  urls:
+    paper: https://arxiv.org/abs/2604.10639
+    code: https://github.com/jstovold/ALIFE2026
+  tags:
+  - ALIFE
+  thumbnail: assets/thumbnails/2026-06-10visualisin_stovold.jpg
+  abstract: 'As Neural Cellular Automata (NCAs) are increasingly applied outside of
+    the toy models in Artificial Life, there is a pressing need to understand how
+    they behave and to build appropriate routes to interpret what they have learnt.
+    By their very nature, the benefits of training NCAs are balanced with a lack of
+    interpretability: we can engineer emergent behaviour, but have limited ability
+    to understand what has been learnt.'
+- id: 2026-06-17smartafle_kalkhof
+  title: 'SMART: A Flexible, Interpretable, and Scalable Spatio-temporal Brain Atlas
+    from High-Resolution Imaging Data'
+  year: '2026-06-17'
+  authors:
+  - - John
+    - Kalkhof
+  - - Boris
+    - Gutman
+  - - Emile
+    - d'Angremont
+  - - Daniel C.
+    - Alexander
+  - - Marco
+    - Lorenzi
+  urls:
+    paper: https://arxiv.org/abs/2606.18753
+  thumbnail: assets/thumbnails/2026-06-17smartafle_kalkhof.jpg
+  abstract: We introduce SMART, a framework for learning a flexible, interpretable,
+    and scalable spatio-temporal brain atlas from longitudinal high-resolution 3D
+    medical images. Existing approaches to spatio-temporal atlas construction rely
+    on black-box generative models that lack flexibility, limit interpretability,
+    and struggle to scale to high-dimensional data. SMART addresses these challenges
+    by learning a continuous disease-time atlas that decouples global groupwise disease
+    dynamics from their patient-specific anatomical manifestation. Guided by anatomically
+    inspired priors, SMART models interpretable global trajectories of regional progression
+    along a shared disease timeline through regionspecific differential equations.
+    Global trajectories are further personalized to individual anatomies via dense
+    diffeomorphic displacements parameterized by a flexible and scalable multi-scale
+    Neural Cellular Automata. Evaluated on five longitudinal MRI datasets in Alzheimer’s
+    disease (ADNI-1/GO/2, OASIS-3, AIBL; >1,300 subjects), SMART produces anatomically
+    meaningful predictions of disease progression and achieves state-of-the-art forecasting
+    accuracy and improved temporal consistency over adversarial and diffusion baselines.
+    Our approach establishes a new paradigm for flexible, interpretable, and scalable
+    modeling of spatio-temporal change in high-dimensional medical image time-series.
+- id: 2026-06-19communicat_singh
+  title: Communication Heterogeneity and Collective Consensus in Neural Cellular Automata
+  year: '2026-06-19'
+  authors:
+  - - Nishit
+    - Singh
+  urls:
+    arxiv: https://arxiv.org/abs/2606.21202
+  thumbnail: assets/thumbnails/2026-06-19communicat_singh.jpg
+  abstract: Reaching global agreement from purely local interactions is a defining
+    problem of collective intelligence, and most models of it assume that all agents
+    share a single communication protocol. We ask what happens when they do not. Using
+    a Neural Cellular Automaton in which a population of cells must solve the density
+    classification task, agreeing on a global majority that no individual can observe,
+    we introduce “languages” as sub-populations that read one another’s messages through
+    a translation with a tunable “linguistic distance”. We find that linguistic distance
+    slows consensus, that it produces mild divergence between groups rather than full
+    fragmentation, and that a collective whose shared rule was trained under diverse
+    protocols is robust to mismatch; a homogeneously trained one is not. The findings
+    hold on both a ring and a two-dimensional grid, and admit a natural reading as
+    Ising relaxation, in which a foreignlanguage region acts as a boundary defect
+    that leaves the system in a higher-energy, partially ordered state. These patterns
+    are qualitatively consistent with effects reported in human group studies, suggesting
+    that distance between communication protocols is a minimal mechanism sufficient
+    to produce them, without anything language-specific.
+- id: 2026-06-22massconser_zhang
+  title: Mass Conservation as an Inductive Bias for Self-Organized Criticality in
+    NCA Reservoirs
+  year: '2026-06-22'
+  authors:
+  - - Tong
+    - Zhang
+  - - Etienne
+    - Guichard
+  - - Sidney
+    - Pontes-Filho
+  - - Stefano
+    - Nichele
+  urls:
+    arxiv: https://arxiv.org/pdf/2606.23115
+    code: https://github.com/modal905/mace-nca-reservoir
+  thumbnail: assets/thumbnails/2026-06-22massconser_zhang.jpg
+  abstract: 'Self-organized criticality (SOC), a dynamical regime associated with
+    maximal information processing, offers a promising foundation for reservoir computing.
+    Recent work has shown that neural cellular automata (NCA) can be evolved toward
+    critical avalanche dynamics and employed as effective reservoirs for memory and
+    classification tasks. Here, we investigate whether mass conservation—a local redistribution
+    rule that preserves total lattice mass—serves as an inductive bias toward SOC
+    in evolved NCA reservoirs. We compare mass-conserving and standard NCA across
+    multiple independent runs and evaluate both on three downstream benchmarks: 5-bit
+    sequential memory, MNIST digit classification, and CartPole-v1 temporal control.
+    Massconserving NCA consistently exhibit stronger criticality, with more runs achieving
+    perfect power-law fits across avalanche distributions, while also being 1.27×
+    faster during evolution. Importantly, conservation does not impair downstream
+    utility: both variants achieve comparable performance across all three tasks.
+    Furthermore, the reservoir with perfect criticality achieves the highest temporal
+    control score, suggesting a positive link between SOC quality and sequential computation.
+    Our results demonstrate that mass conservation is a simple, effective mechanism
+    for promoting robust criticality in evolved NCA reservoirs without sacrificing
+    downstream performance.'
+- id: 2026-06-22evolvingma_berdica
+  title: 'Evolving Many Worlds: Towards Open-Ended Discovery in Petri Dish NCA via
+    Population-Based Training'
+  year: '2026-06-22'
+  authors:
+  - - Uljad
+    - Berdica
+  - - Jakob
+    - Foerster
+  - - Frank
+    - Hutter
+  - - Arber
+    - Zela
+  urls:
+    arxiv: https://arxiv.org/abs/2604.11248
+    code: https://github.com/arberzela/pbt-nca
+  thumbnail: assets/thumbnails/2026-06-22evolvingma_berdica.jpg
+  abstract: The generation of sustained, open-ended complexity from local interactions
+    remains a fundamental challenge in artificial life. Differentiable multi-agent
+    systems, such as Petri Dish Neural Cellular Automata (PD-NCA), exhibit rich selforganization
+    driven purely by spatial competition; however, they are highly sensitive to hyperparameters
+    and frequently collapse into uninteresting patterns and dynamics, such as frozen
+    equilibria or structureless noise. In this paper, we introduce PBT-NCA, a meta-evolutionary
+    algorithm that evolves a population of PD-NCAs subject to a composite objective
+    that rewards both historical behavioral novelty and contemporary visual diversity.
+    Driven by this continuous evolutionary pressure, PBT-NCA spontaneously generates
+    a plethora of emergent lifelike phenomena over extended horizons—a hallmark of
+    true open-endedness. Strikingly, the substrate autonomously discovers diverse
+    morphological survival and self-organization strategies. We observe highly regular,
+    coordinated periodic waves; spore-like scattering where homogeneous groups eject
+    cell-like clusters to colonize distant territories; and fluid, shape-shifting
+    macro-structures that migrate across the substrate, maintaining stable outer boundaries
+    that enclose highly active interiors. By actively penalizing monocultures and
+    dead states, PBT-NCA sustains a state of effective complexity that is neither
+    globally ordered nor globally random, operating persistently at the “edge of chaos”.
