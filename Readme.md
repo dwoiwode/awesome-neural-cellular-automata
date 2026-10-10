@@ -71,6 +71,7 @@ Training an end-to-end differentiable, self-organising cellular automata model o
 - **Projects & Tools**
   - [NeuralCA.org](https://www.neuralca.org/) | [GitHub](https://github.com/MonashDeepNeuron/Neural-Cellular-Automata)
   - [Google Self-organising Systems](https://github.com/google-research/self-organising-systems/)
+  - [MICA](https://github.com/Vovala14/Mica-Ai) - Related discrete-rule research: experimental language modeling with learned integer cellular rules, byte-level Ember and word-level Flame-W. Non-commercial research license.
 
 - **Others**
   - Alexander Mordvintsev: [Website](https://znah.net/) | [YouTube](https://www.youtube.com/@zzznah) | [Twitter/X](https://x.com/zzznah) | [GitHub](https://github.com/znah)
